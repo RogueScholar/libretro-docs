@@ -1,149 +1,204 @@
 # Downloading, Installing and Updating RetroArch for Windows 7 and Later
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hu-TW02bhhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--
+  SPDX-FileCopyrightText: © 2018, Daniel De Matteis <libretro@gmail.com>
+  SPDX-FileCopyrightText: © 2018, Joel Hansen <joellhansenn@gmail.com>
+  SPDX-FileCopyrightText: © 2019, Mark W. Kidd <mark@stardart.net>
+  SPDX-FileCopyrightText: © 2019–2022, Ömercan Kömür <fpscan@gmail.com>
+  SPDX-FileCopyrightText: © 2020, Colin Crowley <sanaki@fuzzy-dice.net>
+  SPDX-FileCopyrightText: © 2020, Winston Weinert <winston@ml1.net>
+  SPDX-FileCopyrightText: © 2020, Panagiotis Georgiadis <pgeorgia@redhat.com>
+  SPDX-FileCopyrightText: © 2021, Sascha Shaw <sascha.shaw@t-online.de>
+  SPDX-FileCopyrightText: © 2022, Tony Peter Jansson <tony@pihaus.org>
+  SPDX-FileCopyrightText: © 2022, Gouchi <gouchi@free.fr>
+  SPDX-FileCopyrightText: © 2023, Eric Warmenhoven <eric@warmenhoven.org>
+  SPDX-FileCopyrightText: © 2023, Dillon Regimbal <dillon@dillonr.com>
+  SPDX-FileCopyrightText: © 2024, Abhishek Jethuri <abhishek.jethuri@gmail.com>
+  SPDX-FileCopyrightText: © 2024–2026, Peter J. Mello <admin@petermello.net>
+
+  SPDX-License-Identifier: MIT
+-->
+<iframe allow="accelerometer 'self'; clipboard-write *; display-capture 'self'; encrypted-media 'src';
+  fullscreen *; geolocation 'src'; gyroscope 'self'; hid 'self'; picture-in-picture *; screen-wake-lock *;
+  web-share *;" aria-label="YouTube video" height="315" width="560" loading="lazy" role="application"
+  name="YouTube embedded player" title="" referrerpolicy="strict-origin-when-cross-origin"
+  sandbox="allow-orientation-lock allow-popups allow-presentation allow-same-origin allow-scripts"
+  src="https://www.youtube-nocookie.com/embed/hu-TW02bhhY?origin=docs.libretro.com&playsinline=1"
+  style="border-collapse: collapse; border-style: hidden; display: block; margin: 1.5rem auto 2rem; position: relative;">
+</iframe>
 
 ## Downloading
 
-First decide if you want a stable release or a nightly. Both options provide you with the latest RetroArch, the only difference is that one is a self extracting installer, and the other one an archive you have to extract manually. Both are portable installation which means the RetroArch setup is:
-- It's self-contained
-- It doesn't need users to guess random locations for configurations files
-- It's easy to update by just replacing files
+First, decide if you want to run a **stable release** or a **nightly build**.
+Both options provide you with the current RetroArch release but differ most
+noticeably in that stable releases are packaged inside of a self-extracting
+installer, while the nightly builds are distributed as a simple archive file
+that has to be extracted manually. Both instances are considered "portable"
+installation, meaning that once in place, RetroArch is:
+
+- Self-contained
+- Not reliant on using user-scope locations to store its configuration files
+- Easy to update simply by replacing the existing files
 
 ### Stable
 
-The stable version is our first priority and the main distribution version. Since it is the major release, it comes out periodically. Stable releases take more time to manufacture, but new features become available in the next version. For example: A version can have a new theme and feature, and in the next version, this theme and feature can be removed, improved or changed. As can be understood from the name of Stable, this version is more stable because it is controlled accordingly to make it work better on the platform it is suitable for.
+The stable version is our first priority and the main distribution version.
+Since it is the major release, it comes out periodically. Stable releases take
+more time to develop, and new features only become available after the next
+release event. For example: a version can provide specific features and themes,
+then in the next version, those features and themes might be removed, improved
+or modified. As can be inferred from the name "Stable," these installations have
+fewer bugs because of the quality assurance testing performed prior to every new
+release event.
 
-Stable release are [here](https://buildbot.libretro.com/stable/{{ unit.stable }}/windows/), and then select the architecture of your computer.
+To get started, visit our [**stable releases**][buildbot-windows-stable]
+repository and then select your hardware architecture to see a list of the
+current installation files.
 
 ### Nightly
 
-This version contains the latest commits available on GitHub, and the latest enhancements and features are added daily. This version may not be as stable as Stable version because it is built daily, but this does not mean that it is not stable.
+This version contains the latest changes made to the source code on GitHub,
+providing the ability to try out the latest enhancements and features as soon as
+they are added. The potential trade-off is that it may not be as stable due to
+not yet having undergone the testing that's done prior to new stable releases,
+though our development process is structured to catch new bugs quickly and
+rollback the offending changes as soon as they're identified.
 
-The current nightly is [here](https://buildbot.libretro.com/nightly/windows/). There are several files you can download in these folders. For a new installation you want **RetroArch.7z** or the setup package (**RetroArch-20XX-XX-XX-setup.exe**).
+To get started, visit our [**nightly builds**][buildbot-windows-nightly]
+repository and select from one of the archive files there within the folder
+named for your hardware architecture. For a new installation, choose either the
+**`RetroArch.7z`** archive or the (**`RetroArch-20XX-XX-XX-setup.exe`**)
+self-extracting installer.
 
 ## Installing
 
-If you pick the 7z archive package, extract it in a folder that doesn't require administrator permissions such as *C:\Users\yourusername\RetroArch* or any other drive. Don't extract it to *Program Files* or your Windows folder. This could case some issues.
+If you download an archive package whose file extension is **`.7z`**, extract it
+in a folder that doesn't require administrator privileges, such as
+*`C:\Users\Username\RetroArch`* or another similar location; avoid extracting it
+to *`Program Files`* or your `Windows` folder as that is known to cause issues.
 
 ## Updating
 
-You can update the installation by downloading the latest **20XX-XX-XX-RetroArch.7z** package and overwriting the executable.
+You can update a nightly build installation simply by downloading the latest
+**`20XX-XX-XX-RetroArch.7z`** package and overwriting your current
+`RetroArch.exe` file with the one inside the package.
 
-If you pick the installer package we recommend to use the default location, follow the installation steps and you should be good to go. You can update the installer version by downloading the latest version and re-running the installer.
+If you used the installer package, we recommend not changing the default
+installation path, simply follow the installation steps as they're shown in the
+wizard and success should follow swiftly. You can update the installer version
+by downloading a new installer package and executing it as you did before.
 
-| :warning: WARNING          |
-|:---------------------------|
-| If you were running a stable release prior to 1.4.0. you will need to update the system libraries. You can do so by downloading the full **RetroArch.7z** package or **redist.7z** from the download locations.      |
-
+!!! warning
+    If you were running a stable release prior to version `1.4.0`, you will need
+    to update the system libraries when you upgrade RetroArch. You can do so by
+    downloading either the **`RetroArch.7z`** or **`redist.7z`** package from
+    the appropriate download repository.
 
 ## Starting RetroArch
 
-On the first run you will be greeted by this screen:
+The first time RetroArch is launched, you will be greeted by the screen below.
 
 ![Screenshot](../image/retroarch/ozone/first_run.webp)
 
-From here you can launch content, change settings and build up your content collection.
+From there, you can launch content, change settings or start adding files to
+your content library.
 
 ### Keyboard Controls
 
-The RetroArch user interface is designed with gamepad navigation in mind but it also features robust keyboard and mouse support. Learn more about keyboard input at [Input and Controls](input-and-controls.md).
+The RetroArch user interface design is optimized for gamepad navigation, but it
+also features robust keyboard and mouse support; learn more about keyboard input
+in the [**Input and Controls**](input-and-controls.md) guide.
 
 ### Gamepad Controls
 
-XINPUT controllers should work out of the box. If the controller can be autoconfigured the OSD will inform you of the autoconfiguration event. We also include autoconf profiles for many popular controllers. If your controller doesn't auto configure you can follow this procedure:
+![Screenshot](../image/retroarch/xmb/autoconf.avif)
 
-![Screenshot](../image/retroarch/xmb/autoconf.gif)
+XInput peripherals should work with RetroArch without prior configuration. If
+the controller can be auto-configured, the on-screen display will inform you of
+the auto-configuration event; we currently include auto-configuration profiles
+for a large number of popular controllers. If your input device isn't
+auto-configured, follow these steps:
 
-- Navigate to **Settings**
-- Navigate to **Input**
-- Navigate to **Input User 1 Binds**
-- Select **User 1 Bind All**
-- Press the buttons as required
+1. Navigate to `Settings` --> `Input` --> `Input User 1 Binds`
+1. Select **`User 1 Bind All`**
+1. Press the buttons as directed on-screen
 
-| :warning: TIP          |
-|:---------------------------|
-| If you have several different controller types you may want to use the **User 1 Save Autoconfig** followed by **User 1 Bind Default All** options after binding in order to achieve hotplug functionality      |   
+!!! tip
+    If you have several different controller types, you may want to use the
+    **`User 1 Save Autoconfig`** option and after it the **`User 1 Bind Default
+    All`** option in order to achieve reliable hotplug functionality.
 
 ### Directory Configuration
 
-Configuring directories is an important aspect to get the best RetroArch experience possible.
-To configure the directories follow these steps:
+Configuring the directories where your RetroArch data will be stored and
+accessed from later is an important aspect to get the best experience possible.
+To define your RetroArch directories, follow these steps:
 
-- Navigate to **Settings**
-- Navigate to **Directory**
-- Select the directory you want to changed
-- Navigate to the desired location
+1. Navigate to `Settings` --> `Directory`
+1. Select the folder that stores the type of data you want to save somewhere
+1. Traverse your filesystem using the RetroArch menu to enter the desired folder
 
-You should always configure the following paths:
+You should always configure these directory paths:
 
-- System Directory for *system files*
-- Savefile Directory for *save files*
-- Savestate Directory *save state files*
-- Browser Directory for *your content*
-
-| :warning: TIP          |
-|:---------------------------|
-| The **Browser Directory** is used as a startup location which allows easy access to your content library.      |  
+- **System Directory** – for *system files*
+- **Savefile Directory** – for *game save files*
+- **Savestate Directory** – for *game state files*
+- **Browser Directory** – for a convenient starting point to browse *your
+  content files*
 
 ### Installing Cores
 
-RetroArch requires cores to run any content. You can download cores directly from RetroArch's interface by following this procedure:
+![Core updater](../image/retroarch/ozone/core_downloader.avif)
 
-![Core updater](../image/retroarch/ozone/core_downloader.gif)
-
-- Navigate to **Online Updater**
-- Navigate to **Select Core Downloader**
-- Select the core you want to download
+RetroArch requires cores to run any content. You can download cores directly
+from within RetroArch's interface by navigating to `Online Updater` --> `Core
+Downloader` in the menu and selecting the core you wish to install.
 
 ### Running Content
 
-After you have installed one or more cores you can run your content following this procedure:
+After you have installed one or more cores, you can run your content by
+following these steps:
 
-- Navigate to **Load Content**
-- Browse to the folder that contains the content you want to run
-- Select the content that you want to run
-- If you have more than one compatible core you will be asked to select the core you want to use for that purpose
+1. Navigate to `Load Content`.
+1. Browse to the folder that contains the content you wish to run and select it.
+   If you have more than one compatible core, you will be asked to select the
+   one to use.
 
-![Run content](../image/retroarch/ozone/run_content.gif)
+![Run content](../image/retroarch/ozone/run_content.avif)
 
-| :warning: TIP          |
-|:---------------------------|
-| By default loading content will trigger a content scan. If your content matches with any of our databases it will be added to a playlist for easy access. You can find the playlists by navigating to the right of the main menu. Every content you launch is added to a history playlist that you can use to load it again quickly at any time     | 
-    
+!!! tip
+    By default, loading content will trigger a content scan. If your content
+    matches an entry in our databases, it will be added to a playlist for easy
+    access. Every content file that is launched is also added to a history
+    playlist that allows it to be loaded again quickly at any time.
 
 ## Glossary
 
-Here is the list of terms in a LibRetro, RetroArch or platform subject, field, or area of usage, with accompanying definitions.
+Below is a list of terms to LibRetro, RetroArch or this page's content with an
+accompanying definition.
 
+- `frontend`: A program designed to execute content using libretro cores, such
+  as Kodi's RetroPlayer, RetroArch, Phoenix, Minir, etc.
+- `core`: A program that has been made compatible with the libretro API and can
+  run inside a libretro frontend.
+- `content`: Any game, image, video or audio file that is executed by a libretro
+  core; in most cases content files are the extracted ROMs published for use by
+  an emulated platform.
+- `retropad`: Libretro’s input controller abstraction, the interface between the
+  physical controller and the inputs understood by the core.
+- `save files`: Reloadable representations of player progress within content run
+  by a libretro core and specific to that content; they are usually transferable
+  between platforms and emulators.
+- `save states`: Snapshots of the active memory at a particular moment while a
+  libretro core is executing content; they are not generally transferable
+  between platforms and will not work on a different emulator than the one used
+  to create them.
+- `system files`: Additional files that may or may not be part of the ROMset
+  needed to allow some content to run correctly, usually referred to by the BIOS
+  term.
+- `autoconf`: A configuration file that contains the correct button definitions
+  for a particular input device, allowing it to be used by RetroArch without
+  user configuration whenever connected.
 
-`frontend`
-
-:   A frontend is a program designed to run libretro cores such as Kodi's RetroPlayer, RetroArch, Phoenix, Minir
-
-`core`
-
-:   A core is a program that has been ported to the libretro API and runs inside a libretro frontend
-
-`content`
-
-:   Content can be a game, an image, a video, an audio file that is executed by a core. In most cases contents are the ROMs of an emulated platform
-
-`retropad`
-
-:   RetroPad is libretro’s input abstraction controller, it’s the interface between the physical controller and the core inputs	
-
-`save files`
-
-:   Save files are saves that are made from within a game, usually cross platform and should work across emulators in most cases
-	
-`save states`
-
-:   Save states are snapshots of the content memory at a particular moment, these are not always cross platform and most certainly won’t work on a different emulator than the one used to create them
-
-`system files`
-
-:   Additional files that might or not be part of the romset that might be needed to get some content to work (usually referred to by the BIOS term)
-
-`autoconf`
-
-:   A configuration file that has button definitions for a particular gamepad
+[buildbot-windows-nightly]: https://buildbot.libretro.com/nightly/windows/
+[buildbot-windows-stable]: https://buildbot.libretro.com/stable/{{ unit.stable }}/windows/

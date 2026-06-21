@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+Controller,Console,Analog Thumb Sticks,L2/R2 Analog,Release Date
+PS Controller,:simple-playstation: PlayStation 1,No,No,December 1994
+Dual Analog,:simple-playstation: PlayStation 1,Yes,No,April 1997
+DualShock,:simple-playstation: PlayStation 1,Yes,No,November 1997
+DualShock 2,:simple-playstation: PlayStation 2,Yes,Yes,October 2000
+Sixaxis,:simple-playstation: PlayStation 3,Yes,Yes,November 2006
+DualShock 3,:simple-playstation: PlayStation 3,Yes,Yes,April 2008
+DualShock 4,:simple-playstation: PlayStation 4,Yes,Yes,November 2013
+DualShock 4 v2,:simple-playstation: PlayStation 4,Yes,Yes,September 2016
+DualSense,:simple-playstation: PlayStation 5,Yes,Yes,November 2020
+DualSense Edge,:simple-playstation: PlayStation 5,Yes,Yes,February 2023

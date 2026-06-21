@@ -1,4 +1,10 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2014, Team Libretro <libretro@gmail.com>
+# SPDX-FileCopyrightText: © 2019, Mark W. Kidd <mark@stardart.net>
+# SPDX-FileCopyrightText: © 2020, Winston Weinert <winston@ml1.net>
+#
+# LyX 2.0 created this file. For more info, see <https://www.lyx.org/>
 \lyxformat 413
 \begin_document
 \begin_header

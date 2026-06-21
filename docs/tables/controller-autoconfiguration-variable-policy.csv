@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: © 2026, Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: MIT
+Controller driver,VID:PID required,`input_device` usage,`input_device` name variability policy
+android,Yes,`input_device`[^3],Use the Bluetooth name&comma; since it's primarily used by Android devices
+udev,Yes,`input_device`[^3],For optimal configuration&comma; if you are generating Linux raw autoconfiguration files&comma; it is advisable to reuse the variables for `input_device` and `alternative_input_device`. In cases where `input_device` is used without alternative names&comma; it is recommended to utilize the USB device index for a more descriptive identification.
+linuxraw,No,`input_device` (for device index over USB)&comma; `input_device_alt1` (for device index over Bluetooth)&comma; `input_device_alt2` (for device index over USB on another Linux kernel)…,Use both device index over USB and Bluetooth from different Linux kernels; their names can differ depending on the Linux version in use.
+sdl2,Yes,`input_device`[^3],No (uses [SDL2 Game Controller community database][sdl2-gamepad-database])

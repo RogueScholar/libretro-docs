@@ -1,8 +1,17 @@
 # MAME 2003-Plus
 
+**MAME 2003-Plus** (also referred to as **MAME 2003+** and **mame2003-plus**) is
+a libretro multi-arcade system emulator core which prioritizes:
+
+1. Usability and frontend integration
+1. Performance
+1. Compatibility across the range of libretro-supported platforms, including
+   mobile devices, single board computers, and consoles.
+
 ## Background
 
-MAME 2003-Plus (also referred to as MAME 2003+ and mame2003-plus) is a libretro multi-arcade system emulator core which prioritizes 1) usability and frontend integration, 2) performance, and 3) compatibility across the range of libretro-supported platforms including mobile devices, single board computers, and consoles. MAME 2003-Plus is part of a long tradition in arcade emulation of producing platform-specific and performance-optimized MAME builds.
+MAME 2003-Plus is part of a long tradition in arcade emulation of producing
+platform-specific and performance-optimized MAME builds.
 
 !!! Question "Why is it called **Plus**?"
     Unlike the other 'historic' libretro MAME cores which remain fixed at one MAME version, MAME 2003-Plus is actively maintained and has to date added support for hundreds of new games along with dozens of new features.
@@ -42,7 +51,7 @@ MAME 2003-Plus began with the game drivers from MAME 0.78, meaning that 95% or m
 !!! question "What is a romset?"
     Arcade games are packaged as zip files, most of which are composed of more than one individual 'ROM' files. That is why some resources inaccurately refer to an individual arcade game as a ROM (like people use to describe a zipped game cartridge ROM) while other resources refer to an individual game as a **ROM set**, **ROMset**, or **romset**.
 
-MAME 2003-Plus has the ability to generate an XML "DAT" file directly from the [MAME menu](#MAME-menu).
+MAME 2003-Plus has the ability to generate an XML "DAT" file directly from the [MAME menu][sect-menu].
 
 
 ### Step 1: Obtaining an XML DAT
@@ -95,7 +104,7 @@ BIOS romsets are not needed when using "Full Non-Merged" arcade romsets. For "Sp
 | States            | game-dependent |
 | Rewind            | ✔         |
 | Netplay           | ✔         |
-| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✕         |
+| RetroAchievements | ✕         |
 | RetroArch Cheats  | ✕         |
 | Native Cheats     | ✔         |
 | Controllers       | ✔         |
@@ -307,3 +316,5 @@ Core-generated content is placed in sub-directories within `/libretro savefile d
 - [MAME 2003](mame_2003.md)
 - [MAME 2010](mame_2010.md)
 - [SAME_CDI](same_cdi.md)
+
+[sect-menu]: #mame-menu

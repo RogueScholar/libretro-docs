@@ -1,0 +1,35 @@
+/* SPDX-License-Identifier: MIT
+ *
+ * SPDX-FileCopyrightText: © 2014–2022, Tristen Forsythe Brown <tristen@mapbox.com>
+ * SPDX-FileCopyrightText: © 2016, Pavel Djundik <hi@xpaw.me>
+ * SPDX-FileCopyrightText: © 2017, David Beitey <david@davidjb.com>
+ */
+th[role=columnheader]:not(.no-sort) {
+  cursor: pointer;
+}
+th[role=columnheader]:not(.no-sort):after {
+  border-color: #404040 transparent;
+  border-style: solid;
+  border-width: 0 4px 4px;
+  content: '';
+  float: right;
+  margin-top: 7px;
+  opacity: 0;
+  user-select: none;
+  visibility: hidden;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+th[aria-sort=ascending]:not(.no-sort):after {
+  border-bottom: none;
+  border-width: 4px 4px 0;
+}
+th[aria-sort]:not(.no-sort):after {
+  opacity: 0.4;
+  visibility: visible;
+}
+th[role=columnheader]:not(.no-sort):hover:after {
+  opacity: 1;
+  visibility: visible;
+}

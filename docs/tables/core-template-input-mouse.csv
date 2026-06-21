@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+RetroMouse Inputs,(Device name) Inputs
+![RetroMouse cursor][retromouse]<br />Mouse Cursor,-
+![RetroMouse left click][retromouse-lbutton]<br />Mouse 1,-
+![RetroMouse right click][retromouse-rbutton]<br />Mouse 2,-
+![RetroMouse middle click][retromouse-mbutton]<br />Mouse 3,-
+Mouse 4,-
+Mouse 5,-
+Wheel Up,-
+Wheel Down,-
+Wheel Left,-
+Wheel Right,-

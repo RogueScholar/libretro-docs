@@ -1,0 +1,358 @@
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: CC0-1.0
+# ---------------------------------------------------------------------------- #
+# This file describes the licensing and copyright situation for files that
+# cannot be annotated directly, such as those containing data in binary form.
+#
+# REUSE Specification v3.3: <https://reuse.software/spec-3.3/#reusetoml>
+
+version = 1
+SPDX-PackageName = "libretro-docs"
+SPDX-PackageDownloadLocation = "https://docs.libretro.com/"
+
+[[annotations]]
+path = "CNAME"
+precedence = "override"
+SPDX-FileCopyrightText = "© 2020, Ömercan Kömür <fpscan@gmail.com>"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "archive/libretro-gl.pdf"
+precedence = "override"
+SPDX-FileCopyrightText = "© 2013, Hans-Kristian Arntzen <post@arntzen-software.no>"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [ 
+  "archive/libretro-shader.pdf", "archive/libretro.pdf",
+  "archive/mario-water1.jpg", "archive/mario-water2.jpg",
+  "archive/shader-rarch-2.jpg", "archive/supermetroid.jpg"
+]
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2012, Hans-Kristian Arntzen <post@arntzen-software.no>",
+  "© 2012, Daniel De Matteis <libretro@gmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "archive/retroarch-enduserguide.pdf",
+  "archive/RetroArch-Libretro-Technical-Brochure.pdf"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "© 2014, Team Libretro <libretro@gmail.com>"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [ "archive/overlay.pdf", "archive/retroarch-cores-manual.pdf" ]
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2013, Hans-Kristian Arntzen <post@arntzen-software.no>",
+  "© 2013, Daniel De Matteis <libretro@gmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [ "archive/ratecontrol-data.pdf", "archive/ratecontrol.pdf" ]
+precedence = "override"
+SPDX-FileCopyrightText = "© 2012, Hans-Kristian Arntzen <post@arntzen-software.no>"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "archive/retroarch-blackberry-playbook-0.9.9.pdf"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2013, Hans-Kristian Arntzen <post@arntzen-software.no>",
+  "© 2013, Daniel De Matteis <libretro@gmail.com>",
+  "© 2013, CatalystG <CatalystG@users.noreply.github.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "archive/retroarch-ios-0.9.9.pdf"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2013, Hans-Kristian Arntzen <post@arntzen-software.no>",
+  "© 2013, Daniel De Matteis <libretro@gmail.com>",
+  "© 2013, Jason Fetters <meancoot@users.noreply.github.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "docs/image/branding/bg.png"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2020, Ömercan Kömür <fpscan@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "docs/image/branding/invader.png", "docs/image/branding/libretro_banner.png",
+  "docs/image/branding/retroarch_banner.png", "docs/image/controller/3do.png",
+  "docs/image/controller/atari_2600.png",
+  "docs/image/controller/atari_7800.png", "docs/image/controller/dc.png",
+  "docs/image/controller/gb.png", "docs/image/controller/gba.png",
+  "docs/image/controller/gg.png", "docs/image/controller/intellivision.png",
+  "docs/image/controller/jaguar.png", "docs/image/controller/lynx.png",
+  "docs/image/controller/md3.png", "docs/image/controller/md6.png",
+  "docs/image/controller/mupen64plus.png", "docs/image/controller/nds.png",
+  "docs/image/controller/nes.png", "docs/image/controller/ngp.png",
+  "docs/image/controller/odyssey.png", "docs/image/controller/parallel.png",
+  "docs/image/controller/pce.png", "docs/image/controller/psp.png",
+  "docs/image/controller/psx.png", "docs/image/controller/saturn.png",
+  "docs/image/controller/sg1000.png", "docs/image/controller/sms.png",
+  "docs/image/controller/snes.png", "docs/image/controller/vb.png",
+  "docs/image/controller/vectrex.png", "docs/image/core/2048/start.png",
+  "docs/image/core/all/download.png", "docs/image/core/all/downloads.png",
+  "docs/image/core/all/info.png", "docs/image/core/all/load.png",
+  "docs/image/core/all/updater.png", "docs/image/core/beetle_psx_hw/3point.png",
+  "docs/image/core/beetle_psx_hw/bilinear.png",
+  "docs/image/core/beetle_psx_hw/bios.png",
+  "docs/image/core/beetle_psx_hw/cursor_cross.png",
+  "docs/image/core/beetle_psx_hw/cursor_dot.png",
+  "docs/image/core/beetle_psx_hw/cursor_off.png",
+  "docs/image/core/beetle_psx_hw/fps.png",
+  "docs/image/core/beetle_psx_hw/gpu_2.png",
+  "docs/image/core/beetle_psx_hw/jinc2.png",
+  "docs/image/core/beetle_psx_hw/m3u.png",
+  "docs/image/core/beetle_psx_hw/nearest.png",
+  "docs/image/core/beetle_psx_hw/sabr.png",
+  "docs/image/core/beetle_psx_hw/scan_off.png",
+  "docs/image/core/beetle_psx_hw/scan_on.png",
+  "docs/image/core/beetle_psx_hw/smooth_off.png",
+  "docs/image/core/beetle_psx_hw/vram.png",
+  "docs/image/core/beetle_psx_hw/wide_off.png",
+  "docs/image/core/beetle_psx_hw/wide_on.png",
+  "docs/image/core/beetle_psx_hw/wire.png",
+  "docs/image/core/beetle_psx_hw/xbr.png",
+  "docs/image/core/beetle_saturn/blend_off.png",
+  "docs/image/core/beetle_saturn/blend_on.png",
+  "docs/image/core/beetle_saturn/cross.png",
+  "docs/image/core/beetle_saturn/dot.png",
+  "docs/image/core/beetle_saturn/off.png",
+  "docs/image/core/beetle_vb/black&red.png",
+  "docs/image/core/beetle_vb/black&white.png",
+  "docs/image/core/beetle_vb/green&magenta.png",
+  "docs/image/core/beetle_vb/off.png", "docs/image/core/beetle_vb/red&blue.png",
+  "docs/image/core/beetle_vb/red&cyan.png",
+  "docs/image/core/beetle_vb/red&electriccyan.png",
+  "docs/image/core/beetle_vb/red&green.png",
+  "docs/image/core/beetle_vb/yellow&blue.png",
+  "docs/image/core/bluemsx/crop_msx2.png",
+  "docs/image/core/bluemsx/crop_off.png", "docs/image/core/bluemsx/crop_on.png",
+  "docs/image/core/bnes/crisisforce.png", "docs/image/core/bsnes/gb.png",
+  "docs/image/core/bsnes/menu1.png", "docs/image/core/bsnes/menu2.png",
+  "docs/image/core/bsnes/sgb.png", "docs/image/core/bsnes/start.png",
+  "docs/image/core/caprice32/5.png", "docs/image/core/caprice32/15.png",
+  "docs/image/core/caprice32/tube_off.png",
+  "docs/image/core/caprice32/tube_on.png",
+  "docs/image/core/chailove/alpha_on.png",
+  "docs/image/core/chailove/chailove.png",
+  "docs/image/core/chailove/quality_off.png",
+  "docs/image/core/chailove/quality_on.png",
+  "docs/image/core/citra/advanced.png", "docs/image/core/citra/context.png",
+  "docs/image/core/citra/core.png", "docs/image/core/citra/default.png",
+  "docs/image/core/citra/gl.png", "docs/image/core/citra/large.png",
+  "docs/image/core/citra/single.png", "docs/image/core/crocods/320x200.png",
+  "docs/image/core/crocods/color.png", "docs/image/core/crocods/green.png",
+  "docs/image/core/crocods/overscan.png", "docs/image/shader/3dfx/3dfx_4x1.png",
+  "docs/image/shader/cgp/2x2xscalehq.png",
+  "docs/image/shader/cgp/2xbr-crt-hyllian.png",
+  "docs/image/shader/cgp/2xbr-hybrid-crt-hyllian.png",
+  "docs/image/shader/cgp/2xbr-jinc2-sharper-hybrid.png",
+  "docs/image/shader/cgp/2xbr-reverse-aa.png",
+  "docs/image/shader/cgp/crt-reverse-aa-ddt.png",
+  "docs/image/shader/cgp/gameboy-colors.png",
+  "docs/image/shader/cgp/gameboy-scree-n-grid.png",
+  "docs/image/shader/cgp/gameboy-screen-grid+motionblur.png",
+  "docs/image/shader/cgp/lowquality-lcd+motionblur.png",
+  "docs/image/shader/cgp/lowquality-lcd.png",
+  "docs/image/shader/cgp/xbr-dilation-smart-blur-4xsoft.png",
+  "docs/image/shader/cgp/xbr-hybrid-bicubic.png",
+  "docs/image/shader/cgp/xbr-hybrid-ddt.png",
+  "docs/image/shader/cgp/xbr-hybrid-lanczos.png",
+  "docs/image/shader/cgp/xbr-hybrid-sharp-lanczos.png",
+  "docs/image/shader/cgp/xbr-smart-blur.png",
+  "docs/image/shader/scalehq/4x-scalehq.png",
+  "docs/image/shader/scalehq/4xScaleHQ.png",
+  "docs/image/shader/xbr/2xbr-lv1-multipass.png",
+  "docs/image/shader/xsal/2xsal-level2-crt.png",
+  "docs/image/shader/xsal/2xsal.png"
+]
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2018, Daniel De Matteis <libretro@gmail.com>",
+  "© 2018, Mohmoud <devmohmoud@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "docs/image/branding/netplay-logo.gif"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2019–2020, Ömercan Kömür <fpscan@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "docs/image/Button_Pack/**"
+precedence = "override"
+SPDX-FileCopyrightText = "© 2014–2021, Nicolae Berbece <nick@thoseawesomeguys.com>"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "docs/image/controller/xbox360.png"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2019, Mark W. Kidd <mark@stardart.net>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "docs/image/core/b2/bbc-master-keyboard.png",
+  "docs/image/core/b2/iso-mapping-for-bbc-master.png"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "© 2025, Zoltan V. Balogh <balogh.zoltan.v@gmail.com>"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "docs/image/core/beetle_psx_hw/16bpp_no-dither.png",
+  "docs/image/core/beetle_psx_hw/32bpp_no-dither.png",
+  "docs/image/core/beetle_psx_hw/crop_off.png",
+  "docs/image/core/beetle_psx_hw/crop_on.png",
+  "docs/image/core/beetle_psx_hw/dither_internalres.png",
+  "docs/image/core/beetle_psx_hw/dither_native.png",
+  "docs/image/core/beetle_psx_hw/dither_off.png",
+  "docs/image/core/beetle_psx_hw/mdec-yuv-filter.png",
+  "docs/image/core/beetle_psx_hw/pgxp_texture_off.jpg",
+  "docs/image/core/beetle_psx_hw/pgxp_texture_on.jpg",
+  "docs/image/core/beetle_psx_hw/ssaa1x_crt-royale.png",
+  "docs/image/core/beetle_psx_hw/ssaa8x_crt-royale.png"
+]
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2019, Albert Liu <ggrtk@users.noreply.github.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "docs/image/core/beetle_psx_hw/gpu_1.png",
+  "docs/image/core/chailove/alpha_off.png",
+  "docs/image/shader/cgp/crt-royale-kurozumi.png",
+  "docs/image/shader/cgp/xbr-dtt-dilation-soft2-aa-gamma.png",
+  "docs/image/shader/scalehq/2x-scalehq.png",
+  "docs/image/shader/scalehq/2xScaleHQ.png"
+]
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2018, Daniel De Matteis <libretro@gmail.com>",
+  "© 2018, Mohmoud <devmohmoud@gmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "docs/image/core/beetle_psx_hw/smooth_on.webp"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2018, Daniel De Matteis <libretro@gmail.com>",
+  "© 2018, Mohmoud <devmohmoud@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>",
+  "© 2026, Peter J. Mello <admin@petermello.net>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "docs/image/core/bluemsx/bios.png"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2018, Mohmoud <devmohmoud@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "docs/image/core/boom3/640x368.png",
+  "docs/image/core/boom3/1920x1080.png"
+]
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2021, Ömercan Kömür <fpscan@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "docs/image/core/caprice32/vkbd_v2.png"
+precedence = "override"
+SPDX-FileCopyrightText = "© 2022, David Skywalker <dantoine@gmail.com>"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "docs/image/core/cb/cb.png"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2019, Mohmoud <devmohmoud@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "docs/image/core/craft/10.png", "docs/image/core/craft/32.png",
+  "docs/image/core/craft/65.png", "docs/image/core/craft/125.png",
+  "docs/image/core/craft/320.png", "docs/image/core/craft/1920.png",
+  "docs/image/core/craft/off.png", "docs/image/core/craft/on.png"
+]
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2018, Daniel De Matteis <libretro@gmail.com>",
+  "© 2018–2019, Mohmoud <devmohmoud@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>"
+]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "docs/image/core/o2em/0.png", "docs/image/core/o2em/25.png",
+  "docs/image/core/o2em/50.png", "docs/image/core/o2em/75.png"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "© 2021, Ömercan Kömür <fpscan@gmail.com>"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "docs/image/core/openlara/2-player-mode.png",
+  "docs/image/core/openlara/320x240.png",
+  "docs/image/core/openlara/320x240_2.png",
+  "docs/image/core/openlara/1920x1080.png",
+  "docs/image/core/openlara/1920x1080_2.png",
+  "docs/image/core/openlara/bilinear.png", "docs/image/core/openlara/files.png",
+  "docs/image/core/openlara/fps.png", "docs/image/core/openlara/gl.png",
+  "docs/image/core/openlara/missing-title-screen.png",
+  "docs/image/core/openlara/nearest.png",
+  "docs/image/core/openlara/steam-folder.png",
+  "docs/image/core/openlara/title-screen-from-console.png",
+  "docs/image/core/openlara/water_off.png",
+  "docs/image/core/openlara/water_on.png"
+]
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "© 2021, Ömercan Kömür <fpscan@gmail.com>",
+  "© 2021, Víctor González <pajaroloco_2@hotmail.com>",
+  "© 2021, Daniel De Matteis <libretro@gmail.com>"
+]
+SPDX-License-Identifier = "MIT"

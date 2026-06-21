@@ -1,115 +1,116 @@
-## **Verifying that you have the right BIOS**
+---
+title: BIOS Information&nbsp;Hub
+description: >-2
+  Basic requirements to successfully managing device firmware files for use with
+  your Libretro frontend.
+glightbox: false
+# icon: fontawesome/solid/microchip
+# status: stable
+---
+<!--
+  SPDX-FileCopyrightText: © 2018, Alfredo Monclus <alfredomonclus@gmail.com>
+  SPDX-FileCopyrightText: © 2019, Thomas Lorblanchès <zlika_ese@hotmail.com>
+  SPDX-FileCopyrightText: © 2020, negativeExponent <negativeExponent@users.noreply.github.com>
+  SPDX-FileCopyrightText: © 2020, Colin Crowley <sanaki@fuzzy-dice.net>
+  SPDX-FileCopyrightText: © 2020, Winston Weinert <winston@ml1.net>
+  SPDX-FileCopyrightText: © 2021, Ignacio Sanchez Gines <nacho@geardome.com>
+  SPDX-FileCopyrightText: © 2022–2025, Ömercan Kömür <fpscan@gmail.com>
+  SPDX-FileCopyrightText: © 2022, BarbuDreadMon <barbudreadmon@gmail.com>
+  SPDX-FileCopyrightText: © 2022, Zoltan Balogh <balogh.zoltan.v@gmail.com>
+  SPDX-FileCopyrightText: © 2022, Neil Barkhina <nbarkhina@gmail.com>
+  SPDX-FileCopyrightText: © 2023, Gouchi <gouchi@free.fr>
+  SPDX-FileCopyrightText: © 2024–2026, Peter J. Mello <admin@petermello.net>
+  SPDX-FileCopyrightText: © 2024, LLeny <LLeny@users.noreply.github.com>
+  SPDX-FileCopyrightText: © 2024, Rupert Carmichael <carmiker@users.noreply.gitlab.com>
+  SPDX-FileCopyrightText: © 2025, Jesse Talavera <jesse@jesse.tg>
+  SPDX-FileCopyrightText: © 2025, 宋文武 <iyzsong@member.fsf.org>
+  SPDX-FileCopyrightText: © 2025, 刘皓 <whiteaxe@tuta.io>
 
-It is very important that the following requirements are met:
+  SPDX-License-Identifier: MIT
+-->
 
-1. Location
-2. Name
-3. File Hash (md5sum)
+# Using device firmware files
 
-### **Location**
-Ensure that you have placed the BIOS file(s) in the correct location.
+## Three basic requirements
 
-Usually is the system folder, which can be located in RetroArch by going to:
+There are three crucial elements to successfully integrating device firmware
+files, such as those containing the original BIOS of emulated hardware, with the
+playing of content by a Libretro frontend, and a failure to account for any of
+them is likely to result in failure of the overall attempt to play the content.
+They are:
 
-Settings->Directory->System/BIOS (look at the right column).
+1. Location (file path)
+1. Filename (including extension)
+1. Checksum (typically using the MD5 algorithm)
 
-The specific core information page will tell you where exactly. (you may need to create a subfolder)
+Below we will examine each of these in sufficient detail that you are able to
+understand and satisfy them in order to use such firmware files with RetroArch
+successfully.
 
-### **Name**
-Verify that the file(s) have the same name and extension that appears in the core info/docs page.
+### Location
+
+> **TL;DR:** Ensure that you have placed the firmware file(s) in the correct
+> location in your filesystem.
+
+Simply put, the folder where the frontend's configuration specifies these files
+should be stored—known as the **`system`** folder—must both exist in the
+filesystem _and_ have the appropriate permissions so that a running RetroArch
+instance is able to learn its contents and access anything that it recognizes.
+Included in this requirement is often the need for the files to be placed in a
+subfolder of that directory that is named for the Libretro core that will be
+requesting access to them; most Libretro cores are only permitted to access
+files stored within their specific subdirectory of the **`system`** folder for
+security reasons.
+
+Start by ascertaining what your configuration specifies as the **`system`**
+folder, which in RetroArch is shown by navigating from the main menu to
+`Settings` --> `Directory` --> `System/BIOS` . The path to the **`system`**
+folder will be shown at the right of the screen/window.
+
+Regarding the possible need for the firmware to be in a core-specific subfolder
+of the **`system`** directory, that information is accessible by first loading
+the core using the `Load Core` option on the main menu and then navigating to
+`Information` --> `Core Information` and looking for the `Firmware:` line,
+beneath which will be a line that begins with `Looking in: …` followed by the
+specific filesystem path the firmware files must be stored in, including the
+core-specific subdirectory, if any.
+
+### Name
+
+Verify that the file(s) have the same name and extension that appears in the
+core info/docs page.
 
 Remember that some operating systems are case sensitive.
 
-###**File Hash (md5sum)**
-Last, but probably the most important part of all, the hash of your BIOS should match the one in the docs.
+### File Hash (md5sum)
 
-#### *What is a hash?*
+Last, but probably the most important part of all, the hash of your BIOS should
+match the one in the docs.
+
+#### What is a hash?
+
 A File Hash is a string of characters that uniquely identifies a file.
 
-#### *Why should i care?*
-If i rename *dog.jpg* to *bios.bin*, how would you know?
+#### Why should I care?
 
-If the dump is not the version that the core needs, or if the file integrity is compromised (corrupted), unexpected things (**bad**) can happen.
+If I rename `dog.jpg` to `bios.bin`, how would you know?
 
-A file can become corrupted by errors in transmission, write errors during copying or moving, faulty storage media, software bugs, etc.
+If the dump is not the version that the core needs, or if the file integrity is
+compromised (i.e. corrupted), unexpected (read: **bad**) things can happen.
 
-#### *How do i check it?*
-You need two things, a piece of software that can generate a hash from your file and a known valid file hash for the comparison, you will find the correct hash in the corresponding core information page (links below)
+A file can become corrupted by errors in transmission, write errors during
+move/copy operations, faulty storage media, software bugs, etc.
 
-As for the software, some operating systems have tools integrated in the commandline that can do the job, but if you prefer a graphical interface look for something like Open-Hashtool, HashMyFiles, etc
+#### How do I check it?
+
+You need two things, a piece of software that can generate a hash from your file
+and a known valid file hash for the comparison. You will find the correct hash
+in the corresponding core information page (links below).
+
+As for the software, some operating systems have integrated tools accessible at
+the command line that can do the job, but if you prefer a graphical interface,
+look for something like Open-Hashtool, HashMyFiles, etc.
 
 ## Links to the core specific BIOS information
 
-System                        | Core               | Link |
-|:----------------------------|:-------------------|:--------------------------------------------------------------------|
-3DO                           | Opera              | [BIOS information](opera.md#bios)
-5200/Atari 8-bit computers    | Atari800           | [BIOS information](atari800.md#bios)
-7800                          | ProSystem          | [BIOS information](prosystem.md#bios)
-Apple                         | minivmac           | [BIOS information](minivmac.md#bios)
-Arcade                        | MAME2003           | [BIOS information](mame_2003.md#bios)
-Arcade                        | MAME2003+          | [BIOS information](mame2003_plus.md#bios)
-Arcade                        | MAME2010           | [BIOS information](mame_2010.md#bios)
-Arcade                        | SAME_CDI           | [BIOS information](same_cdi.md#bios)
-BBK electronic dictionary     | GAM4980            | [BIOS information](gam4980.md#bios)
-ColecoVision                  | Gearcoleco         | [BIOS information](gearcoleco.md#bios)
-Dreamcast                     | Flycast            | [BIOS information](flycast.md#bios)
-DS                            | DeSmuME            | [BIOS information](desmume.md#bios)
-DS                            | melonDS DS         | [BIOS information](melonds_ds.md#bios)
-Elektronika - BK-0010/BK-0011 | bk                 | [BIOS information](bk.md#bios)
-Enterprise 128                | ep128emu           | [BIOS information](ep128emu.md#bios)
-GameBoy/GameBoy Color         | Emux GB            | [BIOS information](emux_gb.md#bios)
-GameBoy/GameBoy Color         | Gambatte           | [BIOS information](gambatte.md#bios)
-GameBoy/GameBoy Color         | Gearboy            | [BIOS information](gearboy.md#bios)
-GameBoy/GameBoy Color         | SameBoy            | [BIOS information](sameboy.md#bios)
-GameBoy Advance               | Beetle GBA         | [BIOS information](beetle_gba.md#bios)
-GameBoy Advance               | gpSP               | [BIOS information](gpsp.md#bios)
-GameBoy Advance               | mGBA               | [BIOS information](mgba.md#bios)
-GameBoy Advance               | VBA Next           | [BIOS information](vba_next.md#bios)
-Gamecube/Wii                  | Dolphin            | [BIOS information](dolphin.md#bios)
-Intellivision                 | FreeIntv           | [BIOS information](freeintv.md#bios)
-Lynx                          | Beetle Lynx        | [BIOS information](beetle_lynx.md#bios)
-Lynx                          | Handy              | [BIOS information](handy.md#bios)
-Lynx                          | Holani             | [BIOS information](holani.md#bios)
-Master System                 | Emux SMS           | [BIOS information](emux_sms.md#bios)
-MS/GG                         | SMS Plus GX        | [BIOS information](smsplus.md#bios)
-MS/GG/MD/CD                   | Genesis Plus GX    | [BIOS information](genesis_plus_gx.md#bios)
-MS/GG/SG-1000                 | Gearsystem         | [BIOS information](gearsystem.md#bios)
-MS/MD/CD/32X                  | PicoDrive          | [BIOS information](picodrive.md#bios)
-MSX/SVI/ColecoVision/SG-1000  | blueMSX            | [BIOS information](bluemsx.md#bios)
-MSX                           | fMSX               | [BIOS information](fmsx.md#bios)
-NES/Famicom                   | FCEUmm             | [BIOS information](fceumm.md#bios)
-NES/Famicom                   | Nestopia        | [BIOS information](nestopia.md#bios)
-NES/Famicom                   | Mesen              | [BIOS information](mesen.md#bios)
-Odyssey2/Videopac+            | O2EM               | [BIOS information](o2em.md#bios)
-PC-98                         | Neko Project II Kai| [BIOS information](neko_project_ii_kai.md#bios)
-PC Engine/CD                  | Beetle PCE FAST    | [BIOS information](beetle_pce_fast.md#bios)
-PCE SuperGrafx                | Beetle SGX         | [BIOS information](beetle_sgx.md#bios)
-PC-FX                         | Beetle PC-FX       | [BIOS information](beetle_pc_fx.md#bios)
-PlayStation                   | Beetle PSX         | [BIOS information](beetle_psx.md#bios)
-PlayStation                   | Beetle PSX HW      | [BIOS information](beetle_psx_hw.md#bios)
-PlayStation                   | PCSX ReARMed       | [BIOS information](pcsx_rearmed.md#bios)
-Pokémon Mini                  | PokeMini           | [BIOS information](pokemini.md#bios)
-PSP                           | PPSSPP             | [BIOS information](ppsspp.md#bios)
-RPG Maker 2000/2003           | EasyRPG            | [BIOS information](easyrpg.md#rtp-files)
-RPG Maker XP/VX/VX Ace        | mkxp-z             | [BIOS information](mkxp-z.md#bios)
-Saturn                        | Beetle Saturn      | [BIOS information](beetle_saturn.md#bios)
-Saturn                        | Kronos             | [BIOS information](kronos.md#bios)
-Saturn                        | Yabause            | [BIOS information](yabause.md#bios)
-Saturn                        | YabaSanshiro       | [BIOS information](yabasanshiro.md#bios)
-Sharp - X68000                | PX68k              | [BIOS information](px68k.md#bios)
-SNES/Super Famicom            | bsnes Accuracy     | [BIOS information](bsnes_accuracy.md#bios)
-SNES/Super Famicom            | bsnes Balanced     | [BIOS information](bsnes_balanced.md#bios)
-SNES/Super Famicom            | bsnes Performance  | [BIOS information](bsnes_performance.md#bios)
-SNES/Super Famicom            | bsnes-mercury Acc  | [BIOS information](bsnes_mercury_accuracy.md#bios)
-SNES/Super Famicom            | bsnes-mercury Bal  | [BIOS information](bsnes_mercury_balanced.md#bios)
-SNES/Super Famicom            | bsnes-mercury Perf | [BIOS information](bsnes_mercury_performance.md#bios)
-SNES/Super Famicom            | nSide Balanced     | [BIOS information](nside_balanced.md#bios)
-SNES/Super Famicom            | higan Accuracy     | [BIOS information](higan_accuracy.md#bios)
-SNES/Super Famicom            | Mesen-S            | [BIOS information](mesen-s.md#bios)
-Super Cassette Vision         | EmuSCV             | [BIOS information](emuscv.md#bios)
-ST/STE/TT/Falcon              | Hatari             | [BIOS information](hatari.md#bios)
-Texas Instruments TI-83       | Numero             | [BIOS information](numero.md#bios)
-Thomson - MO/TO               | Theodore           | [BIOS information](theodore.md#bios)
-Vectrex                       | vecx               | [BIOS information](vecx.md#bios)
-Vircon32                      | Vircon32           | [BIOS information](vircon32.md#bios)
-ZX Spectrum                   | Fuse               | [BIOS information](fuse.md#bios)
+{{ read_csv('bios-core-links.csv', colalign=('left','left','center','left'), comment='#') }}

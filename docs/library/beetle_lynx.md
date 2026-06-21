@@ -2,7 +2,9 @@
 
 ## Background
 
-Beetle Lynx is an Atari Lynx video game system emulator that can be used as a libretro core. Specifically it's a port of Mednafen Lynx which is a fork of Handy.
+Beetle Lynx is an Atari Lynx video game system emulator that can be used as a
+libretro core. Specifically it's a port of Mednafen Lynx which is a fork of
+Handy.
 
 ### Author/License
 
@@ -13,13 +15,16 @@ The Beetle Lynx core has been authored by
 
 The Beetle Lynx core is licensed under
 
-- [zlib](https://github.com/libretro/beetle-lynx-libretro/blob/master/mednafen/lynx/license.txt), [GPLv2](https://github.com/libretro/beetle-lynx-libretro/blob/master/COPYING)
+- [zlib](https://github.com/libretro/beetle-lynx-libretro/blob/master/mednafen/lynx/license.txt),
+  [GPLv2](https://github.com/libretro/beetle-lynx-libretro/blob/master/COPYING)
 
-A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
+A summary of the licenses behind RetroArch and its cores can be found
+[here](../development/licenses.md).
 
 ## Extensions
 
-Content that can be loaded by the Beetle Lynx core have the following file extensions:
+Content that can be loaded by the Beetle Lynx core have the following file
+extensions:
 
 - .lnx
 - .o
@@ -87,22 +92,27 @@ The Beetle Lynx core saves/loads to/from these directories.
 
 ## Loading content
 
-Beetle Lynx supports Lynx headered roms and non-headered roms. It also supports homebrews in *.o extensions.
+Beetle Lynx supports Lynx headered roms and non-headered roms. It also supports
+homebrews in *.o extensions.
 
 ## Core options
 
-The Beetle Lynx core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded.
+The Beetle Lynx core has the following option(s) that can be tweaked from the
+core options menu. The default setting is bolded.
 
-Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
+Settings with (Restart) means that core has to be closed for the new setting to
+be applied on next launch.
 
 - **Auto-rotate Screen** [lynx_rot_screen] (**enabled**/disabled)
 
-	Virtually rotates the screen orientation and keymaps automatically for known games.
-	When disabled, screen rotation is manually adjusted by pressing the SELECT button.
+    Virtually rotates the screen orientation and keymaps automatically for known
+    games. When disabled, screen rotation is manually adjusted by pressing the
+    SELECT button.
 
 ## Controllers
 
-The Beetle Lynx core supports the following device type(s) in the controls menu, bolded device types are the default for the specified user(s):
+The Beetle Lynx core supports the following device type(s) in the controls menu,
+bolded device types are the default for the specified user(s):
 
 ### User 1 device types
 
@@ -130,14 +140,12 @@ The Beetle Lynx core supports the following device type(s) in the controls menu,
 
 Supported combinations
 
-* Option 1 + Pause = Flips Screen
-* Option 2 + Pause = Restarts game
+- Option 1 + Pause = Flips Screen
+- Option 2 + Pause = Restarts game
 
 ## Compatibility
 
-| Game             | Issue                                                                   |
-|------------------|-------------------------------------------------------------------------|
-|  RoadBlasters  | Graphics glitches. Minor flickering and glitches after starting a race.   |
+--8<-- "library/compatibility/lynx.md:compat_table_beetle"
 
 ## External Links
 

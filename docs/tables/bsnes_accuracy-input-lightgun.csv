@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+RetroLightgun Inputs,SuperScope,Justifier(s)
+![Retromouse Cursor][retromouse]<br />Gun&nbsp;crosshair,:fontawesome-solid-crosshairs:{ .huge }<br />SuperScope&nbsp;crosshair { .middle },:fontawesome-solid-crosshairs:{ .huge }<br />Justifier&nbsp;crosshair { .middle }
+:fontawesome-solid-gun:{ .huge }<br />Gun&nbsp;trigger,:fontawesome-solid-gun:{ .huge }<br />SuperScope&nbsp;Fire,:fontawesome-solid-gun:{ .huge }<br />Justifier&nbsp;trigger
+:material-alpha-a-circle:{ .huge }<br />Gun&nbsp;Aux&nbsp;A { .middle },:material-cursor-default-outline:{ .huge }<br />SuperScope<br />Forward&nbsp;Grip&nbsp;button,&#x200B;
+:material-alpha-b-circle:{ .huge }<br />Gun&nbsp;Aux&nbsp;B,:material-car-turbocharger:{ .huge }<br />SuperScope&nbsp;Turbo,&#x200B;
+Gun&nbsp;Start { .middle },:material-pause-box:{ .huge }<br />SuperScope&nbsp;Pause,Justifier&nbsp;Start { .middle }

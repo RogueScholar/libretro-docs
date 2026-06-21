@@ -14,7 +14,7 @@ Here we will touch on some critical topics and run our first content.
 
 RetroArch requires cores to run any content. A core is a program that has been ported to the libretro API and runs inside a libretro frontend. You can download cores directly from RetroArch's interface by following this procedure:
 
-![Core updater](../image/retroarch/ozone/core_downloader.gif)
+![Core updater](../image/retroarch/ozone/core_downloader.avif)
 
 - Navigate to **Online Updater**
 - Navigate to **Select Core Downloader**
@@ -33,7 +33,7 @@ After you have installed one or more cores you can run your content following th
 - Select the content that you want to run
 - If you have more than one compatible core you will be asked to select the core you want to use for that purpose
 
-![Run content](../image/retroarch/ozone/run_content.gif)
+![Run content](../image/retroarch/ozone/run_content.avif)
 
 And here is the fancy diagram down below:
 

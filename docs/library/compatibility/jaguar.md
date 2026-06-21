@@ -2,6 +2,8 @@
 
 ## Virtual Jaguar
 
+[//1]:--8<-- [start:compat_table]
+
 A reference compatibility table can be found here [https://icculus.org/virtualjaguar/](https://icculus.org/virtualjaguar/)
 
 | Game               | Issue                                                   |
@@ -15,3 +17,5 @@ A reference compatibility table can be found here [https://icculus.org/virtualja
 | Super Burnout      | Hangs after selecting a track.                          |
 | Towers II          | Heavy flickering.                                       |
 | Wolfenstein 3D     | Doesn't boot.                                           |
+
+[//2]:--8<-- [end:compat_table]

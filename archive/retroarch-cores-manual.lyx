@@ -1,4 +1,12 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2013, Hans-Kristian Arntzen <post@arntzen-software.no>
+# SPDX-FileCopyrightText: © 2013, Daniel De Matteis <libretro@gmail.com>
+# SPDX-FileCopyrightText: © 2019, Mark W. Kidd <mark@stardart.net>
+# SPDX-FileCopyrightText: © 2020, Winston Weinert <winston@ml1.net>
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+#
+# LyX 2.0 created this file. For more info, see <https://www.lyx.org/>
 \lyxformat 413
 \begin_document
 \begin_header
@@ -88,7 +96,7 @@ begin{centering}
 
 
 \begin_inset Graphics
-	filename retroarch-android/logo.png
+	filename retroarch-android-logo.png
 	lyxscale 50
 	scale 50
 	clip

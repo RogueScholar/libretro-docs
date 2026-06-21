@@ -12,7 +12,7 @@ RetroArch makes use of two input systems in order to support the full range of i
 - **Pointer device** indicates if it is possible for the core to query the absolute coordinates of the pointer, as opposed to the default (relative) mouse. Certain cores may only support one or the other.
 - **Lightgun device** indicates if it is possible for the core to query a specific lightgun device, which has a different button set compared to a RetroPad. A few platforms support physical lightguns natively, or lightguns may appear as pointer devices.
 - **Rumble support** indicates if the driver can pass on haptic feedback (vibration) signals.
-- **Autoconfig support** indicates if the driver can read the controller vendor/product identifiers and apply an automatic mapping for [RetroPad](../../guides/input-and-controls/#what-is-a-retropad).
+- **Autoconfig support** indicates if the driver can read the controller vendor/product identifiers and apply an automatic mapping for [RetroPad](input-and-controls.md#what-is-a-retropad).
 
 The listing below is not complete, but on the rest of the platforms, there is usually only 1 valid driver.
 
@@ -51,18 +51,20 @@ Multi-mouse support for X11 was added after RetroArch 1.20.0 and requires that R
 
 | Controller driver | Conditions | Rumble support | Autoconfig support |
 |-------------------|------------|----------------|--------------------|
-| `udev` | Access to the udev interface (see below) | Yes | Yes (+[physical ID support](../../guides/controller-autoconfiguration/#physical-identifier-customization)) |
+| `udev` | Access to the udev interface (see below) | Yes | Yes (+[physical ID support](controller-autoconfiguration.md#physical-identifier-customization)) |
 | `sdl2` | - | Yes | Yes |
 | `linuxraw` | - | No | Yes |
-| `parport` | [Special adapter](../../development/retroarch/input/parallel-port-controllers/) on physical parallel port | No | No |
+| `parport` | [Special adapter](../development/retroarch/input/parallel-port-controllers.md) on physical parallel port | No | No |
 | `hid` | Only if enabled during compilation | Yes | Yes |
 
 ### udev drivers
+
 udev is the newest input driver and uses the evdev joypad interface at `/dev/input`. It supports hotplugging and force feedback (if supported by device). udev reads evdev events directly and supports keyboard callback, mice, and touchpads. `libudev` is used to discover devices and support hotplugging.
 
 The `libudev` and `libxkbdcommon` packages are required. udev does not require X11, but udev does depend on X11 keyboard layout files being installed.
 
 ### Setting up udev permissions
+
 Most Linux distributions prevent users from capturing keyboard/mouse information by default. Only root and users in the group "input" are able to access raw input. This is a security feature in case the system is used by multiple users.
 
 The easiest way to gain access to this input is to:
@@ -77,12 +79,15 @@ If adding your user to the input group does not succeed, you may also set up a u
 * **Step 3:** Reboot
 
 ### linuxraw drivers
+
 The linuxraw controller driver uses the legacy joystick API at `/dev/input/js*`. The linuxraw input driver requires an active TTY in order to read keyboard events.
 
 ### hid driver
+
 The hid driver on Linux platform detects Human Interface Devices via libusb. By default it is not enabled during compilation.
 
 ---
+
 ## Windows
 
 **Windows Input Drivers**
@@ -103,6 +108,7 @@ The hid driver on Linux platform detects Human Interface Devices via libusb. By 
 | `hid` | Only if enabled during compilation | Yes | Yes |
 
 ### hid driver
+
 The hid driver on Windows platform detects Human Interface Devices via libusb. By default it is not enabled during compilation.
 
 ---
@@ -121,6 +127,7 @@ The libretro API provides a possibility to pass extra sensor inputs to cores: 3 
 
 ---
 ## Footnotes
+
 [^1]: MFi controllers are primarily supported on Apple devices, which means that the operating systems supporting this configuration would include:
 - iOS: Used on iPhones and iPads.
 - macOS: Used on Mac computers.

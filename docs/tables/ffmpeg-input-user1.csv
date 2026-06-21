@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+User 1 input device,Input mode
+&#8203;None,Doesn't disable input
+**RetroPad**,Gamepad
+RetroPad with Analog { .middle },Gamepad<br />(there's no reason to switch to this)

@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+RetroPad&nbsp;Inputs,User&nbsp;input&nbsp;descriptors,(Device&nbsp;name)&nbsp;Inputs
+![RetroPad B button][retropad-b],Action 1,-
+![RetroPad Y button][retropad-y],Action 2,-
+![RetroPad Select button][retropad-select],Action 3,-
+![RetroPad Start button][retropad-start],Action 4,-
+![RetroPad D-pad Up][retropad-dpad-up],Action 5,-
+![RetroPad D-pad Down][retropad-dpad-down],Action 6,-
+![RetroPad D-pad Left][retropad-dpad-left],Action 7,-
+![RetroPad D-pad Right][retropad-dpad-right],Action 8,-
+![RetroPad A button][retropad-a],Action 9,-
+![RetroPad X button][retropad-x],Action 10,-
+![RetroPad L1 button][retropad-l1],Action 11,-
+![RetroPad R1 button][retropad-r1],Action 12,-
+![RetroPad L2 trigger][retropad-l2],Action 13,-
+![RetroPad R2 trigger][retropad-r2],Action 14,-
+![RetroPad L3 button][retropad-l3],Action 15,-
+![RetroPad R3 button][retropad-r3],Action 16,-
+![RetroPad left analog stick][retropad-lstick]<br />X-axis,Action 17,-
+![RetroPad left analog stick][retropad-lstick]<br />Y-axis,Action 18,-
+![RetroPad right analog stick][retropad-rstick]<br />X-axis,Action 19,-
+![RetroPad right analog stick][retropad-rstick]<br />Y-axis,Action 20,-

@@ -4,8 +4,12 @@ about: Create a report to help us improve
 title: ''
 labels: bug
 assignees: ''
-
 ---
+<!--
+  SPDX-FileCopyrightText: © 2020, Ömercan Kömür <fpscan@gmail.com>
+
+  SPDX-License-Identifier: MIT
+-->
 
 **Describe the bug**
 A clear and concise description of what the bug is.

@@ -108,7 +108,7 @@ Frontend-level settings or features that the higan Accuracy core respects.
 | Rewind            | ✔         |
 | Netplay           | ✔         |
 | Core Options      | ✔         |
-| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✕         |
+| RetroAchievements | ✕         |
 | RetroArch Cheats  | ✕         |
 | Native Cheats     | ✕         |
 | Controls          | ✔         |
@@ -182,7 +182,7 @@ Load a SGB-supported GB.mdGBC rom.
 ## MSU-1
 
 !!! attention
-	MSU-1 support in this core is complex. **Use the [Snes9x core](../library/snes9x#msu-1-support) for simplified and easily accessible MSU-1 support.**
+	MSU-1 support in this core is complex. **Use the [Snes9x core][snes9x-msu1] for simplified and easily accessible MSU-1 support.**
 
 MSU-1 support can be used by loading a correct .bml file.
 
@@ -342,3 +342,5 @@ Incompatible with ROM hacks made to take advantage of emulator quirks, much like
 - [Nintendo - SNES / Famicom (Snes9x 2005 Plus)](snes9x_2005_plus.md)
 - [Nintendo - SNES / Famicom (Snes9x 2005)](snes9x_2005.md)
 - [Nintendo - SNES / Famicom (Snes9x 2010)](snes9x_2010.md)
+
+[snes9x-msu1]: snes9x.md#msu-1-support

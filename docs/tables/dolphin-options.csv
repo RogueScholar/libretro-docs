@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+Core option,Valid values
+Renderer<br />[`dolphin_renderer`],<ul><li class="default">`Hardware`</li><li>`Software`</li></ul>
+Internal Resolution<br />[`dolphin_efb_scale`] { .middle },<ul><li class="default">`x1 (640×528)`</li><li>`x2 (1280×1056)`</li><li>`x3 (1920×1584)`</li><li>`x4 (2560×2112)`</li><li>`x5 (3200×2640)`</li><li>`x6 (3840×3168)`</li></ul>
+Widescreen (Wii)<br />[`dolphin_widescreen`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+WideScreen Hack<br />[`dolphin_widescreen_hack`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+Shader Compilation Mode<br />[`dolphin_shader_compilation_mode`] { .middle },<ul><li class="default">`sync`</li><li>`a-sync Skip Rendering`</li><li>`sync UberShaders`</li><li>`a-sync UberShaders`</li></ul>
+Wait for Shaders before Starting<br />[`dolphin_wait_for_shaders`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+Progressive Scan<br />[`dolphin_progressive_scan`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+PAL60<br />[`dolphin_pal60`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Max Anisotropy<br />[`dolphin_max_anisotropy`] { .middle },<ul><li class="default">`1x`</li><li>`2x`</li><li>`4x`</li><li>`8x`</li><li>`16x`</li></ul>
+Skip Presenting Duplicate Frames<br />[`dolphin_skip_dupe_frames`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Scaled EFB Copy<br />[`dolphin_efb_scaled_copy`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Force Texture Filtering<br />[`dolphin_force_texture_filtering`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+Store EFB Copies on GPU<br />[`dolphin_efb_to_texture`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Texture Cache Accuracy<br />[`dolphin_texture_cache_accuracy`] { .middle },<ul><li class="default">`Fast`</li><li>`Middle`</li><li>`Safe`</li></ul>
+GPU Texture Decoding<br />[`dolphin_gpu_texture_decoding`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+Fast Depth Calculation<br />[`dolphin_fast_depth_calculation`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Bounding Box Emulation<br />[`dolphin_bbox_enabled`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+Disable EFB to VRAM<br />[`dolphin_efb_to_vram`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+Load Custom Textures<br />[`dolphin_load_custom_textures`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+CPU Core<br />[`dolphin_cpu_core`] { .middle },<ul><li class="default">`JIT64/JITARM64`</li><li>`Interpreter`</li><li>`Cached Interpreter`</li></ul>
+CPU Clock Rate<br />[`dolphin_cpu_clock_rate`],<ul><li class="default">`100%`</li><li>Between `5%` and `300%` (inclusive)</li></ul>
+Fastmem<br />[`dolphin_fastmem`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Wiimote IR Mode<br />[`dolphin_ir_mode`] { .middle },<ul><li class="default">`Right Stick controls pointer (relative)`</li><li>`Right Stick controls pointer (absolute)`</li><li>`Mouse controls pointer`</li></ul>
+Wiimote IR Vertical Offset<br />[`dolphin_ir_offset`],<ul><li class="default">`10`</li><li>Integers between `-50` and `50` (inclusive)</li></ul>
+Wiimote IR Total Yaw<br />[`dolphin_ir_yaw`],<ul><li class="default">`15`</li><li>Integers between `0` and `100` (inclusive)</li></ul>
+Wiimote IR Total Pitch<br />[`dolphin_ir_pitch`],<ul><li class="default">`15`</li><li>Integers between `0` and `100` (inclusive)</li></ul>
+Rumble<br />[`dolphin_enable_rumble`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Sensor Bar Position<br />[`dolphin_sensor_bar_position`],<ul><li class="default">`Bottom`</li><li>`Top`</li></ul>
+Wiimote Continuous Scanning<br />[`dolphin_wiimote_continuous_scanning`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+Use ports 5-8 for GameCube<br />controllers in Wii mode<br />[`dolphin_alt_gc_ports_on_wii`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul> { .middle }
+Audio Mixer Rate<br />[`dolphin_mixer_rate`],<ul><li class="default">`32000`</li><li>`48000`</li></ul>
+DSP HLE<br />[`dolphin_dsp_hle`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+DSP Enable JIT<br />[`dolphin_dsp_jit`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Language<br />[`dolphin_language`] { .middle },<ul><li class="default">`English`</li><li>`Japanese`</li><li>`German`</li><li>`French`</li><li>`Spanish`</li><li>`Italian`</li><li>`Dutch`</li><li>`Simplified Chinese`</li><li>`Traditional Chinese`</li><li>`Korean`</li></ul>
+Internal Cheats Enabled<br />[`dolphin_cheats_enabled`],<ul><li class="default">`OFF`</li><li>`ON`</li></ul>
+OSD Enabled<br />[`dolphin_osd_enabled`],<ul><li class="default">`ON`</li><li>`OFF`</li></ul>
+Log Level<br />[`dolphin_log_level`] { .middle },<ul><li class="default">`Info`</li><li>`Notice`</li><li>`Error`</li><li>`Warning`</li></ul>

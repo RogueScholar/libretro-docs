@@ -1,246 +1,372 @@
-# Nintendo Gamecube/Wii (Dolphin)
+---
+title: Dolphin (GameCube/Wii)
+description: >-2
+  A Nintendo Gamecube and Wii emulator for Libretro frontends like RetroArch.
+icon: cores/dolphin
+status: stable
+---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ayv-zf04HsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# Libretro Dolphin core :cores-dolphin:
 
-## Background
+The **Libretro Dolphin core** is a Nintendo Gamecube/Wii emulator for Android,
+Windows, Mac and Linux, written in C++, that supports the [OpenGL][],
+[Vulkan][], and [Direct3D 11][d3d11] graphics APIs.
 
-A Nintendo Gamecube/Wii emulator for Android, Windows, Mac and Linux, written in C++.
+<iframe allow="accelerometer 'self'; clipboard-write *; display-capture 'self'; encrypted-media 'src';
+  fullscreen *; geolocation 'src'; gyroscope 'self'; hid 'self'; picture-in-picture *; screen-wake-lock *;
+  web-share *;" aria-label="YouTube video" height="315" width="560" loading="lazy" role="application"
+  name="YouTube embedded player" title="RetroArch - How to Setup: Dolphin" referrerpolicy="strict-origin-when-cross-origin"
+  sandbox="allow-orientation-lock allow-popups allow-presentation allow-same-origin allow-scripts"
+  src="https://www.youtube-nocookie.com/embed/ayv-zf04HsQ?origin=docs.libretro.com&playsinline=1"
+  style="border-collapse: collapse; border-style: hidden; display: block; margin: 1.5rem auto 2rem; position: relative;"></iframe>
 
-The dolphin-libretro core supports [OpenGL](#opengl), [Vulkan](#vulkan), and [Direct3D 11](#d3d11) rendering.
+## Licensing
 
-The dolphin-libretro core is licensed under
+The Libretro Dolphin core is distributed under the terms of the
 
-- [GPLv2](https://github.com/libretro/dolphin/blob/master/LICENSE.TXT)
+- [GPL-2.0-or-later][dolphin-license] license.
 
-A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
+A summary of the [licenses governing the use and distribution of RetroArch and
+its cores][ra-licensing] is also available.
 
-## Requirements
+## System requirements
 
-- OpenGL/Open GL ES 3.0 or higher for the OpenGL renderer.
-- Vulkan for the Vulkan renderer.
-- Direct3D 11 for the Direct3D 11 renderer.
+The Libretro Dolphin core includes native rendering support for three modern,
+low-level graphics APIs. Your computer's graphics subsystem must meet or exceed
+the required specification level for at least one or more of these to use
+Dolphin.
+
+|   Renderer   | Minimum specification level | Recommended specification level        |
+|:------------:|:----------------------------|:---------------------------------------|
+| **OpenGL**   | OpenGL 3.0 / OpenGL ES 3.0  | OpenGL 4.4 / OpenGL ES 3.2, or higher  |
+| **Vulkan**   | Vulkan 1.0                  | Vulkan 1.1 or higher                   |
+| **Direct3D** | Direct3D 11.0               | Direct3D 11.1 / Direct3D 12, or higher |
 
 ## Setup
 
-To function properly, the dolphin-libretro core requires the Dolphin `Sys` folder to be in the proper location. This directory contains Dolphin's database of per-game compatibility settings/hacks, without which many games experience bugs of varying severity.
+### `Sys` folder
 
-After downloading the core within RetroArch, do **one** of the following options:
+Proper functioning of the Libretro Dolphin core requires a copy of the Dolphin
+emulator's `Sys` folder and its contents to be accessible at a specific location
+in your filesystem. After downloading the Dolphin core within RetroArch, use one
+of the following three methods to acquire a copy of the `Sys` folder to use with
+it, if you don't yet have one.
 
-### A. Installing from the 'Core System Files Downloader' (Easy/Automatic)
+!!! tip "Desired outcome"
+    Success at this task is achieved when a copy of the `Sys` folder, as found
+    at `Data/Sys` in the Dolphin core's GitHub repository, is placed at the
+    location defined in RetroArch's configuration as
+    `RETROARCH_SYSTEM_FOLDER/dolphin-emu`.
 
-If your frontend version has `Main Menu > Online Updater > Core System Files Downloader` then that's the easiest solution. Just download 'Dolphin.zip' from that menu and it will place the files where it needs them. You're all done!
+#### A. Core System Files Downloader
 
-### B. Installing from the GitHub repo (Hard/Manual)
+If your Libretro frontend includes the `Core System Files Downloader` option
+under `Main Menu` --> `Online Updater`, that is the most reliable and expedient
+method for acquiring a copy of the `Sys` folder. Select that command and then
+find `Dolphin.zip` in the list of available downloads, and the necessary files
+will be extracted and placed in the proper location.
 
-1. Get a copy of the Dolphin `Sys` folder. This can be done by downloading the
-current source code. We provide two methods: one using *Git* and one without.
-    * **If you have *Git* (if not, see the next option)**
-    Just clone the most recent version of the code by running:
-    ```
+#### B. Code repository using Git
+
+If the Online Updater is not an option or fails to extract the files for some
+reason, then you will have to retrieve the Dolphin core's source code (hosted on
+GitHub) and move the `Sys` folder from within it to where your Libretro frontend
+expects it to be. There are two methods by which to go about this; choosing the
+more appropriate one for you depends on whether or not you are able to use the
+[**Git** version control software][git-downloads] on your device.
+
+- **If you have Git installed (if not, see the next option):** Just clone the
+  entire repository's current state to any convenient location on your system
+  with the terminal command:
+
+    ``` shell
     git clone --depth=1 https://github.com/libretro/dolphin.git
     ```
-    * **If you don't have *Git* **
-    You can download a *zip* file of the source code with the following URL:
-    [https://github.com/libretro/dolphin/archive/master.zip](https://github.com/libretro/dolphin/archive/master.zip)
-    You can then extract it.
 
-2. After downloading/extracting the code, navigate into the resulting source tree folder.
-The `Sys` folder you need is located in *Data/Sys*.
-This is the folder we will need to move/copy.
-3. *Find RetroArch's system folder path*
-If you didn't change its default location, the `system` folder is located at the top level of your RetroArch installation folder. Whether you moved it or not, you can find the location of your `system` folder (along with any other folders RetroArch uses) by going to Settings > Directory or by locating the *system_directory* line in the RetroArch configuration file (usually `retroarch.cfg`).
-4. In the `RETROARCH_SYSTEM_FOLDER`, create a new folder named *dolphin-emu* and move/copy the `Sys` folder into it.
+#### C. GitHub `master.zip` file
 
-When everything is set up properly, the `Sys` folder path should look something like this:
-```
-RETROARCH_SYSTEM_FOLDER/dolphin-emu/Sys
-```
+GitHub provides a convenient `master.zip` archive file for every hosted public
+repository that is freely available to download and from which you can manually
+extract the `Sys` folder to place in the appropriate directory (just as the
+Online Updater would). [**This link**][gh-dl-master] will start a download of
+the Dolphin core repository `master.zip` file (~45MiB as of August 2024) from
+GitHub.
 
-The dolphin-libretro core will now work much more reliably.
+1. Once the download is complete, extract the archive using any standard archive
+   file utility.
+    + [PeaZip][] is one such utility that's free, reliable and easy-to-use, if
+      you don't have one; it runs on Windows, macOS and Linux. Likewise on
+      Android devices, ZArchiver is a free and well-regarded archive file
+      handler ([Google Play Store][zarchiver-android]).
+1. You'll find a folder named `dolphin-master` was created by extracting the ZIP
+   file. Open it, and then open the `Data` folder you'll find inside it. The
+   `Sys` folder you'll encounter there is what contains the files Dolphin needs.
+   (Approximately 2,000 files in total, but requiring only ~5MiB of disk space.)
+1. Determine your RetroArch `system` folder path. If you have not modified your
+   installation, the RetroArch configuration path will match the location shown
+   in the [RGUI documentation][rgui-conf-file] named
+   `RETROARCH_CONFIG_DIR/system`. If your configuration _has_ been altered from
+   the defaults, inspect your `retroarch.cfg` file and find the
+   `system_directory` key to determine which folder is used.
+1. In the folder you identified in the previous step, verify that a directory
+   named `dolphin-emu` exists, and if it does not, create it with exactly that
+   name.
+1. Move or copy the `Sys` folder recursively (i.e., with all its contents) to
+   the `RETROARCH_SYSTEM_FOLDER/dolphin-emu` directory from the previous step.
 
-## BIOS
+There is also currently a bug with this core and the `gl` driver that can be
+resolved by going to `Settings` --> `User Interface` -->
+`Show Advanced Settings` to ensure that it is turned `ON`, then navigating to
+`Settings` --> `Core` --> `Allow Cores to Change the Video Driver` and setting
+that to `OFF`.
 
-The (optional) BIOS file goes in the directory `RETROARCH_SAVES_FOLDER/dolphin-emu/User/GC/<USA or EUR or JAP>`, with the file name `IPL.bin` for all regions. It is not necessary to provide a BIOS for most games, but certain titles (particularly those which make heavy use of the system fonts, like Star Fox Assault) can be unplayable without it.
+The Dolphin core should now work without issue.
 
-To play the [Gamecube BIOS animation](https://www.youtube.com/watch?v=CpmYW-gCSy4) at game launch, once you have the aforementioned BIOS file placed and named correctly, open the `Dolphin.ini` file located in `RETROARCH_SAVES_FOLDER/dolphin-emu/User/GameSettings/Config/` with a text editor and change the line `SkipIPL = True` to `SkipIPL = False`.
+### BIOS
 
-## Extensions
+The (optional) BIOS file must be placed in the
+`retroarch/saves/User/GC/<locale>` directory with the file name `IPL.bin`, where
+`<locale>` is one of:
 
-Content that can be loaded by the dolphin-libretro core have the following file extensions:
+- `USA`
+- `EUR`
+- `JAP`
 
-- .elf
-- .iso
-- .gcm
-- .dol
-- .tgc
-- .wbfs
-- .ciso
-- .gcz
-- .wad
-- .rvz
+It is not necessary to provide a BIOS for most games, but certain titles
+(particularly those which make heavy use of the system fonts, like Star Fox
+Assault) may be unplayable without it.
 
-RetroArch database(s) that are associated with the dolphin-libretro core:
+!!! tip "Gamecube BIOS (startup) animation"
+    To play the [Gamecube BIOS animation][gc-bios-ani] (embedded below) at game
+    launch, with the aforementioned `IPL.bin` file in place, open the
+    `retroarch/saves/User/Config/Dolphin.ini` file in a text editor and change
+    the value of `SkipIPL` from `True` to `False`.
 
-- [Nintendo - GameCube](https://github.com/libretro/libretro-database/blob/master/rdb/Nintendo%20-%20GameCube.rdb)
-- [Nintendo - Wii](https://github.com/libretro/libretro-database/blob/master/rdb/Nintendo%20-%20Wii.rdb)
+<iframe allow="accelerometer 'self'; clipboard-write *; display-capture 'self'; encrypted-media 'src';
+  fullscreen *; geolocation 'src'; gyroscope 'self'; hid 'self'; picture-in-picture *; screen-wake-lock *;
+  web-share *;" aria-label="YouTube video" height="315" width="560" loading="lazy" role="application"
+  name="YouTube embedded player" title="Nintendo Gamecube Intro *Original Not A Meme*" referrerpolicy="strict-origin-when-cross-origin"
+  sandbox="allow-orientation-lock allow-popups allow-presentation allow-same-origin allow-scripts"
+  src="https://www.youtube-nocookie.com/embed/CpmYW-gCSy4?origin=docs.libretro.com&playsinline=1"
+  style="border-collapse: collapse; border-style: hidden; display: block; margin: 1.5rem auto 2rem; position: relative;"></iframe>
 
-## Features
+## Core information
 
-Frontend-level settings or features that the dolphin-libretro core respects.
+### File extensions
 
-| Feature           | Supported |
-|-------------------|:---------:|
-| Restart           | ✔         |
-| Saves             | ✔         |
-| States            | ✔         |
-| Rewind            | ✔         |
-| Netplay           | ✕         |
-| Core Options      | ✔         |
-| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✔         |
-| RetroArch Cheats  | ✕         |
-| Native Cheats     | ✔         |
-| Controls          | ✔         |
-| Remapping         | ✔         |
-| Multi-Mouse       | ✕         |
-| Rumble            | ✕         |
-| Sensors           | ✕         |
-| Camera            | ✕         |
-| Location          | ✕         |
-| Subsystem         | ✕         |
-| [Softpatching](../guides/softpatching.md) | ✕         |
-| Disk Control      | ✕         |
-| Username          | ✕         |
-| Language          | ✔         |
-| Crop Overscan     | ✕         |
-| LEDs              | ✕         |
+Content that can be loaded by the Dolphin core will have one of the following
+file extensions:
 
-## Directories
+- `.elf`
+- `.iso`
+- `.gcm`
+- `.dol`
+- `.tgc`
+- `.wbfs`
+- `.ciso`
+- `.gcz`
+- `.wad`
+- `.rvz`
 
-In addition to the aforementioned `RETROARCH_SYSTEM_FOLDER/dolphin-emu` directory, the dolphin-libretro core also creates a folder structure similar to that used by the standalone Dolphin emulator in `RETROARCH_SAVES_FOLDER/dolphin-emu/User`. In this structure, you can access/edit most of the same functionality you would find in the standalone Dolphin emulator and can even copy some files--such as `GAME.ini` and save files--back and forth between the dolphin-libretro core and the standalone Dolphin emulator.
+### Databases
 
-## Geometry and timing
+RetroArch databases that are associated with the Dolphin core:
 
-- The dolphin-libretro core's core provided FPS is 60 (for NTSC) / 50 (for PAL)
-- The dolphin-libretro core's core provided sample rate can be either 32000 Hz or 48000 Hz depending on user configuration
-- The dolphin-libretro core's base width is dependent on the 'Internal Resolution' core option
-- The dolphin-libretro core's base height is dependent on the 'Internal Resolution' core option
-- The dolphin-libretro core's max width is dependent on the 'Internal Resolution' core option
-- The dolphin-libretro core's max height is dependent on the 'Internal Resolution' core option
-- The dolphin-libretro core's core provided aspect ratio is 4/3.
+- [Nintendo - GameCube][rdb-gamecube]
+- [Nintendo - Wii][rdb-wii]
 
-## Language
+### Features
 
-When the `Language` core option is set to automatic, the default dolphin-libretro language setting will be pulled from RetroArch's Language setting.
+These are the frontend-level features and configuration options that the Dolphin
+core supports.
 
-## Internal Cheats
+|           Feature |     Supported      |
+|------------------:|:------------------:|
+| Restart           | :white_check_mark: |
+| Saves             | :white_check_mark: |
+| States            | :white_check_mark: |
+| Rewind            | :white_check_mark: |
+| Netplay           | ❌                 |
+| Core Options      | :white_check_mark: |
+| RetroAchievements | ❌                 |
+| RetroArch Cheats  | ❌                 |
+| Native Cheats     | :white_check_mark: |
+| Controls          | :white_check_mark: |
+| Remapping         | :white_check_mark: |
+| Multi-Mouse       | ❌                 |
+| Rumble            | ❌                 |
+| Sensors           | ❌                 |
+| Camera            | ❌                 |
+| Location          | ❌                 |
+| Subsystem         | ❌                 |
+| [Softpatching][]  | ❌                 |
+| Disk Control      | ❌                 |
+| Username          | ❌                 |
+| Language          | :white_check_mark: |
+| Crop Overscan     | ❌                 |
+| LEDs              | ❌                 |
 
-Disabled by default. Internal cheats can be handled via the GAME.ini files, but they will not take effect unless internal cheats are enabled in the core options. While there is no automatic way to add cheats to the dolphin-libretro core, it can use a cheat file generated by the standalone Dolphin emulator using the following process:
+### Compatibility
 
-1. Open standalone Dolphin emulator and right-click your game > Properties.
-2. Look at the title bar and remember the ID of the game (for example `GFZE01` for `F-Zero GX USA`).
-3. Go to `Gecko Codes` tab and click `Download Codes`.
-4. Check the boxes for the cheats you want to use then you can close Dolphin.
-5. Navigate to `My Documents\Dolphin Emulator\GameSettings` by default for Windows (or `~/.local/share/dolphin-emu/GameSettings` for Linux).
-6. Copy the .ini file with the ID of the game and paste it in your `RETROARCH_SAVES_FOLDER/dolphin-emu/User/GameSettings` folder.
-7. Start the game, go to Quick Menu > Core Options and turn ON "Internal Cheats".
-8. And finally Quick Menu > Close Content, restart the game and the cheats should now be active.
+The upstream Dolphin Emulator developers maintain a highly extensive
+[compatibility list][compatibility] detailing the overall quality of Dolphin's
+emulation for most officially released titles, along with any specific issues
+and potential workarounds.
 
-If you need to enable another cheat later for that game, you don't need to do the whole process all over again. You can simply edit the .ini file(s) in your `RETROARCH_SAVES_FOLDER/dolphin-emu/User/GameSettings` folder structure with a text editor to add the cheat title under the line [Gecko_Enabled].
+### Directories
 
-## OpenGL
+The Dolphin core's library name is 'Dolphin'
 
-Dolphin's OpenGL renderer can be used by setting RetroArch's video driver to gl.
+### Geometry and timing
 
-The common option for all operating systems is OpenGL, requiring hardware that supports OpenGL/Open GL ES 3.0 or higher. It is an older, pre-Vulkan API, slower than Vulkan but with better compatibility. If you encounter problems with other APIs, try this one.
+The Libretro Dolphin core provides…
 
-## Vulkan
+- …a refresh rate of 60 frames/second for NTSC and 50 frames/second for PAL.
+- …an audio sample rate of either 32000 Hz or 48000 Hz, depending on user
+  configuration.
+- …a base width and base height which are dependent on the 'Internal Resolution'
+  core option.
+- …a maximum width and maximum height which are dependent on the 'Internal
+  Resolution' core option.
+- …video output with an aspect ratio of 4:3.
 
-Dolphin's Vulkan renderer can be used by setting RetroArch's video driver to vulkan.
+### Language
 
-This is the latest and fastest API currently. It is most recommended for demanding less of your CPU, thus being the fastest.
+When the `Language` core option is set to automatic, the default Dolphin
+language setting will be pulled from RetroArch's `Language` setting.
 
-## D3D11
+### Internal Cheats
 
-Dolphin's Direct3D 11 renderer can be used by setting RetroArch's video driver to d3d11.
+Disabled by default.
 
-In some cases Direct3D 11 may offer better performance than OpenGL, especially on integrated Intel graphics.
+## Graphics APIs
+
+### Vulkan
+
+Dolphin's Vulkan renderer can be used by setting RetroArch's video driver to
+`vulkan`.
+
+This is the newest and most performant API, currently, and can run on any
+Vulkan-compliant hardware, though best results are achieved with equipment that
+satisfies at least the Vulkan 1.1 specification. It is highly recommended for
+its much lower demands on your CPU resources.
+
+### OpenGL
+
+Dolphin's OpenGL renderer can be used by setting RetroArch's video driver to
+`gl`.
+
+The OpenGL renderer is the only one common to all operating systems, requiring
+hardware that supports OpenGL 3.0 or OpenGL ES 3.0 at a minimum. It is an older,
+pre-Vulkan API, widely regarded as the slowest of Dolphin's renderers, but with
+the widest compatibility, as the OpenGL 3.0 specification was published in 2008
+and is generally satisfied by graphics hardware of roughly the same vintage. If
+you encounter problems with other APIs, try this one.
+
+### Direct3D (D3D11)
+
+Dolphin's Direct3D 11 renderer can be used by setting RetroArch's video driver
+to `d3d11`.
+
+Direct3D is a Windows-specific graphics API and is known to function well with
+hardware from all manufacturers. In some cases it may offer better performance
+than OpenGL, especially on integrated Intel graphics.
 
 ## Core options
 
-The Dolphin core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded.
+The Dolphin core has the following option(s) that can be customized from the
+`Core Options` menu. The corresponding configuration file key names are shown in
+[`square brackets`] and default values are indicated with ✪.
 
-- **Renderer** [dolphin_renderer] (**Hardware**|Software)
-- **Internal Resolution** [dolphin_efb_scale] (**x1 (640 x 528)**|x2 (1280 x 1056)|x3 (1920 x 1584)|x4 (2560 x 2112)|x5 (3200 x 2640)|x6 (3840 x 3168))
-- **Widescreen (Wii)** [dolphin_widescreen] (**ON**|OFF)
-- **WideScreen Hack** [dolphin_widescreen_hack] (**OFF**|ON)
-- **Shader Compilation Mode** [dolphin_shader_compilation_mode] (**sync**|a-sync Skip Rendering|sync UberShaders|a-sync UberShaders)
-- **Wait for Shaders before Starting** [dolphin_wait_for_shaders] (**OFF**|ON)
-- **Progressive Scan** [dolphin_progressive_scan] (**ON**|OFF)
-- **PAL60** [dolphin_pal60] (**ON**|OFF)
-- **Max Anisotropy** [dolphin_max_anisotropy] (**1x**|2x|4x|8x|16x)
-- **Skip Presenting Duplicate Frames** [dolphin_skip_dupe_frames] (**ON**|OFF)
-- **Scaled EFB Copy** [dolphin_efb_scaled_copy] (**ON**|OFF)
-- **Force Texture Filtering** [dolphin_force_texture_filtering] (**OFF**|ON)
-- **Store EFB Copies on GPU** [dolphin_efb_to_texture] (**ON**|OFF)
-- **Texture Cache Accuracy** [dolphin_texture_cache_accuracy] (**Fast**|Middle|Safe)
-- **GPU Texture Decoding** [dolphin_gpu_texture_decoding] (**OFF**|ON)
-- **Fast Depth Calculation** [dolphin_fast_depth_calculation] (**ON**|OFF)
-- **Bounding Box Emulation** [dolphin_bbox_enabled] (**OFF**|ON)
-- **Disable EFB to VRAM** [dolphin_efb_to_vram] (**OFF**|ON)
-- **Load Custom Textures** [dolphin_load_custom_textures] (**OFF**|ON)
-- **CPU Core** [dolphin_cpu_core] (**JIT64/JITARM64**|Interpreter|Cached Interpreter)
-- **CPU Clock Rate** [dolphin_cpu_clock_rate] (**100%**|from 5% to 300%)
-- **Fastmem** [dolphin_fastmem] (**ON**|OFF)
-- **Wiimote IR Mode** [dolphin_ir_mode] (**Right Stick controls pointer (relative)**|Right Stick controls pointer (absolute)|Mouse controls pointer)
-- **Wiimote IR Vertical Offset** [dolphin_ir_offset] (**10**|from -50 to 50)
-- **Wiimote IR Total Yaw** [dolphin_ir_yaw] (**15**|from 0 to 100)
-- **Wiimote IR Total Pitch** [dolphin_ir_pitch] (**15**|from 0 to 100)
-- **Rumble** [dolphin_enable_rumble] (**ON**|OFF)
-- **Sensor Bar Position** [dolphin_sensor_bar_position] (**Bottom**|Top)
-- **Wiimote Continuous Scanning** [dolphin_wiimote_continuous_scanning] (**OFF**|ON)
-- **Use ports 5-8 for GameCube controllers in Wii mode** [dolphin_alt_gc_ports_on_wii] (**OFF**|ON)
-- **Audio Mixer Rate** [dolphin_mixer_rate] (**32000**|48000)
-- **DSP HLE** [dolphin_dsp_hle] (**ON**|OFF)
-- **DSP Enable JIT** [dolphin_dsp_jit] (**ON**|OFF)
-- **Language** [dolphin_language] (**English**|Japanese|German|French|Spanish|Italian|Dutch|Simplified Chinese|Traditional Chinese|Korean)
-- **Internal Cheats Enabled** [dolphin_cheats_enabled] (**OFF**|ON)
-- **OSD Enabled** [dolphin_osd_enabled] (**ON**|OFF)
-- **Log Level** [dolphin_log_level] (**Info**|Notice|Error|Warning)
+{{ read_csv('dolphin-options.csv', colalign=('center','left'), comment='#') }}
 
-## Joypad
+## Core inputs
 
-| RetroPad Inputs                                 | GameCube Controller | Wiimote     | Wiimote (sideways) | Wiimote + Nunchuk | Classic Controller | Classic Controller Pro |
-|------------------------------------------------ |---------------------|-------------|--------------------|-------------------|--------------------|------------------------|
-| ![](../image/retropad/retro_b.png)              | B                   | B           | 1                  | B                 | B                  | B                      |
-| ![](../image/retropad/retro_y.png)              | Y                   | 2           | B                  | Z                 | Y                  | Y                      |
-| ![](../image/retropad/retro_select.png)         |                     | -           | -                  | 2                 | -                  | -                      |
-| ![](../image/retropad/retro_start.png)          | Start               | +           | +                  | 1                 | +                  | +                      |
-| ![](../image/retropad/retro_dpad_up.png)        | D-Pad Up            | D-Pad Up    | D-Pad Up           | D-Pad Up          | D-Pad Up           | D-Pad Up               |
-| ![](../image/retropad/retro_dpad_down.png)      | D-Pad Down          | D-Pad Down  | D-Pad Down         | D-Pad Down        | D-Pad Down         | D-Pad Down             |
-| ![](../image/retropad/retro_dpad_left.png)      | D-Pad Left          | D-Pad Left  | D-Pad Left         | D-Pad Left        | D-Pad Left         | D-Pad Left             |
-| ![](../image/retropad/retro_dpad_right.png)     | D-Pad Right         | D-Pad Right | D-Pad Right        | D-Pad Right       | D-Pad Right        | D-Pad Right            |
-| ![](../image/retropad/retro_a.png)              | A                   | A           | 2                  | A                 | A                  | A                      |
-| ![](../image/retropad/retro_x.png)              | X                   | 1           | A                  | C                 | X                  | X                      |
-| ![](../image/retropad/retro_l1.png)             |                     |             |                    | -                 | ZL                 | L                      |
-| ![](../image/retropad/retro_r1.png)             | Z                   |             |                    | +                 | ZR                 | R                      |
-| ![](../image/retropad/retro_l2.png)             | L                   |             |                    | Shake Nunchuk     | L                  | ZL                     |
-| ![](../image/retropad/retro_r2.png)             | R                   | Shake       | Shake              | Shake Wiimote     | R                  | ZR                     |
-| ![](../image/retropad/retro_l3.png)             | L-Analog            |             |                    |                   |                    |                        |
-| ![](../image/retropad/retro_r3.png)             | R-Analog            | Home        |  Home              | Home              | Home               | Home                   |
-| ![](../image/retropad/retro_left_stick.png) X   | Analog X            | Tilt X      |  Tilt X            | Nunchuk Stick X   | Left Stick X       | Left Stick X           |
-| ![](../image/retropad/retro_left_stick.png) Y   | Analog Y            | Tilt Y      |  Tilt Y            | Nunchuk Stick Y   | Left Stick Y       | Left Stick Y           |
-| ![](../image/retropad/retro_right_stick.png) X  | C-Stick X           |             |                    | Tilt X            | Right Stick X      | Right Stick X          |
-| ![](../image/retropad/retro_right_stick.png) Y  | C-Stick Y           |             |                    | Tilt Y            | Right Stick Y      | Right Stick Y          |
-**NOTE:** The 'L-Analog' and 'R-Analog' inputs are half-presses of the analog L and R buttons, respectively. These inputs are required to progress in some games, such as Super Mario Sunshine.
-
-## Compatibility
-
-[Compatibility Pages](https://dolphin-emu.org/compat/)
+{{ read_csv('dolphin-inputs.csv', colalign=('center','center','center','center','center','center','center'), comment='#') }}
 
 ## External Links
 
-- [Official Dolphin Website](https://dolphin-emu.org/)
-- [Official Dolphin Github Repository](https://github.com/dolphin-emu/dolphin)
-- [Libretro Dolphin Core info file](https://github.com/libretro/libretro-super/blob/master/dist/info/dolphin_libretro.info)
-- [Report Libretro Dolphin Core Issues Here](https://github.com/libretro/dolphin/issues)
-- [Gameplay Videos](https://www.youtube.com/playlist?list=PLRbgg4gk_0IcC4j9ggvxzZm2GiuufDMeU)
+- [Gameplay Videos][playlist-gameplay]
+- **Dolphin Emulator** (upstream project):
+    + [Official Website][dolphin]
+    + [Source Code Repository][github-dolphin] (GitHub)
+- **Libretro Dolphin core:**
+    + [Core info file][core-info-file]
+    + [Issue Tracker][github-issues]
+
+[compatibility]: https://dolphin-emu.org/compat/
+  "Dolphin Emulator - Compatibility List"
+[core-info-file]: https://github.com/libretro/libretro-super/blob/master/dist/info/dolphin_libretro.info
+  "GitHub: libretro-super/dist/info/dolphin_libretro.info at master • libretro/libretro-super"
+[d3d11]: #direct3d-d3d11
+  "Dolphin (GameCube/Wii) § Direct3D (D3D11) - Libretro Documentation"
+[dolphin]: https://dolphin-emu.org/
+  "Dolphin Emulator - GameCube/Wii games on PC"
+[dolphin-license]: https://github.com/libretro/dolphin/blob/master/license.txt
+  "GitHub: dolphin/license.txt at master • libretro/dolphin"
+[gc-bios-ani]: https://www.youtube.com/watch?v=CpmYW-gCSy4
+  "Nintendo Gamecube Intro *Original Not A Meme* - YouTube"
+[gh-dl-master]: https://github.com/libretro/dolphin/archive/refs/heads/master.zip
+  "GitHub: Download ZIP • libretro/dolphin"
+[git-downloads]: https://git-scm.com/downloads
+  "Git - Downloads"
+[github-dolphin]: https://github.com/dolphin-emu/dolphin
+  "GitHub: dolphin-emu/dolphin - Dolphin is a GameCube / Wii emulator, allowing you to play games for these two platforms on PC with improvements."
+[github-issues]: https://github.com/libretro/dolphin/issues
+  "GitHub: Issues • libretro/dolphin"
+[opengl]: #opengl
+  "Dolphin (GameCube/Wii) § OpenGL - Libretro Documentation"
+[peazip]: https://peazip.github.io/
+  "PeaZip free archiver utility, open/extract RAR TAR ZIP files"
+[playlist-gameplay]: https://www.youtube.com/playlist?list=PLRbgg4gk_0IcC4j9ggvxzZm2GiuufDMeU
+  "@Libretro: Dolphin (playlist) - YouTube"
+[ra-licensing]: ../development/licenses.md
+  "Licenses - Libretro Documentation"
+[rdb-gamecube]: https://github.com/libretro/libretro-database/blob/master/rdb/Nintendo%20-%20GameCube.rdb
+  "GitHub: libretro-database/rdb/Nintendo - GameCube.rdb on master • libretro/libretro-database"
+[rdb-wii]: https://github.com/libretro/libretro-database/blob/master/rdb/Nintendo%20-%20Wii.rdb
+  "GitHub: libretro-database/rdb/Nintendo - Wii.rdb on master • libretro/libretro-database"
+[rpad-a]: ../image/retropad/retro_a.png
+  "RetroPad A button"
+[rpad-b]: ../image/retropad/retro_b.png
+  "RetroPad B button"
+[rpad-dpad-down]: ../image/retropad/retro_dpad_down.png
+  "RetroPad directional pad Down"
+[rpad-dpad-left]: ../image/retropad/retro_dpad_left.png
+  "RetroPad directional pad Left"
+[rpad-dpad-right]: ../image/retropad/retro_dpad_right.png
+  "RetroPad directional pad Right"
+[rpad-dpad-up]: ../image/retropad/retro_dpad_up.png
+  "RetroPad directional pad Up"
+[rpad-l1]: ../image/retropad/retro_l1.png
+  "RetroPad L1 left shoulder button"
+[rpad-l2]: ../image/retropad/retro_l2.png
+  "RetroPad L2 left analog trigger"
+[rpad-l3]: ../image/retropad/retro_l3.png
+  "RetroPad L3 left analog stick button"
+[rpad-lstick]: ../image/retropad/retro_left_stick.png
+  "RetroPad left analog stick"
+[rpad-r1]: ../image/retropad/retro_r1.png
+  "RetroPad R1 right shoulder button"
+[rpad-r2]: ../image/retropad/retro_r2.png
+  "RetroPad R2 right analog trigger"
+[rpad-r3]: ../image/retropad/retro_r3.png
+  "RetroPad R3 right analog stick button"
+[rpad-rstick]: ../image/retropad/retro_right_stick.png
+  "RetroPad right analog stick"
+[rpad-select]: ../image/retropad/retro_select.png
+  "RetroPad Select button"
+[rpad-start]: ../image/retropad/retro_start.png
+  "RetroPad Start button"
+[rpad-x]: ../image/retropad/retro_x.png
+  "RetroPad X button"
+[rpad-y]: ../image/retropad/retro_y.png
+  "RetroPad Y button"
+[rgui-conf-file]: ../guides/rgui.md#config-file
+  "RGUI interface style § Configuration file - Libretro Documentation"
+[softpatching]: ../guides/softpatching.md
+  "Softpatching ROMs with RetroArch - Libretro Documentation"
+[vulkan]: #vulkan
+  "Dolphin (GameCube/Wii) § Vulkan - Libretro Documentation"
+[zarchiver-android]: https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver
+  "ZArchiver - Apps on Google Play"

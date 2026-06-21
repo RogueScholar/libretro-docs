@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: MIT
+Core option,Description,Valid values
+**Tape Fast Load** { .middle },Instantly load content (enabled)&comma; or horizontal scan lines while loading content (disabled),<ul class="core_opts"><li class="default">On</li><li>Off</li></ul>
+**8K-16K Contents** { .middle },Selects the contents of memory addresses from 8192–16383 from among: content-based heuristic selection&comma; a shadow copy of the ROM&comma; 8K of RAM&comma; or [dK'tronics 4K ROM + 4K of RAM](http://www.fruitcake.plus.com/Sinclair/ZX81/Chroma/ChromaInterface_Software_CharacterSetROM.htm "ZX81 Chroma 81 SCART Interface - Character Set ROM Cartridge") { .middle },<ul class="core_opts"><li class="default">auto</li><li>ROM shadow</li><li>RAM</li><li>dK'tronics 4K Graphics ROM + 4K RAM</li></ul>
+**High Resolution** { .middle },Enable WRX high resolution display output { .middle },<ul class="core_opts"><li class="default">auto</li><li>none</li><li>WRX</li></ul>
+**Emulate Chroma 81** { .middle },Enable [Chroma 81](http://www.fruitcake.plus.com/Sinclair/ZX81/Chroma/ChromaInterface.htm "ZX81 Chroma 81 SCART Interface - Introduction") (colorization) interface { .middle },<ul class="core_opts"><li class="default">auto</li><li>Off</li><li>On</li></ul>
+**Video Presets** { .middle },Change video emulation mode (if Chroma 81 is enabled&comma; "`clean`" mode is used regardless of this option) { .middle },<ul class="core_opts"><li class="default">clean</li><li>tv</li><li>noisy</li></ul>
+**Sound Emulation** { .middle },Enable sound emulation { .middle },<ul class="core_opts"><li class="default">auto</li>none</li><li>Zon X-81</li></ul>
+**Transparent Keyboard Overlay** { .middle },Show keyboard overlay as transparent or opaque { .middle },<ul class="core_opts"><li>Off</li><li class="default">On</li></ul>
+**Time to Release Key (in milliseconds)** { .middle },Duration of time interval between keyboard overlay inputs and key release signal { .middle },<ul class="core_opts"><li class="default">100</li><li>300</li><li>500</li><li>1000</li></ul>

@@ -2,123 +2,128 @@
 
 ## Background
 
-Flycast is a multi-platform Sega Dreamcast, NAOMI, Atomiswave and System SP emulator. The Flycast core has been authored by
+Flycast is a multi-platform Sega Dreamcast, NAOMI, Atomiswave and System SP
+emulator.
 
-- flyinghead
+The Flycast core has been authored by **flyinghead** and is licensed according
+to the terms of the
+[GNU General Public License, version 2](https://github.com/flyinghead/flycast/blob/master/LICENSE).
 
-The Flycast core is licensed under
-
-- [GPLv2](https://github.com/flyinghead/flycast/blob/master/LICENSE)
-
-
-A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
+[A summary of the licenses](../development/licenses.md) that govern the use and
+distribution of RetroArch and its cores has been created to help you understand
+the rights and responsibilities associated with them.
 
 ## How to play NAOMI Games
 
-1. Run NAOMI games stored in MAME format zip files by following the same process as standard Dreamcast games
+- MAME `.zip` files: Run these games in the same way as you would standard
+  Dreamcast games.
+- MAME `.zip`+`.chd`: Run these games by verifying that the filename of the
+  `.zip` archive file matches its MAME ID and then move it into your RetroArch
+  `roms` folder. Then move the associated `.chd` file into a _subdirectory_ of
+  the `roms` folder whose name matches the `.zip` file (minus the file
+  extension).
 
-2. Run NAOMI GD-ROM format games stored in MAME zip + chd format by running the zip file through RetroArch. The zip file should be stored in your roms folder with the chd file in a subdirectory of the roms folder named after the mame ID.
+    ??? example "Example for a game whose MAME ID is `ikaruga`"
+        - Filepath of .zip archive: `roms/ikaruga.zip`
+        - Filepath of .chd archive: `roms/ikaruga/gdl-0010.chd`
 
-{==
-Example (MAME ID=ikaruga)
-- [ROM FOLDER]/ikaruga.zip
-- [ROM FOLDER]/ikaruga/gdl-0010.chd
-==}
+## File extensions
 
-## Extensions
+Content loaded by the flycast core can have any of these file extensions:
 
-Content that can be loaded by the flycast core have the following file extensions:
-
-- .cdi
-- .gdi
-- .chd
-- .cue
-- .bin
-- .elf
-- .zip
-- .7z
-- .lst
-- .dat
-- .m3u
+- `.7z`
+- `.bin`
+- `.cdi`
+- `.chd`
+- `.cue`
+- `.dat`
+- `.elf`
+- `.gdi`
+- `.lst`
+- `.m3u`
+- `.zip`
 
 ## Databases
 
 RetroArch database(s) that are associated with the flycast core:
 
-- [Sega - Dreamcast](https://github.com/libretro/libretro-database/blob/master/rdb/Sega%20-%20Dreamcast.rdb)
+- [Sega&nbsp;-&nbsp;Dreamcast][sega-dreamcast-db]
 
 ## BIOS
 
-Required or optional firmware files go in RetroArch's system directory.
+BIOS/firmware files for the flycast core must be located in RetroArch's `system`
+directory, be they required or optional.
 
-|   Filename      |    Description                                                       |              md5sum              |
-|:---------------:|:--------------------------------------------------------------------:|:--------------------------------:|
-| dc/dc_boot.bin  | Dreamcast BIOS - Optional                                            | e10c53c2f8b90bab96ead2d368858623 |
-| dc/naomi.zip    | NAOMI BIOS from MAME - Optional                                      |                                  |
-| dc/hod2bios.zip | NAOMI The House of the Dead 2 BIOS from MAME - Optional              |                                  |
-| dc/f355dlx.zip  | NAOMI Ferrari F355 Challenge (deluxe) BIOS from MAME - Optional      |                                  |
-| dc/f355bios.zip | NAOMI Ferrari F355 Challenge (twin/deluxe) BIOS from MAME - Optional |                                  |
-| dc/airlbios.zip | NAOMI Airline Pilots (deluxe) BIOS from MAME - Optional              |                                  |
-| dc/awbios.zip   | Atomiswave BIOS from MAME - Optional                                 |                                  |
-| dc/naomi2.zip   | NAOMI 2 BIOS from MAME - Optional                                    |                                  |
-| dc/segasp.zip   | System SP BIOS from MAME - Optional                                  |                                  |
+|     Filename      | Description                                                             |            MD5 checksum            |
+|:-----------------:|:-----------------------------------------------------------------------:|:----------------------------------:|
+| `dc/dc_boot.bin`  | Dreamcast BIOS (optional)                                               | `e10c53c2f8b90bab96ead2d368858623` |
+| `dc/naomi.zip`    | NAOMI BIOS from MAME (optional)                                         |                                    |
+| `dc/hod2bios.zip` | NAOMI "The House of the Dead 2" BIOS from MAME (optional)               |                                    |
+| `dc/f355dlx.zip`  | NAOMI "Ferrari F355 Challenge (deluxe)" BIOS from MAME (optional)       |                                    |
+| `dc/f355bios.zip` | NAOMI "Ferrari F355 Challenge (twin/deluxe)"" BIOS from MAME (optional) |                                    |
+| `dc/airlbios.zip` | NAOMI "Airline Pilots (deluxe)" BIOS from MAME (optional)               |                                    |
+| `dc/awbios.zip`   | "Atomiswave" BIOS from MAME (optional)                                  |                                    |
+| `dc/naomi2.zip`   | NAOMI 2 BIOS from MAME (optional)                                       |                                    |
+| `dc/segasp.zip`   | System SP BIOS from MAME (optional)                                     |                                    |
 
 !!! attention
-    All bios files need to be in a directory named 'dc' in RetroArch's system directory.
+    All BIOS files need to be in a _subdirectory_ named `dc` inside RetroArch's
+    `system` directory.
 
 ## Features
 
-| Feature           | Supported |
-|-------------------|:---------:|
-| Restart           | ✔         |
-| Screenshots       | ✔         |
-| Saves             | ✔         |
-| States            | ✔         |
-| Rewind            | ✕         |
-| Netplay           | ✕         |
-| Core Options      | ✔         |
-| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✔         |
-| RetroArch Cheats  | ✔         |
-| Native Cheats     | ✕         |
-| Controls          | ✔         |
-| Remapping         | ✔         |
-| Multi-Mouse       | ✕         |
-| Rumble            | ✔         |
-| Sensors           | ✕         |
-| Camera            | ✕         |
-| Location          | ✕         |
-| Subsystem         | ✕         |
-| Softpatching      | ✕         |
-| Disk Control      | ✔         |
-| Username          | ✕         |
-| Crop Overscan (in RetroArch's Video settings) | ✕         |
+| Feature                                         | Supported |
+|:-----------------------------------------------:|:---------:|
+| Restart                                         | ✔        |
+| Screenshots                                     | ✔        |
+| Saves                                           | ✔        |
+| States                                          | ✔        |
+| Rewind                                          | ✖        |
+| Netplay                                         | ✖        |
+| Core Options                                    | ✔        |
+| [Memory Monitoring (achievements)][mem-monitor] | ✔        |
+| RetroArch Cheats                                | ✔        |
+| Native Cheats                                   | ✖        |
+| Controls                                        | ✔        |
+| Remapping                                       | ✔        |
+| Multi-Mouse                                     | ✖        |
+| Rumble                                          | ✔        |
+| Sensors                                         | ✖        |
+| Camera                                          | ✖        |
+| Location                                        | ✖        |
+| Subsystem                                       | ✖        |
+| Softpatching                                    | ✖        |
+| Disk Control                                    | ✔        |
+| Username                                        | ✖        |
+| Crop Overscan (in RetroArch's Video settings)   | ✖        |
 
 ### Directories
 
-The FlyCast core's directory name is 'Flycast'
+The FlyCast core's directory name is `Flycast`. It creates these files in the
+`dc` subfolder within RetroArch's `system` directory.
 
-The FlyCast core creates these files in RetroArch's system directory.
+- `dc_nvmem.bin`
+- `vmu_save_A1.bin`
+- `vmu_save_B1.bin`
+- `vmu_save_C1.bin`
+- `vmu_save_D1.bin`
 
-```
-dc/
-├── vmu_save_A1.bin
-├── vmu_save_B1.bin
-├── vmu_save_C1.bin
-├── vmu_save_D1.bin
-└── dc_nvmem.bin
-```
+### Default aspect ratio
 
-### Core provided aspect ratio
-
-FlyCast's core provided aspect ratio is 4/3.
+The FlyCast core's native aspect ratio is **4:3** (W:H).
 
 ### Rumble
 
-Rumble only works when the Joypad being used has rumble functionality and the Joypad input driver being used has rumble function implementation (e.g. **Xinput**).
+Gamepad vibration only works when the input device being used has rumble
+functionality and the input driver used with it also has a rumble function
+implementation (e.g., **Xinput**).
 
 ## Core options
 
-The FlyCast core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded. Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
+The FlyCast core has the following options that can be managed from the `Core
+Options` menu. The default value for each is shown in boldface, and those
+annotated with "(Restart)" require that the core first be closed and reopened
+before taking effect.
 
 ### System
 
@@ -172,7 +177,7 @@ Configure visual buffers & effects, display parameters, framerate/-skip and rend
 	![](../image/core/flycast/640x480.png)
 
 ??? note "Internal resolution - 1920x1440"
-	![](../image/core/flycast/1920x1440.png)	
+	![Screenshot taken at 1920×1440px internal resolution][ss-1920x1440]
 
 **Cable Type** [flycast_cable_type] (**TV (Composite)**[^cable]|TV (RGB)|VGA(RGB))
 
@@ -430,3 +435,6 @@ An alternative is to append discs to the current playlist via the "Disk Image Ap
 
 [^vulkan]: If video driver is vulkan. 
 [^cable]: If low end then VGA (RGB), otherwise TV (Composite).
+[mem-monitor]: ../guides/memorymonitoring.md
+[sega-dreamcast-db]: https://github.com/libretro/libretro-database/blob/master/rdb/Sega%20-%20Dreamcast.rdb
+[ss-1920x1440]: ../image/core/flycast/1920x1440.webp

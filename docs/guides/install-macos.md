@@ -1,29 +1,59 @@
 # Downloading, Installing and Updating RetroArch for macOS
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H2Fv29vMpcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe allow="accelerometer; ambient-light-sensor; autoplay; clipboard-write;
+  display-capture; encrypted-media; execution-while-out-of-viewport; fullscreen;
+  geolocation; gyroscope; hid; magnetometer; picture-in-picture;
+  screen-wake-lock; speaker-selection; web-share;" aria-label="YouTube video"
+  height="315" loading="lazy" name="YouTube embedded player"
+  referrerpolicy="strict-origin-when-cross-origin" role="application"
+  sandbox="allow-orientation-lock; allow-presentation;"
+  src="https://www.youtube-nocookie.com/embed/H2Fv29vMpcY"
+  style="border-collapse: collapse; border-style: hidden; margin: 1rem auto;"
+  title="LibRetro: RetroArch experience on M2!" width="560"></iframe>
 
 ## Downloading and installing
 
-Download one of the .dmg files from here:
+### Stable vs. nightly builds
 
-* [Stable](https://buildbot.libretro.com/stable/{{ unit.stable }}/apple/osx/universal/RetroArch_Metal.dmg)
-* [Nightly](https://buildbot.libretro.com/nightly/apple/osx/universal/RetroArch_Metal.dmg)
+Most users should use the stable build for the best experience. The nightly
+build contains the latest changes to the source code containing the latest
+enhancements and features that have been added but not yet tested and verified
+to work properly. Thus, the nightly builds as a rule are not as reliable as the
+stable releases.
 
-The install follows the standard process of opening the .dmg file and copying RetroArch.app into the Applications folder.
+### Metal vs. non-Metal builds
 
-### About the "Metal" build name
+Most users should use the Metal builds, which have more features and are a
+Universal binary. The non-Metal builds are x86_64-only and only include the
+OpenGL graphics driver. However, the Metal builds minimum required macOS version
+is 10.13, whereas the non-Metal build is compatible with macOS 10.9+.
 
-The downloadable builds are named "Metal" for historical reasons. This build is a Universal binary (supporting both Intel and Apple Silicon Macs) and includes multiple video drivers: Vulkan, glcore (OpenGL 3/4), and an experimental Metal driver. Most users should use the Vulkan or glcore video drivers.
+It is possible to build RetroArch for older versions of macOS, though due to
+resource constraints these are not provided. See the
+[compilation instructions for macOS][compiling-osx] to build it yourself.
 
-!!! warning "Metal video driver is experimental"
-    The metal video driver within RetroArch is experimental, largely untested, and not well supported. If you encounter issues, switch to the Vulkan or glcore video driver instead.
+### DMG package download links
 
-The Metal build requires macOS 10.13 or later. It is possible to build RetroArch for older versions of macOS, though due to resource constraints these are not provided. See the [instructions for building on macOS](../development/retroarch/compilation/osx.md) to build it yourself.
+Download one of the .dmg files below.
 
-### Stable vs nightly builds
+- _Metal builds:_
+  + [**Stable**][stable-metal]
+  + [**Nightly**][nightly-metal]
+- _Non-Metal builds:_
+  + [**Stable**][stable-non-metal]
+  + [**Nightly**][nightly-non-metal]
 
-Most people should start with the Stable build. The Nightly build contains the latest commits available on GitHub, and the latest enhancements and features that are added daily. The Nightly build may not be as stable as the Stable version.
+The install follows the standard process of opening the .dmg file and copying
+RetroArch.app into the Applications folder.
 
 ## Updating
 
-There are no automatic updates in RetroArch. When updating, simply download and open the new .dmg file, and copy RetroArch.app into Applications. When prompted, choose to overwrite the old version.
+There are no automatic updates in RetroArch. When updating, simply download and
+open the new .dmg file, and copy RetroArch.app into Applications. When prompted,
+choose to overwrite the old version.
+
+[compiling-osx]: ../development/retroarch/compilation/osx.md
+[nightly-metal]: https://buildbot.libretro.com/nightly/apple/osx/universal/RetroArch_Metal.dmg
+[nightly-non-metal]: https://buildbot.libretro.com/nightly/apple/osx/x86_64/RetroArch.dmg
+[stable-metal]: https://buildbot.libretro.com/stable/{{ unit.stable }}/apple/osx/universal/RetroArch_Metal.dmg
+[stable-non-metal]: https://buildbot.libretro.com/stable/{{ unit.stable }}/apple/osx/x86_64/RetroArch.dmg

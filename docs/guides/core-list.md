@@ -1,3 +1,4 @@
+
 | Core                      | System/Machine         | Notes              |
 | :---                      | :---                   | :---               |
 | [2048](https://docs.libretro.com/library/2048/) | Game                   | A port of the popular puzzle game 2048 to libretro |

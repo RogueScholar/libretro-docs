@@ -1,3 +1,13 @@
-/site
+# SPDX-FileCopyrightText: © 2018, Daniel De Matteis <libretro@gmail.com>
+# SPDX-FileCopyrightText: © 2019, Devin Prater <d.prater@me.com>
+# SPDX-FileCopyrightText: © 2020, Ömercan Kömür <fpscan@gmail.com>
+# SPDX-FileCopyrightText: © 2023, kynoptic <kynoptic@users.noreply.github.com>
+# SPDX-FileCopyrightText: © 2023, Stefan Stockinger <estefan3112@gmail.com>
+# SPDX-FileCopyrightText: © 2024, Dion Olsthoorn <dion.olsthoorn@gmail.com>
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: MIT
+
 .DS_Store
 .venv
+/site

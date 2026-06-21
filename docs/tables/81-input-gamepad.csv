@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: MIT
+RetroPad Inputs,Cursor Joystick
+![RetroPad B button](../image/retropad/retro_b.png "B button"),:material-alpha-b-circle:{ .huge }<br />button { .middle }
+![RetroPad Y button](../image/retropad/retro_y.png "Y button"),:material-alpha-y-circle:{ .huge }<br />button { .middle }
+![RetroPad Select button](../image/retropad/retro_select.png "Select button"),:material-keyboard-outline:{ .huge }<br />Keyboard overlay { .middle }
+![RetroPad D-pad Up](../image/retropad/retro_dpad_up.png "D-Pad Up"),:material-gamepad-round-up:{ .huge }<br />D-pad Up { .middle }
+![RetroPad D-pad Down](../image/retropad/retro_dpad_down.png "D-Pad Down"),:material-gamepad-round-down:{ .huge }<br />D-pad Down { .middle }
+![RetroPad D-pad Left](../image/retropad/retro_dpad_left.png "D-Pad Left"),:material-gamepad-round-left:{ .huge }<br />D-pad Left { .middle }
+![RetroPad D-pad Right](../image/retropad/retro_dpad_right.png "D-Pad Right"),:material-gamepad-round-right:{ .huge }<br />D-pad Right { .middle }
+![RetroPad A button](../image/retropad/retro_a.png "A button"),:material-alpha-a-circle:{ .huge }<br />button { .middle }
+![RetroPad X button](../image/retropad/retro_x.png "X button"),:material-alpha-x-circle:{ .huge }<br />button { .middle }
+![RetroPad L1 button](../image/retropad/retro_l1.png "L1 shoulder button"),:material-alpha-l-circle:{ .huge }<br />button { .middle }
+![RetroPad R1 button](../image/retropad/retro_r1.png "R1 shoulder button"),:material-alpha-r-circle:{ .huge }<br />button { .middle }
+![RetroPad L2 button](../image/retropad/retro_l2.png "L2 analog trigger"),L2<br />button { .middle }
+![RetroPad R2 button](../image/retropad/retro_r2.png "R2 analog trigger"),R2<br />button { .middle }

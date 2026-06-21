@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+RetroMouse Inputs,SNES Mouse
+![RetroMouse Cursor][retromouse]<br />Mouse Cursor { .short },:material-cursor-default:{ .huge }<br />SNES Mouse Cursor { .middle }
+![RetroMouse Left button][retromouse-left]<br />Mouse 1 { .short },:material-cursor-default-click:{ .huge }<br />SNES Mouse<br />Left button { .middle }
+![RetroMouse Right button][retromouse-right]<br />Mouse 2 { .short },:material-mouse-right-click:{ .huge }<br />SNES Mouse<br />Right button { .middle }

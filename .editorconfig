@@ -1,21 +1,27 @@
+# SPDX-FileCopyrightText: © 2019, Mark W. Kidd <mark@stardart.net>
+# SPDX-FileCopyrightText: © 2020, Mahyar Koshkouei <mk@deltabeard.com>
+# SPDX-FileCopyrightText: © 2025, Ömercan Kömür <fpscan@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+# ---------------------------------------------------------------------------- #
 # Libretro coding standards
-# See https://libretro.readthedocs.io/en/latest/development/coding-standards/
-# Or search for "Libretro Coding Standards"
+# See <https://libretro.readthedocs.io/en/latest/development/coding-standards/>
+#     or search for "Libretro Coding Standards".
+# ---------------------------------------------------------------------------- #
 
 root = true
 
 [*]
-end_of_line = lf
-insert_final_newline = true
+charset                  = utf-8
+end_of_line              = lf
+insert_final_newline     = true
 trim_trailing_whitespace = true
-charset = utf-8
 
 [Makefile]
-indent_style = space
-indent_size = 3
+indent_size              = 3
+indent_style             = space
 
 [*.{c,h}]
-indent_style = space
-indent_size = 3
-max_line_length = 80
-
+indent_size              = 3
+indent_style             = space
+max_line_length          = 80

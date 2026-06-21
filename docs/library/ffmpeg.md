@@ -1,215 +1,273 @@
-# FFmpeg
+---
+title: FFmpeg
+description: >-2
+  An integrated, generic media player for use within Libretro frontends like
+  RetroArch.
+icon: simple/ffmpeg
+status: stable
+glightbox: true
+---
 
-## Background
+# Libretro FFmpeg core
 
-Video/music player implemented in libretro. FFmpeg can play video and audio files of different formats in RetroArch. If a video file has more than one audio input, FFmpeg can switch between them. If there is a hard coded subtitle file in the video file, FFmpeg can switch between them in the same way.
+<!--
+  SPDX-FileCopyrightText: © 2018, Daniel De Matteis <libretro@gmail.com>
+  SPDX-FileCopyrightText: © 2018, Mohmoud <devmohmoud@gmail.com>
+  SPDX-FileCopyrightText: © 2019, Mark W. Kidd <mark@stardart.net>
+  SPDX-FileCopyrightText: © 2019–2025, Hunter Kaller <hunter_kaller@yahoo.com>
+  SPDX-FileCopyrightText: © 2020, Colin L. Crowley <sanaki@fuzzy-dice.net>
+  SPDX-FileCopyrightText: © 2020–2022, Ömercan Kömür <fpscan@gmail.com>
+  SPDX-FileCopyrightText: © 2020, Winston Weinert <winston@ml1.net>
+  SPDX-FileCopyrightText: © 2024–2026, Peter J. Mello <admin@petermello.net>
+  SPDX-FileCopyrightText: © 2026, Tobias Pampinella <tobiaspampinella@users.noreply.github.com>
 
-### Author/License
+  SPDX-License-Identifier: MIT
+-->
+The Libretro FFmpeg core is an audio/video player implementation for the
+Libretro API. FFmpeg can play multimedia files of many different formats within
+RetroArch. If a video file has multiple embedded audio tracks, FFmpeg can switch
+between them. Likewise, if there are multiple hard-coded subtitles in the file,
+it can switch between them, too.
 
-The FFmpeg core has been authored by
+## Author/License
 
-- Fabrice Bellard
-- FFmpeg team
+The FFmpeg core has been authored by…
 
-The FFmpeg core is licensed under
+- [**Fabrice Bellard**][enwiki-fbellard], and
+- **the FFmpeg team**
 
-- [LGPLv2, GPLv2](https://github.com/libretro/FFmpeg/blob/master/LICENSE.md)
+…and is distributed under the terms of the
 
-A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
+- [GNU Lesser General Public License, version 2.1 (or later)][ffmpeg-license],
+  and the
+- [GNU General Public License, version 2.0 (or later)][ffmpeg-license].
 
-## Experience
+A [summary of the licenses governing the use and distribution RetroArch and its
+cores][ra-licensing] is also available.
 
-!!! important
-	RetroArch and LibRetro do not share any copyrighted content. RetroArch does not download any video or audio files. It does not stream content you have on different platforms.
+## User experience
 
-### Watching Movies with Subtitles
+???+ success "Copyright non-infringement"
+    RetroArch and Libretro do not share or distribute any unlicensed,
+    copyrighted content. RetroArch does not download any media files nor does it
+    play content streams from external platforms or services.
 
-You can open video files in the following formats (see: [Extensions](#extensions)). If your video file in these formats has a subtitle file encoded with .SSA type, these subtitle files will appear automatically. External subtitles are currently not supported. The video files you have played will be added to the Videos section in the main menu.
+### Video playback
 
-??? note "Turkish subtitles encoded 95's Ghost in the Shell"
-	![RetroArch and LibRetro do not share any copyrighted content.](../image/core/ffmpeg/subtitle.png)
+#### Video configuration
 
-#### Setup
+<iframe allow="accelerometer 'self'; clipboard-write *; display-capture 'self'; encrypted-media 'src';
+  fullscreen *; geolocation 'src'; gyroscope 'self'; hid 'self'; picture-in-picture *; screen-wake-lock *;
+  web-share *;" aria-label="YouTube video" height="315" width="560" loading="lazy" role="application"
+  name="YouTube embedded player" title="LibRetro: Watching movies with RetroArch" referrerpolicy="strict-origin-when-cross-origin"
+  sandbox="allow-orientation-lock allow-popups allow-presentation allow-same-origin allow-scripts"
+  src="https://www.youtube-nocookie.com/embed/zget1P8ptho?origin=docs.libretro.com&playsinline=1"
+  style="border-collapse: collapse; border-style: hidden; display: block; margin: 1.5rem auto 2rem; position: relative;"></iframe>
 
-Watch the video below for details:
+#### Subtitles
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zget1P8ptho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+You can open video files in the following formats (see: [§ File
+extensions][file-extensions]). If your video file in these formats has a
+subtitle file encoded with `.ssa` type, these subtitle files will appear
+automatically. External subtitles are currently not supported. The video files
+you have played will be added to the Videos section in the main menu.
 
-### Listening to Music
+??? example "95's Ghost in the Shell playing with Turkish subtitles"
+    <figure markdown="span">
+      ![Ghost in the Shell][gits-subs]{ data-gallery="subtitles" width="360" }
+    </figure>
 
-You can open audio files in the following formats (see: [Extensions](#extensions)). In the example below, you can see and listen to an mp3 file running at the lowest settings. File quality will affect sound quality. The audio files you have played will be added to the Music section in the main menu.
+### Audio playback
 
-??? note "Example"
-	<video width="320" height="240" controls>
-	  <source src="/image/core/ffmpeg/audio-preview.mp4" type="video/mp4">
-	  <source src="/image/core/ffmpeg/audio-preview.ogg" type="video/ogg">
-	Your browser does not support the video tag.
-	</video>
+You can open audio files in the following formats (see: [§ File
+extensions][file-extensions]). In the example below, you can see and listen to
+an mp3 file running at the lowest settings. File quality will affect sound
+quality. The audio files you have played will be added to the Music section in
+the main menu.
 
-#### Setup
+??? example "Combined playback of split audio/video streams"
+    <video width="480" height="360" controls>
+      <source src="/image/core/ffmpeg/audio-preview.mp4" type="video/mp4">
+      <source src="/image/core/ffmpeg/audio-preview.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
 
-Watch the video below for details:
+#### Audio configuration
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5f6nWBpagaM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe allow="accelerometer 'self'; clipboard-write *; display-capture 'self'; encrypted-media 'src';
+  fullscreen *; geolocation 'src'; gyroscope 'self'; hid 'self'; picture-in-picture *; screen-wake-lock *;
+  web-share *;" aria-label="YouTube video" height="315" width="560" loading="lazy" role="application"
+  name="YouTube embedded player" title="LibRetro: Listening to music with RetroArch" referrerpolicy="strict-origin-when-cross-origin"
+  sandbox="allow-orientation-lock allow-popups allow-presentation allow-same-origin allow-scripts"
+  src="https://www.youtube-nocookie.com/embed/5f6nWBpagaM?origin=docs.libretro.com&playsinline=1"
+  style="border-collapse: collapse; border-style: hidden; display: block; margin: 1.5rem auto 2rem; position: relative;"></iframe>
 
-## Extensions
+## File extensions
 
-Content that can be loaded by the FFmpeg core have the following file extensions:
+Content that can be loaded by the Libretro FFmpeg core will have one of the
+following file extensions:
 
-- .mkv
-- .avi
-- .f4v
-- .f4f
-- .3gp
-- .ogm
-- .flv
-- .mp4
-- .mp3
-- .flac
-- .ogg
-- .m4a
-- .webm
-- .3g2
-- .mov
-- .wmv
-- .mpg
-- .mpeg
-- .vob
-- .asf
-- .divx
-- .m2p
-- .m2ts
-- .ps
-- .ts
-- .mxf
-- .wma
-- .wav
+- **Audio/video formats:**
+    + `.3g2`/`.3gp`
+    + `.asf`/`.wmv`
+    + `.avi`
+    + `.divx`
+    + `.f4f`/`.f4v`/`.flv`
+    + `.m2p`
+    + `.m2ts`
+    + `.mkv`
+    + `.mov`
+    + `.mp4`
+    + `.mpeg`/`.mpg`
+    + `.mxf`
+    + `.ogm`/`.ogv`/`.ogx`
+    + `.ps`
+    + `.ts`
+    + `.vob`
+    + `.webm`
+- **Audio-only formats:**
+    + `.f4a`/`.f4b`/`.fla`
+    + `.flac`
+    + `.m4a`/`.m4b`
+    + `.mp3`
+    + `.oga`/`.ogg`
+    + `.wav`
+    + `.wma`
 
 ## Features
 
-Frontend-level settings or features that the FFmpeg core respects.
+Frontend-level settings or features that the FFmpeg core respects:
 
-| Feature           | Supported |
-|-------------------|:---------:|
-| Restart           | ✔         |
-| Screenshots       | ✔         |
-| [Shaders](#shaders)       | ✔         |
-| Saves             | ✕         |
-| States            | ✕         |
-| Rewind            | ✕         |
-| Netplay           | ✕         |
-| Core Options      | ✔         |
-| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✕         |
-| RetroArch Cheats  | ✕         |
-| Native Cheats     | ✕         |
-| Controls          | ✔         |
-| Remapping         | ✔         |
-| Multi-Mouse       | ✕         |
-| Rumble            | ✕         |
-| Sensors           | ✕         |
-| Camera            | ✕         |
-| Location          | ✕         |
-| Subsystem         | ✕         |
-| [Softpatching](../guides/softpatching.md) | ✕         |
-| Disk Control      | ✕         |
-| Username          | ✕         |
-| Language          | ✕         |
-| Crop Overscan     | ✕         |
-| LEDs              | ✕         |
+{{ read_csv('ffmpeg-features.csv', colalign=('right','center'), comment='#') }}
 
 ### Directories
 
-The FFmpeg core's directory name is 'FFmpeg'
+The Libretro FFmpeg core's directory name is '`FFmpeg`'.
 
 ### Geometry and timing
 
-- The FFmpeg core's core provided FPS is dependent on the loaded media.
-- The FFmpeg core's core provided sample rate is dependent on the loaded media.
-- The FFmpeg core's core provided aspect ratio is dependent on the loaded media.
+The Libretro FFmpeg core provides…
+
+- …a refresh rate that is dependent on the loaded media.
+- …an audio sample rate that is dependent on the loaded media.
+- …video output with an aspect ratio that is dependent on the loaded media.
 
 ### Shaders
 
-Shaders can improve your viewing quality as well as deliver the excitement of the 80s or 90s. In the example below you can see how a VHS shader can affect view quality. You can also provide more innovative watching possibilities by stacking shaders on top of each other.
+Shaders can improve your viewing quality, as well as recreate the experience of
+viewing it on hardware from the 80s or 90s. In the example below, you can see
+how a VHS shader effect can affect the viewing quality. You can also provide
+more innovative playback styles by stacking shaders on top of each other.
 
-??? note "VHSPro Shader"
-	![RetroArch and LibRetro do not share any copyrighted content.](../image/core/ffmpeg/shader1.png)
+??? example "Screenshot: Shaders"
+    <figure markdown="span">
+      ![VHSPro shader][vhspro-shader]{ data-gallery="shader" width="360" }
+    </figure>
 
 ## Core options
 
-The FFmpeg core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded.
+The Libretro FFmpeg core has the following options which can be customized using
+the `Core Options` menu. The corresponding configuration file key names are
+shown in [`square brackets`] and default values are indicated with ✪.
 
-Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
+{{ read_csv('ffmpeg-options.csv', colalign=('center','center','left'), comment='#') }}
 
-- **Temporal Interpolation** [ffmpeg_temporal_interp] (**Off**/On)
+??? example "Screenshots: FFT Resolution"
+    ![320×180][fft-320]{ data-gallery="fft-res" width="360" }
+    &emsp;&emsp;
+    ![3840×2160][fft-3840]{ data-gallery="fft-res" width="360" }
 
-	'Fake’ a higher framerate by using motion blur.
+??? example "Screenshots: Colorspace"
+    ![BT.601][bt601]{ data-gallery="colorspace" width="200" }
+    &emsp;&emsp;
+    ![FCC][]{ data-gallery="colorspace" width="200" }
+    &emsp;&emsp;
+    ![BT.709][bt709]{ data-gallery="colorspace" width="200" }
+    &emsp;&emsp;
+    ![SMPTE240M][]{ data-gallery="colorspace" width="200" }
 
-- **FFT Resolution** [ffmpeg_fft_resolution] (**1280x720**/1920x1080/2560x1440/3840x2160/640x360/320x180)
+## Input devices
 
-	Modify the resolution of the music visualizer.
+The FFmpeg core supports the following device type(s) in the controls menu.
+Default device types for the specified user(s) are shown in **boldface**.
 
-??? note "FFT Resolution - 320x180"
-	![](../image/core/ffmpeg/320x180.png)
+### User 1
 
-??? note "FFT Resolution - 3840x2160"
-	![](../image/core/ffmpeg/3840x2160.png)
+{{ read_csv('ffmpeg-input-user1.csv', colalign=('center','center'), comment='#') }}
 
-- **FFT Multisample** [ffmpeg_fft_multisample] (**1x**/2x/4x)
+### Device tables
 
-	Modify the antialiasing of the music visualizer.
+#### Gamepad
 
-- **Colorspace** [ffmpeg_color_space] (**auto**/BT.70/BT.601/FCC/SMPTE240M)
-
-	Choose [colorspaces](https://trac.ffmpeg.org/wiki/colorspace) from different broadcast regions/standards.
-
-??? note "Colorspace"
-	![](../image/core/ffmpeg/BT.601.png)
-	![](../image/core/ffmpeg/FCC.png)
-	![](../image/core/ffmpeg/BT.709.png)
-	![](../image/core/ffmpeg/SMPTE240M.png)
-
-
-## Controllers
-
-The FFmpeg core supports the following device type(s) in the controls menu, bolded device types are the default for the specified user(s):
-
-### User 1 device types
-
-- None - Doesn't disable input.
-- **RetroPad** - Joypad
-- RetroPad w/Analog - Joypad - There's no reason to switch to this.
-
-### Other controllers
-
-- Mouse - The FFmpeg core allows Wheel Up and Wheel Down mouse inputs for seeking. This is always active, completely separate from the device types in the Controls menu and cannot be manually selected.
-
-### Controller tables
-
-#### Joypad
-
-| User 1 Remap descriptors | RetroPad Inputs                                |
-|--------------------------|------------------------------------------------|
-| Seek +60 seconds         | ![](../image/retropad/retro_dpad_up.png)       |
-| Seek -60 seconds         | ![](../image/retropad/retro_dpad_down.png)     |
-| Seek -10 seconds         | ![](../image/retropad/retro_dpad_left.png)     |
-| Seek +10 seconds         | ![](../image/retropad/retro_dpad_right.png)    |
-| Cycle Audio Track        | ![](../image/retropad/retro_l1.png)            |
-| Cycle Subtitle Track     | ![](../image/retropad/retro_r1.png)            |
+{{ read_csv('ffmpeg-input-gamepad.csv', colalign=('center','center'), comment='#') }}
 
 #### Mouse
 
-| RetroMouse Inputs                                   | FFmpeg Core Inputs        |
-|-----------------------------------------------------|---------------------------|
-| Wheel Up                                            | Seek +60 seconds          |
-| Wheel Down                                          | Seek -60 seconds          |
+The FFmpeg core provides Wheel Up and Wheel Down mouse inputs for seeking
+through content. This is always active and fully independent of the device types
+in the Controls menu; it cannot be manually enabled or disabled.
 
-## External Links
+{{ read_csv('ffmpeg-input-mouse.csv', colalign=('center','center'), comment='#') }}
 
-- [Official FFmpeg Website](https://www.ffmpeg.org/)
-- [Official FFmpeg Repositories](https://www.ffmpeg.org/download.html#repositories)
-- [Libretro FFmpeg Core info file](https://github.com/libretro/libretro-super/blob/master/dist/info/ffmpeg_libretro.info)
-- [Internal Libretro FFmpeg Github Repository](https://github.com/libretro/RetroArch/tree/master/cores/libretro-ffmpeg)
-- [Buildbot Libretro FFmpeg Github repository](https://github.com/libretro/FFmpeg)
-- [Report Libretro FFmpeg Core Issues Here](https://github.com/libretro/RetroArch/issues)
-- [Video Setup](https://www.youtube.com/watch?v=zget1P8ptho)
-- [Audio Setup](https://www.youtube.com/watch?v=5f6nWBpagaM)
+## External links
+
+- **FFmpeg (upstream project):**
+    + [Official Website][ffmpeg]
+    + [Source Code Repositories][ffmpeg-vcs]
+- **Libretro FFmpeg core:**
+    + [Core info file][core-info-file]
+    + [Internal Libretro core source code][internal-vcs]
+    + [Issue Tracker][gh-issues]
+
+[bt601]: ../image/core/ffmpeg/BT.601.webp
+  "Screenshot: BT.601 colorspace"
+[bt709]: ../image/core/ffmpeg/BT.709.webp
+  "Screenshot: BT.709 colorspace"
+[colorspaces]: https://trac.ffmpeg.org/wiki/colorspace
+  "Colorspace support in FFmpeg – FFmpeg Wiki"
+[core-info-file]: https://github.com/libretro/libretro-super/blob/master/dist/info/ffmpeg_libretro.info
+  "GitHub: libretro-super/dist/info/ffmpeg_libretro.info on master • libretro/libretro-super"
+[enwiki-fbellard]: https://en.wikipedia.org/wiki/Fabrice_Bellard
+  "English Wikipedia: Fabrice Bellard"
+[fcc]: ../image/core/ffmpeg/FCC.webp
+  "Screenshot: FCC colorspace"
+[ffmpeg]: https://ffmpeg.org/
+  "FFmpeg - A complete, cross-platform solution to record, convert and stream audio and video"
+[ffmpeg-license]: https://github.com/libretro/FFmpeg/blob/master/LICENSE.md
+  "GitHub: FFmpeg/LICENSE.md on master • libretro/FFmpeg"
+[ffmpeg-vcs]: https://ffmpeg.org/download.html#repositories
+  "FFmpeg - Git Repositories"
+[fft-320]: ../image/core/ffmpeg/320x180.png
+  "Screenshot: FFT Resolution set to 320px×180px"
+[fft-3840]: ../image/core/ffmpeg/3840x2160.png
+  "Screenshot: FFT Resolution set to 3840px×2160px"
+[file-extensions]: #file-extensions
+  "FFmpeg § File extensions - Libretro Documentation"
+[gh-issues]: https://github.com/libretro/RetroArch/issues
+  "GitHub: Issues • libretro/FFmpeg"
+[gits-subs]: ../image/core/ffmpeg/subtitle.webp
+  "Screenshot: Ghost in the Shell with embedded subtitles shown"
+[internal-vcs]: https://github.com/libretro/RetroArch/tree/master/cores/libretro-ffmpeg
+  "GitHub: RetroArch/cores/libretro-ffmpeg on master • libretro/RetroArch"
+[ra-licensing]: ../development/licenses.md
+  "Licenses - Libretro Documentation"
+[rpad-dpad-down]: ../image/retropad/retro_dpad_down.png
+  "RetroPad directional pad Down"
+[rpad-dpad-left]: ../image/retropad/retro_dpad_left.png
+  "RetroPad directional pad Left"
+[rpad-dpad-right]: ../image/retropad/retro_dpad_right.png
+  "RetroPad directional pad Right"
+[rpad-dpad-up]: ../image/retropad/retro_dpad_up.png
+  "RetroPad directional pad Up"
+[rpad-l1]: ../image/retropad/retro_l1.png
+  "RetroPad L1 left shoulder button"
+[rpad-r1]: ../image/retropad/retro_r1.png
+  "RetroPad R1 right shoulder button"
+[shaders]: #shaders
+  "FFmpeg § Shaders - Libretro Documentation"
+[smpte240m]: ../image/core/ffmpeg/SMPTE240M.webp
+  "Screenshot: SMPTE240M colorspace"
+[softpatching]: ../guides/softpatching.md
+  "Softpatching ROMs with RetroArch - Libretro Documentation"
+[vhspro-shader]: ../image/core/ffmpeg/shader1.png
+  "Screenshot: Video playback with the VHSpro shader enabled"

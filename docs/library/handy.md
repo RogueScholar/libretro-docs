@@ -1,93 +1,80 @@
-# Atari - Lynx (Handy)
+---
+title: Handy (Lynx)
+description: An Atari Lynx emulator for Libretro frontends, like RetroArch.
+icon: simple/atari
+status: stable
+glightbox: true
+---
 
-## Background
+# Libretro Handy core
 
-Handy is an Atari Lynx video game system emulator that can be used as a libretro core.  Handy was the original name of the Lynx project that was started at Epyx and then finished by Atari.
+Handy is an Atari Lynx video game system emulator that can be used as a libretro
+core. Handy was the original name of the Lynx project that was started at Epyx
+and then finished by Atari.
 
-### Author/License
+## Author/License
 
-The Handy core has been authored by
+The Handy core's original author is
 
-- K. Wilkins
+- **K. Wilkins**
 
-The Handy core is licensed under
+and it is distributed under the terms of the
 
-- [zlib](https://sourceforge.net/projects/handy/)
+- [Zlib License][handy-license].
 
-A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
+A [summary of the licenses governing the use and distribution RetroArch and its
+cores][ra-licensing] is also available.
 
 ## Extensions
 
-Content that can be loaded by the Handy core have the following file extensions:
+Content that can be loaded by the Handy core has the following file extension:
 
-- .lnx
+- `.lnx`
 
 ## Databases
 
 RetroArch database(s) that are associated with the Handy core:
 
-- [Atari - Lynx](https://github.com/libretro/libretro-database/blob/master/rdb/Atari%20-%20Lynx.rdb)
+- [Atari - Lynx][rdb-lynx]
 
 ## BIOS
 
-Required or optional firmware files go in the frontend's system directory.
+Required or optional firmware files go in the frontend's **system** directory.
 
-|   Filename    |    Description             |              md5sum              |
-|:-------------:|:--------------------------:|:--------------------------------:|
-| lynxboot.img  | Lynx Boot Image - Required | fcd403db69f54290b51035d82f835e7b |
+|    Filename     |    Description             |            MD5 Checksum            |
+|:---------------:|:--------------------------:|:----------------------------------:|
+| `lynxboot.img`  | Lynx Boot Image (required) | `fcd403db69f54290b51035d82f835e7b` |
 
 ## Features
 
-Frontend-level settings or features that the Handy core respects.
+Frontend-level settings or features that the Handy core respects:
 
-| Feature           | Supported |
-|-------------------|:---------:|
-| Restart           | ✔         |
-| Screenshots       | ✔         |
-| Saves             | ✕         |
-| States            | ✔         |
-| Rewind            | ✔         |
-| Netplay (State based) | ✔ (not link-cable emulation) |
-| Core Options      | ✔         |
-| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✔         |
-| Cheats (Cheats menu) | ✕         |
-| Native Cheats     | ✕         |
-| Controls          | ✔         |
-| Remapping         | ✔         |
-| Multi-Mouse       | ✕         |
-| Rumble            | ✕         |
-| Sensors           | ✕         |
-| Camera            | ✕         |
-| Location          | ✕         |
-| Subsystem         | ✕         |
-| [Softpatching](../guides/softpatching.md) | ✕         |
-| Disk Control      | ✕         |
-| Username          | ✕         |
-| Language          | ✕         |
-| Crop Overscan     | ✕         |
-| LEDs              | ✕         |
+{{ read_csv('handy-features.csv', colalign=('right','center'), comment='#') }}
 
 ### Directories
 
-The Handy core's directory name is 'Handy'
-
-The Handy core saves/loads to/from these directories.
+The Libretro Handy core's directory name is 'Handy', and it saves to/loads from
+these directories:
 
 **Frontend's State directory**
 
-- 'content-name'.state# (State)
+:   `<content_name>.state`
 
 ### Geometry and timing
 
-- The Handy core's core provided FPS is 75
-- The Handy core's core provided sample rate is 22050 Hz
-- The Handy core's core provided aspect ratio is dependent on the ['Display rotation' core option](#core-options/). When set to None, the aspect ratio will be 80/51. When set to 90 or 240, the aspect ratio will be 51/80.
+The Libretro Handy core provides…
+
+- …a refresh rate of 75 frames/second.
+- …an audio sample rate of 22050 Hz.
+- …video output with an aspect ratio that is dependent on the
+  [`Display rotation` core option][core-options]. When set to `None`, the aspect
+  ratio will be 80:51, and when set to `90` or `240`, the aspect ratio will be
+  51:80.
 
 ## Core options
 
-The Handy core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded.
-
-Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
+The Libretro Handy core has the following option that can be defined using the
+`Core Options` menu. The default setting is bolded.
 
 - **Display rotation** [handy_rot] (**None**/90/240)
 
@@ -107,19 +94,20 @@ The Handy core supports the following device type(s) in the controls menu, bolde
 
 #### Joypad
 
-![](../image/controller/lynx.png)
+!!! info inline end "Atari Lynx controller (click to expand)"
+    ![Atari Lynx controller map][lynx-controller-map]{ data-gallery="controller" width="360" }
 
-| User 1 Remap descriptors | RetroPad Inputs                             |
-|--------------------------|---------------------------------------------|
-| B                        | ![](../image/retropad/retro_b.png)          |
-| Pause                    | ![](../image/retropad/retro_start.png)      |
-| D-Pad Up                 | ![](../image/retropad/retro_dpad_up.png)    |
-| D-Pad Down               | ![](../image/retropad/retro_dpad_down.png)  |
-| D-Pad Left               | ![](../image/retropad/retro_dpad_left.png)  |
-| D-Pad Right              | ![](../image/retropad/retro_dpad_right.png) |
-| A                        | ![](../image/retropad/retro_a.png)          |
-| Option 1                 | ![](../image/retropad/retro_l1.png)         |
-| Option 2                 | ![](../image/retropad/retro_r1.png)         |
+| RetroPad Inputs                             | User 1 Remap descriptors |
+|---------------------------------------------|--------------------------|
+| ![](../image/retropad/retro_b.png)          | B                        |
+| ![](../image/retropad/retro_start.png)      | Pause                    |
+| ![](../image/retropad/retro_dpad_up.png)    | D-Pad Up                 |
+| ![](../image/retropad/retro_dpad_down.png)  | D-Pad Down               |
+| ![](../image/retropad/retro_dpad_left.png)  | D-Pad Left               |
+| ![](../image/retropad/retro_dpad_right.png) | D-Pad Right              |
+| ![](../image/retropad/retro_a.png)          | A                        |
+| ![](../image/retropad/retro_l1.png)         | Option 1                 |
+| ![](../image/retropad/retro_r1.png)         | Option 2                 |
 
 Supported combinations
 
@@ -132,18 +120,33 @@ Supported combinations
 |--------------|-------------------------------------------------------------------------|
 | RoadBlasters | Graphics glitches. Minor flickering and glitches after starting a race. |
 
-## External Links
+## See also
 
-- [Official Handy Website](http://handy.sourceforge.net/)
-- [Official Handy Downloads](http://handy.sourceforge.net/download.htm)
-- [Libretro Handy Core info file](https://github.com/libretro/libretro-super/blob/master/dist/info/handy_libretro.info)
-- [Libretro Handy Github Repository](https://github.com/libretro/libretro-handy)
-- [Report Libretro Handy Core Issues Here](https://github.com/libretro/libretro-handy/issues)
-- [Gameplay Videos](https://www.youtube.com/playlist?list=PLRbgg4gk_0IfDlFKLg0HMDXbn8BrcxbJV)
+### Other Atari Lynx Libretro cores
 
-### See also
+- [Beetle Lynx][beetle-lynx]
 
-#### Atari - Lynx
+## External links
 
-- [Atari - Lynx (Beetle Lynx)](beetle_lynx.md)
-- [Atari - Lynx (Holani)](holani.md)
+- **Handy Emulator** (upstream project):
+    + [Official Website][handy]
+    + [Downloads][handy-downloads]
+- **Libretro Handy core:**
+    + [Core info file][core-info-file]
+    + [Source code repository][core-vcs]
+    + [Issue tracker][core-issues]
+- [Gameplay Videos][gameplay-playlist]
+
+[beetle-lynx]: beetle_lynx.md
+[core-info-file]: https://github.com/libretro/libretro-super/blob/master/dist/info/handy_libretro.info
+[core-issues]: https://github.com/libretro/libretro-handy/issues
+[core-options]: #core-options
+[core-vcs]: https://github.com/libretro/libretro-handy
+[gameplay-playlist]: https://www.youtube.com/playlist?list=PLRbgg4gk_0IfDlFKLg0HMDXbn8BrcxbJV
+[handy]: https://handy.sourceforge.net/
+[handy-downloads]: https://handy.sourceforge.net/download.htm
+[handy-license]: https://sourceforge.net/projects/handy/
+[lynx-controller-map]: ../image/controller/lynx.png
+[ra-licensing]: ../development/licenses.md
+[rdb-lynx]: https://github.com/libretro/libretro-database/blob/master/rdb/Atari%20-%20Lynx.rdb
+[softpatching]: ../guides/softpatching.md

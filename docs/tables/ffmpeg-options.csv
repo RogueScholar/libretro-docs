@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+Core option,Description,Valid values
+**Temporal Interpolation**<br />[`ffmpeg_temporal_interp`],"Fake" a higher frame rate by using motion blur { .middle },<ul><li class="default">`Off`</li><li>`On`</li></ul>
+**FFT Resolution**<br />[`ffmpeg_fft_resolution`] { .middle },Modify the resolution of the music visualizer { .middle },<ul><li>`320×180`</li><li>`640×360`</li><li class="default">`1280×720`</li><li>`1920×1080`</li><li>`2560×1440`</li><li>`3840×2160`</li></ul>
+**FFT Multisample**<br />[`ffmpeg_fft_multisample`] { .middle },Modify the antialiasing of the music visualizer { .middle },<ul><li class="default">`1x`</li><li>`2x`</li><li>`4x`</li></ul>
+**Colorspace**<br />[`ffmpeg_color_space`] { .middle },Choose [colorspaces] from different<br />broadcast regions/standards { .middle },<ul><li class="default">`auto`</li><li>`BT.70`</li><li>`BT.601`</li><li>`FCC`</li><li>`SMPTE240M`</li></ul>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  SPDX-FileCopyrightText: © 2014–2021, Nicolae Berbece <nick@thoseawesomeguys.com>
+
+  SPDX-License-Identifier: CC0-1.0
+-->
+<svg id="gamepad-stick-l3" height="24" version="1.1" viewBox="0 0 24 24"
+     width="24" xmlns="http://www.w3.org/2000/svg">
+ <path fill="currentColor" stroke="currentColor" stroke-width="0.05"
+  d="M 12.000,  5.000
+     L  9.000,  1.000
+     h  6.000 z
+     m  5.000, 12.350
+     V 20.000
+     q  0.000,  0.825 -0.587, 1.413
+     T 15.000, 22.000
+     H  9.000
+     q -0.825,  0.000 -1.412,-0.587
+     T  7.000, 20.000
+     v -2.650
+     q -2.275, -0.800 -3.637,-2.187
+     T  2.000, 12.075
+     q  0.000, -2.525  2.913,-4.300
+     T 12.000,  6.000
+     t  7.088,  1.775
+     t  2.912,  4.300
+     q  0.000,  1.700 -1.362, 3.088
+     T 17.000, 17.350
+     m -6.225, -2.850
+     H 14.000       v -0.900
+     h -2.225       V  9.500
+     h -1.00 z" />
+</svg>

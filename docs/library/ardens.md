@@ -1,10 +1,16 @@
 # Ardens
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jeTeVY7TJ_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<iframe allow="accelerometer 'self'; clipboard-write *; display-capture 'self'; encrypted-media 'src';
+  fullscreen *; geolocation 'src'; gyroscope 'self'; hid 'self'; picture-in-picture *; screen-wake-lock *;
+  web-share *;" aria-label="YouTube video" height="315" width="560" loading="lazy" role="application"
+  name="YouTube embedded player" title="Libretro Core: Ardens" referrerpolicy="strict-origin-when-cross-origin"
+  sandbox="allow-orientation-lock allow-popups allow-presentation allow-same-origin allow-scripts"
+  src="https://www.youtube-nocookie.com/embed/jeTeVY7TJ_Y?origin=docs.libretro.com&playsinline=1"
+  style="border-collapse: collapse; border-style: hidden; display: block; margin: 1.5rem auto 2rem; position: relative;"></iframe>
 
 ## Background
 
-Ardens is a simulator for the Arduboy FX. 
+Ardens is a simulator for the Arduboy FX.
 
 The Ardens core has been authored by
 
@@ -14,21 +20,24 @@ The Ardens core is licensed under
 
 - [MIT](https://github.com/tiberiusbrown/Ardens/blob/master/LICENSE.txt)
 
-A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
+A summary of the licenses behind RetroArch and its cores can be found
+[here](../development/licenses.md).
 
-## Requirements¶
+## Requirements
 
 None
 
-## BIOS¶
+## BIOS
 
 The Ardens core does not feature BIOS use.
 
 ## Extensions
 
-Content that can be loaded by the Ardens core have the following file extensions:
+Content that can be loaded by the Ardens core have the following file
+extensions:
 
-- `.hex` or `.arduboy`
+- `.hex`
+- `.arduboy`
 
 RetroArch database(s) that are associated with the Ardens core:
 
@@ -72,27 +81,25 @@ Frontend-level settings or features that the Ardens core respects:
 - The Ardens core's max width is 128
 - The Ardens core's max height is 64
 
-
 ## User 1 device types
 
-The Ardens core supports the following device type(s) in the controls menu, bolded device types are the default for the specified user(s):
+The Ardens core supports the following device type(s) in the controls menu,
+bolded device types are the default for the specified user(s):
 
 - None - Doesn't disable input.
 - **RetroPad**
 - RetroPad w/Analog
 
-
 ## Joypad
 
-| RetroPad Inputs                                | User 1 input descriptors | 
+| RetroPad Inputs                                | User 1 input descriptors |
 |------------------------------------------------|--------------------------|
 | ![](../image/retropad/retro_b.png)             | Button B                 |
 | ![](../image/retropad/retro_dpad_up.png)       | Up                       |
 | ![](../image/retropad/retro_dpad_down.png)     | Down                     |
-| ![](../image/retropad/retro_dpad_left.png)     | Left                     | 
-| ![](../image/retropad/retro_dpad_right.png)    | Right                    | 
-| ![](../image/retropad/retro_a.png)             | Button A                 | 
-
+| ![](../image/retropad/retro_dpad_left.png)     | Left                     |
+| ![](../image/retropad/retro_dpad_right.png)    | Right                    |
+| ![](../image/retropad/retro_a.png)             | Button A                 |
 
 ## External Links
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  SPDX-FileCopyrightText: © 2014–2021, Nicolae Berbece <nick@thoseawesomeguys.com>
+
+  SPDX-License-Identifier: CC0-1.0
+-->
+<svg id="gamepad-button-l1" height="24" version="1.1" viewBox="0 0 24 24"
+     width="24" xmlns="http://www.w3.org/2000/svg">
+ <path fill="currentColor" stroke="currentColor" stroke-width="0.05"
+  d="M 14.550,15.500
+     h  1.350      v -7.000
+     H 15.000
+     l -2.475, 1.800
+     l  0.725, 0.975
+     l  1.300,-0.975 z
+     m -6.400, 0.000
+     h  4.475      v -1.250
+     h -3.100      V  8.500
+     H  8.150 z
+     M 22.000, 4.000
+     v 12.000
+     q  0.000, 1.650 -1.175, 2.825
+     T 18.000,20.000
+     H  6.000
+     q -1.650, 0.000 -2.825,-1.175
+     T  2.000,16.000
+     V  4.000 z" />
+</svg>

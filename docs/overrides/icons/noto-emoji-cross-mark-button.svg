@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  SPDX-FileCopyrightText: © 2013, Google, Inc. <fonts@google.com>
+  SPDX-FileCopyrightText: © 2014, Roozbeh Pournader <roozbeh@unicode.org>
+  SPDX-FileCopyrightText: © 2017, Doug Felt <dougfelt@google.com>
+  SPDX-FileCopyrightText: © 2018, frankslin <frankslin@users.noreply.github.com>
+  SPDX-FileCopyrightText: © 2019, Qingqing Deng <qqd@google.com>
+  SPDX-FileCopyrightText: © 2021, Roderick Sheeter <rsheeter@google.com>
+
+  SPDX-License-Identifier: Apache-2.0
+-->
+<svg id="cross-mark-button" height="128" version="1.1" viewBox="0 0 128 128"
+     width="128" xmlns="http://www.w3.org/2000/svg">
+ <path fill="#fff" stroke="#fff" stroke-width="1"
+  d="M 109.540, 93.900
+     a   3.573,  3.573  0    0    1   0.000, 5.030
+     l -10.600, 10.610
+     a   3.573,  3.573  0    0    1  -5.030, 0.000
+     L  64.000, 79.640
+     l -29.900, 29.900
+     a   3.573,  3.573  0    0    1  -5.030, 0.000
+     L  18.460, 98.930
+     a   3.573,  3.573  0    0    1   0.000,-5.030
+     L  48.360, 64.000
+     l -29.900,-29.900
+     a   3.585,  3.585  0    0    1   0.000,-5.040
+     l  10.610,-10.600
+     a   3.555,  3.555  0    0    1   5.030, 0.000
+     L  64.000, 48.360
+     l  29.900,-29.900
+     a   3.555,  3.555  0    0    1   5.030, 0.000
+     l  10.610, 10.600
+     a   3.585,  3.585  0    0    1   0.000, 5.040
+     L  79.640, 64.000 z" />
+ <path fill="#ed6c30" stroke="#ed6c30" stroke-width="1"
+  d="M 123.830,  0.470
+     H   4.170
+     a   3.710,  3.710  0    0    0  -3.700, 3.700
+     v 119.660
+     c   0.000,  2.040  1.660, 3.700  3.700, 3.700
+     h 119.660
+     c   2.030,  0.000  3.690,-1.660  3.690,-3.700
+     V   4.170
+     a   3.690,  3.690  0    0    0  -3.690,-3.700
+     M 109.540, 93.900
+     a   3.573,  3.573  0    0    1   0.000, 5.030
+     l -10.600, 10.610
+     a   3.573,  3.573  0    0    1  -5.030, 0.000
+     L  64.000, 79.640
+     l -29.900, 29.900
+     a   3.573,  3.573  0    0    1  -5.030, 0.000
+     L  18.460, 98.930
+     a   3.573,  3.573  0    0    1   0.000,-5.030
+     L  48.360, 64.000
+     l -29.900,-29.900
+     a   3.585,  3.585  0    0    1   0.000,-5.040
+     l  10.610,-10.600
+     a   3.555,  3.555  0    0    1   5.030, 0.000
+     L  64.000, 48.360
+     l  29.900,-29.900
+     a   3.555,  3.555  0    0    1   5.030, 0.000
+     l  10.610, 10.600
+     a   3.585,  3.585  0    0    1   0.000, 5.040
+     L  79.640, 64.000 z" />
+</svg>

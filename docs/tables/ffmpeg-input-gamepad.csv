@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+RetroPad Inputs,User 1 remap descriptors
+![RetroPad D-pad Up][rpad-dpad-up],:material-fast-forward-60:{ .huge }<br />Seek ahead 60 seconds { .middle }
+![RetroPad D-pad Down][rpad-dpad-down],:material-rewind-60:{ .huge }<br />Seek behind 60 seconds { .middle }
+![RetroPad D-pad Left][rpad-dpad-left],:material-rewind-10:{ .huge }<br />Seek behind 10 seconds { .middle }
+![RetroPad D-pad Right][rpad-dpad-right],:material-fast-forward-10:{ .huge }<br />Seek ahead 10 seconds { .middle }
+![RetroPad L1 button][rpad-l1],:material-music-box-multiple-outline:{ .huge }<br />Cycle Audio Tracks { .middle }
+![RetroPad R1 button][rpad-r1],:material-text-box-multiple-outline:{ .huge }<br />Cycle Subtitle Tracks { .middle }

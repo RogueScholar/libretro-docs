@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+RetroPad Input,<big>:material-gamepad-variant:</big> Remap descriptor
+![Retropad D-pad Up][retropad-dpad-up],:material-gamepad-round-up:{ .huge }<br />D-pad Up { .middle }
+![Retropad D-pad Down][retropad-dpad-down],:material-gamepad-round-down:{ .huge }<br />D-pad Down { .middle }
+![Retropad D-pad Left][retropad-dpad-left],:material-gamepad-round-left:{ .huge }<br />D-pad Left { .middle }
+![Retropad D-pad Right][retropad-dpad-right],:material-gamepad-round-right:{ .huge }<br />D-pad Right { .middle }
+![Retropad Select button][retropad-select],Select<br />button { .middle }
+![Retropad Start button][retropad-start],Start<br />button { .middle }
+![Retropad B button][retropad-b],:material-gamepad-circle-down: / :material-alpha-b-circle: { class="huge middle" }
+![Retropad Y button][retropad-y],:material-gamepad-circle-left: / :material-alpha-y-circle: { class="huge middle" }
+![Retropad A button][retropad-a],:material-gamepad-circle-right: / :material-alpha-a-circle: { class="huge middle" }
+![Retropad X button][retropad-x],:material-gamepad-circle-up: / :material-alpha-x-circle: { class="huge middle" }
+![Retropad L1 button][retropad-l1],:material-alpha-l-circle: { class="huge middle" }
+![Retropad R1 button][retropad-r1],:material-alpha-r-circle: { class="huge middle" }

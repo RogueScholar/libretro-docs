@@ -1,47 +1,29 @@
-# Licenses
+---
+title: Licenses
+description: >-2
+  An overview of the licenses that govern the use and distribution of RetroArch
+  and the Libretro cores.
+icon: material/license
+status: as-needed
+glightbox: false
+---
 
-There is software behind RetroArch and Lakka that is protected by Non-Commercial licenses.
+# Libretro/RetroArch Licensing
 
-It is important to respect the wishes of the developers and people behind the respective projects.
+There is software used within RetroArch and Lakka that is protected by
+Non-Commercial licenses. It is important to respect the wishes of the developers
+and other stakeholders responsible for these projects.
 
-See below for a summary of the licenses behind RetroArch and its cores:
+Below you will find a summary of the licenses behind RetroArch and its cores.
 
-## Non-commercial
+## Non-commercial restrictions
 
-**SOFTWARE LISTED IN THE TABLE BELOW ARE PROTECTED BY NON-COMMERCIAL LICENSES. EVERY ENTRY HAS A HYPERLINK FOR PROOF OF THE SOFTWARE'S LICENSE**
+**SOFTWARE LISTED IN THIS TABLE IS ==PROTECTED BY NON-COMMERCIAL LICENSES==.
+EACH ENTRY HAS A HYPERLINK FOR PROOF OF THE SOFTWARE'S LICENSE. THIS SOFTWARE
+MAY NOT BE SOLD NOR MAY THEY BE INCLUDED IN COMMERCIAL PRODUCTS OR ACTIVITY
+WITHOUT PRIOR WRITTEN APPROVAL FROM THEIR COPYRIGHT HOLDERS.**
 
-**SOFTWARE LISTED IN THE TABLE BELOW MAY NOT BE SOLD, NOR MAY THEY BE USED IN A COMMERCIAL PRODUCT OR ACTIVITY WITHOUT COPYRIGHT HOLDERS' APPROVAL.**
-
-| Software                                             			                   | License                                                                                   | Non-commercial |
-|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|----------------|
-| [Lakka](http://www.lakka.tv/)                                                    | [Non-commercial](http://www.lakka.tv/doc/FAQ/)                                            | Non-commercial |
-| [Opera](../library/opera.md)                         			                       | [Non-commercial](https://github.com/libretro/opera-libretro/blob/master/libopera/opera_core.h)      | Non-commercial |
-| [AmiArcadia](../library/amiarcadia.md)                                           | [Non-commercial](https://amigan.1emu.net/releases/)                                       | Non-commercial |
-| [Cannonball](../library/cannonball.md)                                           | [Non-commercial](https://github.com/libretro/cannonball/blob/master/docs/license.txt)     | Non-commercial |
-| [Dinothawr](../library/dinothawr.md)             			                       | [Non-commercial](https://github.com/libretro/Dinothawr/blob/master/LICENSE)               | Non-commercial |
-| FB Alpha                                         			                       | [Non-commercial](https://github.com/libretro/fbalpha/blob/master/src/license.txt)         | Non-commercial |
-| FB Alpha 2012                                    			                       | [Non-commercial](https://github.com/libretro/fbalpha2012/blob/master/docs/license.txt)                                        | Non-commercial |
-| FB Alpha 2012 CPS-1                              			                       | [Non-commercial](https://github.com/libretro/fbalpha2012_cps1/blob/master/src/license.txt)                                        | Non-commercial |
-| FB Alpha 2012 CPS-2                              			                       | [Non-commercial](https://github.com/libretro/fbalpha2012_cps2/blob/master/src/license.txt)                                        | Non-commercial |
-| FB Alpha 2012 CPS-3                                                              | [Non-commercial](https://github.com/libretro/fbalpha2012_cps3/blob/master/docs/license.txt)                                        | Non-commercial |
-| FB Alpha 2012 Neo Geo                            		                           | [Non-commercial](https://github.com/libretro/fbalpha2012_neogeo/blob/master/src/license.txt)                                        | Non-commercial |
-| fMSX                                                                             | [Non-commercial](https://github.com/libretro/fmsx-libretro/blob/master/LICENSE)           | Non-commercial |
-| [Genesis Plus GX](../library/genesis_plus_gx.md)          		               | [Non-commercial](https://github.com/libretro/Genesis-Plus-GX/blob/master/LICENSE.txt)     | Non-commercial |
-| MAME 2000							                                               | [MAME (Non-commercial)](https://github.com/libretro/mame2000-libretro/blob/master/readme.txt) | Non-commercial |
-| [MAME 2003](../library/mame_2003.md)						                       | [MAME (Non-commercial)](https://github.com/libretro/mame2003-libretro/blob/master/LICENSE.md)         | Non-commercial |
-| MAME 2003 Midway                                                                 | [MAME (Non-commercial)](https://github.com/libretro/mame2003_midway/blob/master/docs/mame.txt)         | Non-commercial |
-| MAME 2003-Plus                                                                   | [MAME (Non-commercial)](https://github.com/libretro/mame2003-plus-libretro/blob/master/LICENSE.md) | Non-commercial |
-| MAME 2009                                                                        | [MAME (Non-commercial)](https://github.com/r-type/mame2009/blob/master/docs/mame.txt)         | Non-commercial |
-| MAME 2010                                                 	         	       | [MAME (Non-commercial)](https://github.com/libretro/mame2010-libretro/blob/master/docs/mame.txt)         | Non-commercial |
-| MAME 2014                                                 		               | [MAME (Non-commercial)](https://github.com/libretro/mame2014-libretro/blob/master/docs/license.txt)         | Non-commercial |
-| MESS 2014                                                 		               | [MAME (Non-commercial)](https://github.com/libretro/mame2014-libretro/blob/master/docs/license.txt)         | Non-commercial |
-| [PicoDrive](../library/picodrive.md)                                             | [MAME (Non-commercial)](https://github.com/libretro/picodrive/blob/master/COPYING)        | Non-commercial |
-| [Snes9x](../library/snes9x.md)                                                   | [Non-commercial](https://github.com/snes9xgit/snes9x/blob/master/LICENSE)  | Non-commercial |
-| [Snes9x 2002](../library/snes9x_2002.md)                                         | [Non-commercial](https://github.com/libretro/snes9x/blob/master/docs/snes9x-license.txt)  | Non-commercial |
-| [Snes9x 2005](../library/snes9x_2005.md)                                         | [Non-commercial](https://github.com/libretro/snes9x/blob/master/docs/snes9x-license.txt)  | Non-commercial |
-| [Snes9x 2005 Plus](../library/snes9x_2005_plus.md)                               | [Non-commercial](https://github.com/libretro/snes9x/blob/master/docs/snes9x-license.txt)  | Non-commercial |
-| [Snes9x 2010](../library/snes9x_2010.md)                                         | [Non-commercial](https://github.com/libretro/snes9x2010/blob/master/LICENSE.txt) | Non-commercial |
-| UME 2014                                                                         | [MAME (Non-commercial)](https://github.com/libretro/mame2014-libretro/blob/master/docs/license.txt)         | Non-commercial |
+{{ read_csv('licenses-non-commercial.csv', colalign=('left','left','left'), comment='#') }}
 
 ## Libretro
 
@@ -55,27 +37,27 @@ See below for a summary of the licenses behind RetroArch and its cores:
 
 ## Cores
 
-| Core                                             			           | License                                                                                   | Non-commercial |
+| Core                                                             | License                                                                                   | Non-commercial |
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|----------------|
-| [3D Engine](../library/3d_engine.md)             			           | [GPLv3](https://github.com/libretro/libretro-3dengine/blob/master/license)                |                |
-| [2048](../library/2048.md)                       			           | [Public Domain](https://github.com/libretro/libretro-2048/blob/master/COPYING)            |                |
+| [3D Engine](../library/3d_engine.md)                             | [GPLv3](https://github.com/libretro/libretro-3dengine/blob/master/license)                |                |
+| [2048](../library/2048.md)                                       | [Public Domain](https://github.com/libretro/libretro-2048/blob/master/COPYING)            |                |
 | [Anarch](../library/anarch.md)                                                   | [CC0](https://codeberg.org/iyzsong/anarch-libretro/src/branch/master/LICENSE)             |                |
 | [Ardens](../library/ardens.md)                                       | [MIT](https://github.com/tiberiusbrown/Ardens/blob/master/LICENSE.txt)                         |                |
 | [AmiArcadia](../library/amiarcadia.md)                               | [Non-commercial](https://amigan.1emu.net/releases/)                                       | Non-commercial |
-| [Atari800](../library/atari800.md)               			           | [GPLv2](https://github.com/atari800/atari800/blob/master/COPYING)                         |                |
-| [Beetle bsnes](../library/beetle_bsnes.md)       			           | [GPLv2](https://github.com/libretro/beetle-bsnes-libretro/blob/master/COPYING)            |                |
-| [Beetle Cygne](../library/beetle_cygne.md)       			           | [GPLv2](https://github.com/libretro/beetle-wswan-libretro/blob/master/COPYING)            |                |
-| [Beetle GBA](../library/beetle_gba.md)           			           | [GPLv2](https://github.com/libretro/beetle-gba-libretro/blob/master/COPYING)              |                |
-| [Beetle Lynx](../library/beetle_lynx.md)        			           | [zlib](https://github.com/libretro/beetle-lynx-libretro/blob/master/mednafen/lynx/license.txt), [GPLv2](https://github.com/libretro/beetle-lynx-libretro/blob/master/COPYING)       |                |
-| [Beetle NeoPop](../library/beetle_neopop.md)        			           | [GPLv2](https://github.com/libretro/beetle-ngp-libretro/blob/master/COPYING)              |                |
-| [Beetle PC-FX](../library/beetle_pc_fx.md)        			           | [GPLv2](https://github.com/libretro/beetle-pcfx-libretro/blob/master/COPYING)             |                |
-| [Beetle PCE FAST](../library/beetle_pce_fast.md) 			           | [GPLv2](https://github.com/libretro/beetle-pce-fast-libretro/blob/master/COPYING)         |                |
-| [Beetle PSX](../library/beetle_psx.md)           			           | [GPLv2](https://github.com/libretro/beetle-psx-libretro/blob/master/COPYING)              |                |
-| [Beetle PSX HW](../library/beetle_psx_hw.md)     			           | [GPLv2](https://github.com/libretro/beetle-psx-libretro/blob/master/COPYING)              |                |
-| [Beetle Saturn](../library/beetle_saturn.md)     			           | [GPLv2](https://github.com/libretro/beetle-saturn-libretro/blob/master/COPYING)           |                |
-| [Beetle SGX](../library/beetle_sgx.md)           			           | [GPLv2](https://github.com/libretro/beetle-supergrafx-libretro/blob/master/COPYING)       |                |
-| [Beetle VB](../library/beetle_vb.md)             			           | [GPLv2](https://github.com/libretro/beetle-vb-libretro/blob/master/COPYING)               |                |
-| [blueMSX](../library/bluemsx.md)						   | [GPLv2](https://github.com/libretro/blueMSX-libretro/blob/master/license.txt)             |                |
+| [Atari800](../library/atari800.md)                               | [GPLv2](https://github.com/atari800/atari800/blob/master/COPYING)                         |                |
+| [Beetle bsnes](../library/beetle_bsnes.md)                       | [GPLv2](https://github.com/libretro/beetle-bsnes-libretro/blob/master/COPYING)            |                |
+| [Beetle Cygne](../library/beetle_cygne.md)                       | [GPLv2](https://github.com/libretro/beetle-wswan-libretro/blob/master/COPYING)            |                |
+| [Beetle GBA](../library/beetle_gba.md)                           | [GPLv2](https://github.com/libretro/beetle-gba-libretro/blob/master/COPYING)              |                |
+| [Beetle Lynx](../library/beetle_lynx.md)                         | [zlib](https://github.com/libretro/beetle-lynx-libretro/blob/master/mednafen/lynx/license.txt), [GPLv2](https://github.com/libretro/beetle-lynx-libretro/blob/master/COPYING)       |                |
+| [Beetle NeoPop](../library/beetle_neopop.md)                     | [GPLv2](https://github.com/libretro/beetle-ngp-libretro/blob/master/COPYING)              |                |
+| [Beetle PC-FX](../library/beetle_pc_fx.md)                       | [GPLv2](https://github.com/libretro/beetle-pcfx-libretro/blob/master/COPYING)             |                |
+| [Beetle PCE FAST](../library/beetle_pce_fast.md)                 | [GPLv2](https://github.com/libretro/beetle-pce-fast-libretro/blob/master/COPYING)         |                |
+| [Beetle PSX](../library/beetle_psx.md)                           | [GPLv2](https://github.com/libretro/beetle-psx-libretro/blob/master/COPYING)              |                |
+| [Beetle PSX HW](../library/beetle_psx_hw.md)                     | [GPLv2](https://github.com/libretro/beetle-psx-libretro/blob/master/COPYING)              |                |
+| [Beetle Saturn](../library/beetle_saturn.md)                     | [GPLv2](https://github.com/libretro/beetle-saturn-libretro/blob/master/COPYING)           |                |
+| [Beetle SGX](../library/beetle_sgx.md)                           | [GPLv2](https://github.com/libretro/beetle-supergrafx-libretro/blob/master/COPYING)       |                |
+| [Beetle VB](../library/beetle_vb.md)                             | [GPLv2](https://github.com/libretro/beetle-vb-libretro/blob/master/COPYING)               |                |
+| [blueMSX](../library/bluemsx.md)                                 | [GPLv2](https://github.com/libretro/blueMSX-libretro/blob/master/license.txt)             |                |
 | [bnes](../library/bnes.md)                                                       | [GPLv3](https://github.com/libretro/bnes-libretro/blob/master/license)                    |                |
 | [bsnes-mercury Accuracy](../library/bsnes_mercury_accuracy.md)                   | [GPLv3](https://github.com/libretro/bsnes-mercury/blob/master/LICENSE)                    |                |
 | [bsnes-mercury Balanced](../library/bsnes_mercury_balanced.md)                   | [GPLv3](https://github.com/libretro/bsnes-mercury/blob/master/LICENSE)                    |                |
@@ -84,25 +66,25 @@ See below for a summary of the licenses behind RetroArch and its cores:
 | [bsnes Balanced](../library/bsnes_balanced.md)                                   | [GPLv3](https://github.com/libretro/bsnes-libretro/blob/libretro/COPYING)                 |                |
 | [bsnes C++98 (v085)](../library/bsnes_cplusplus98.md)                            | [GPLv3](https://github.com/libretro/bsnes-libretro/blob/libretro/COPYING)                 |                |
 | [bsnes Performance](../library/bsnes_performance.md)                             | [GPLv3](https://github.com/libretro/bsnes-libretro/blob/libretro/COPYING)                 |                |
-| [Caprice32](../library/caprice32.md)             			           | [GPLv2](https://github.com/ColinPitrat/caprice32/blob/master/COPYING.txt)                 |                |
-| [ChaiLove](../library/chailove.md)               			           | [MIT](https://github.com/libretro/libretro-chailove/blob/master/COPYING)                        |                |
-| [Citra](../library/citra.md)                     			           | [GPLv2](https://github.com/citra-emu/citra/blob/master/license.txt)                       |                |
+| [Caprice32](../library/caprice32.md)                             | [GPLv2](https://github.com/ColinPitrat/caprice32/blob/master/COPYING.txt)                 |                |
+| [ChaiLove](../library/chailove.md)                               | [MIT](https://github.com/libretro/libretro-chailove/blob/master/COPYING)                        |                |
+| [Citra](../library/citra.md)                                     | [GPLv2](https://github.com/citra-emu/citra/blob/master/license.txt)                       |                |
 | [Citra Canary/Experimental](../library/citra_canary.md)              | [GPLv2](https://github.com/citra-emu/citra/blob/master/license.txt)                       |                |
-| [ClownMDEmu](../library/clownmdemu.md)                     			   | [AGPLv3](https://github.com/Clownacy/clownmdemu-libretro/blob/master/LICENCE.txt)         |                |
-| [Craft](../library/craft.md)                     			           | [MIT](https://github.com/libretro/Craft/blob/master/LICENSE.md)                           |                |
-| [CrocoDS](../library/crocods.md)                 			           | [MIT](https://github.com/libretro/libretro-crocods/blob/master/LICENSE)                   |                |
+| [ClownMDEmu](../library/clownmdemu.md)                             | [AGPLv3](https://github.com/Clownacy/clownmdemu-libretro/blob/master/LICENCE.txt)         |                |
+| [Craft](../library/craft.md)                                     | [MIT](https://github.com/libretro/Craft/blob/master/LICENSE.md)                           |                |
+| [CrocoDS](../library/crocods.md)                                 | [MIT](https://github.com/libretro/libretro-crocods/blob/master/LICENSE)                   |                |
 | [DeSmuME 2015](../library/desmume_2015.md)                           | [GPLv2](https://github.com/libretro/desmume2015/blob/master/desmume/COPYING)              |                |
-| [DeSmuME](../library/desmume.md)                 			           | [GPLv2](https://github.com/TASVideos/desmume/blob/master/license.txt)                     |                |
+| [DeSmuME](../library/desmume.md)                                 | [GPLv2](https://github.com/TASVideos/desmume/blob/master/license.txt)                     |                |
 | [DICE](../library/dice.md)             | [GPLv3](https://github.com/mittonk/dice-libretro/blob/master/LICENSE.txt)                    |                |
-| [Dinothawr](../library/dinothawr.md)             			           | [Non-commercial](https://github.com/libretro/Dinothawr/blob/master/LICENSE)               | Non-commercial |
-| Dolphin                                          			           | [GPLv2](https://github.com/dolphin-emu/dolphin/blob/master/license.txt)                   |                |
-| DOSBox                                           			           | [GPLv2](https://github.com/libretro/dosbox-libretro/blob/master/COPYING)                  | |
-| DOSBox Pure                                          			           | [GPLv2](https://github.com/libretro/dosbox-libretro/blob/master/COPYING)                  | |
+| [Dinothawr](../library/dinothawr.md)                             | [Non-commercial](https://github.com/libretro/Dinothawr/blob/master/LICENSE)               | Non-commercial |
+| Dolphin                                                          | [GPLv2](https://github.com/dolphin-emu/dolphin/blob/master/license.txt)                   |                |
+| DOSBox                                                           | [GPLv2](https://github.com/libretro/dosbox-libretro/blob/master/COPYING)                  | |
+| DOSBox Pure                                                      | [GPLv2](https://github.com/libretro/dosbox-libretro/blob/master/COPYING)                  | |
 | [doukutsu-rs](../library/doukutsu-rs.md) | [MIT](https://github.com/DrGlaucous/doukutsu-rs-nm/blob/retroarch-dev/LICENSE)       |                |
 | Dummy Core                                                                       | [MIT](https://github.com/libretro/libretro-samples/blob/master/license)       |                |
 | Dungeon Crawl Stone Soup                                                         | [GPLv2+](https://github.com/libretro/crawl-ref/blob/master/crawl-ref/licence.txt)         |                |
 | EasyRPG                                                                          | [GPLv3](https://github.com/libretro/easyrpg-libretro/blob/master/COPYING)                 |                |
-| [EightyOne](../library/eightyone.md)             			           | [GPLv3](https://github.com/libretro/81-libretro/blob/master/LICENSE)                      |                |
+| [EightyOne](../library/81.md)                                    | [GPLv3](https://github.com/libretro/81-libretro/blob/master/LICENSE)                      |                |
 | [Elektronika - BK-0010/BK-0011](../library/bk.md)                                          | [BSD](https://github.com/libretro/bk-emulator/blob/master/COPYING) |                            |
 | [EmuSCV](../library/emuscv.md)                           | [GPLv2](https://github.com/libretro/)                  |                |
 | [Emux CHIP-8](../library/emux_chip8.md)                                          | [GPLv2](https://github.com/libretro/emux/blob/master/COPYING)                             |                |
@@ -110,12 +92,12 @@ See below for a summary of the licenses behind RetroArch and its cores:
 | [Emux NES](../library/emux_nes.md)                                               | [GPLv2](https://github.com/libretro/emux/blob/master/COPYING)                             |                |
 | [Emux SMS](../library/emux_sms.md)                                               | [GPLv2](https://github.com/libretro/emux/blob/master/COPYING)                             |                |
 | [ep128emu](../library/ep128emu.md)                                               | [GPLv2](https://github.com/libretro/ep128emu-core/blob/master/COPYING)                             |                |
-| FB Alpha                                         			                       | [Non-commercial](https://github.com/libretro/fbalpha/blob/master/src/license.txt)         | Non-commercial |
-| FB Alpha 2012                                    			                       | [Non-commercial](https://github.com/libretro/fbalpha2012/blob/master/docs/license.txt)                                        | Non-commercial |
-| FB Alpha 2012 CPS-1                              			                       | [Non-commercial](https://github.com/libretro/fbalpha2012_cps1/blob/master/src/license.txt)                                        | Non-commercial |
-| FB Alpha 2012 CPS-2                              			                       | [Non-commercial](https://github.com/libretro/fbalpha2012_cps2/blob/master/src/license.txt)                                        | Non-commercial |
+| FB Alpha                                                                     | [Non-commercial](https://github.com/libretro/fbalpha/blob/master/src/license.txt)         | Non-commercial |
+| FB Alpha 2012                                                                | [Non-commercial](https://github.com/libretro/fbalpha2012/blob/master/docs/license.txt)                                        | Non-commercial |
+| FB Alpha 2012 CPS-1                                                          | [Non-commercial](https://github.com/libretro/fbalpha2012_cps1/blob/master/src/license.txt)                                        | Non-commercial |
+| FB Alpha 2012 CPS-2                                                          | [Non-commercial](https://github.com/libretro/fbalpha2012_cps2/blob/master/src/license.txt)                                        | Non-commercial |
 | FB Alpha 2012 CPS-3                                                              | [Non-commercial](https://github.com/libretro/fbalpha2012_cps3/blob/master/docs/license.txt)                                        | Non-commercial |
-| FB Alpha 2012 Neo Geo                            		                   | [Non-commercial](https://github.com/libretro/fbalpha2012_neogeo/blob/master/src/license.txt)                                        | Non-commercial |
+| FB Alpha 2012 Neo Geo                                                        | [Non-commercial](https://github.com/libretro/fbalpha2012_neogeo/blob/master/src/license.txt)                                        | Non-commercial |
 | [FCEUmm](../library/fceumm.md)                                                   | [GPLv2](https://github.com/libretro/libretro-fceumm/blob/master/Copying)                  |                |
 | [FFmpeg](../library/ffmpeg.md)                                                   | [LGPLv2, GPLv2](https://github.com/libretro/FFmpeg/blob/master/LICENSE.md)                |                |
 | [Flycast](../library/flycast.md)                                                 | [GPLv2](https://github.com/libretro/flycast/blob/master/LICENSE)        |                |
@@ -126,58 +108,58 @@ See below for a summary of the licenses behind RetroArch and its cores:
 | Fuse                                                                             | [GPLv3](https://github.com/libretro/fuse-libretro/blob/master/LICENSE)                    |                |
 | [GAM4980](../library/gam4980.md)                                                 | [GPLv3](https://codeberg.org/iyzsong/gam4980/raw/branch/master/COPYING)                   |                |
 | [Gambatte](../library/gambatte.md)                                               | [GPLv2](https://github.com/libretro/gambatte-libretro/blob/master/COPYING)                |                |
-| [Game Music Emu](../library/game_music_emu.md)            		           | [GPLv3](https://github.com/libretro/libretro-gme/blob/master/LICENSE)                     |                |
+| [Game Music Emu](../library/game_music_emu.md)                                   | [GPLv3](https://github.com/libretro/libretro-gme/blob/master/LICENSE)                     |                |
 | [Gearboy](../library/gearboy.md)                                                 | [GPLv3](https://github.com/drhelius/Gearboy/blob/master/LICENSE)                          |                |
 | [Gearcoleco](../library/gearcoleco.md)                                           | [GPLv3](https://github.com/drhelius/Gearcoleco/blob/master/LICENSE)                       |                |
 | [Geargrafx](../library/geargrafx.md)                                           | [GPLv3](https://github.com/drhelius/Geargrafx/blob/master/LICENSE)                       |                |
 | [Gearlynx](../library/gearlynx.md)                                               | [GPLv3](https://github.com/drhelius/Gearlynx/blob/master/LICENSE)                         |                |
 | [Gearsystem](../library/gearsystem.md)                                           | [GPLv3](https://github.com/drhelius/Gearsystem/blob/master/LICENSE)                       |                |
-| [Genesis Plus GX](../library/genesis_plus_gx.md)          		           | [Non-commercial](https://github.com/libretro/Genesis-Plus-GX/blob/master/LICENSE.txt)     | Non-commercial |
+| [Genesis Plus GX](../library/genesis_plus_gx.md)                                 | [Non-commercial](https://github.com/libretro/Genesis-Plus-GX/blob/master/LICENSE.txt)     | Non-commercial |
 | [Geolith](../library/geolith.md)                                                 | [BSD-3-Clause, MIT](https://github.com/libretro/geolith-libretro/blob/master/LICENSE)     |                |
 | [gpSP](../library/gpsp.md)                                                       | [GPLv2](https://github.com/libretro/gpsp/blob/master/COPYING)                             |                |
 | [GW](../library/gw.md)                                                           | [zlib](https://github.com/libretro/gw-libretro/blob/master/LICENSE)                       |                |
-| [Handy](../library/handy.md)					    		   | [zlib](https://github.com/libretro/libretro-handy/blob/master/lynx/license.txt)                                           |                |
-| [Holani](../library/holani.md)					    		   | [GPLv3](https://github.com/LLeny/holani-retro/blob/main/LICENSE)                                           |                |
-| [Hatari](../library/hatari.md)						   | [GPLv2](https://github.com/libretro/hatari/blob/master/readme.txt)                        |                |
+| [Handy](../library/handy.md)                                                     | [zlib](https://github.com/libretro/libretro-handy/blob/master/lynx/license.txt)                                           |                |
+| [Hatari](../library/hatari.md)                                                   | [GPLv2](https://github.com/libretro/hatari/blob/master/readme.txt)                        |                |
 | [higan Accuracy](../library/higan_accuracy.md)                                   | [GPLv3](https://gitlab.com/higan/higan/blob/master/LICENSE.txt)                           |                |
-| [Imageviewer](../library/imageviewer.md)				  	   | [MIT](https://github.com/libretro/RetroArch/blob/master/cores/libretro-imageviewer/LICENSE)                                                                                       |                |
+| [Holani](../library/holani.md)                     | [GPLv3](https://github.com/LLeny/holani-retro/blob/main/LICENSE)                                           |                |
+| [Imageviewer](../library/imageviewer.md)                                         | [MIT](https://github.com/libretro/RetroArch/blob/master/cores/libretro-imageviewer/LICENSE)                                                                                       |                |
 | [JollyCV](../library/jollycv.md)                                                 | [BSD-3-Clause, MIT](https://github.com/libretro/jollycv/blob/master/LICENSE)     |                |
-| [Kronos](../library/kronos.md)						   | [GPLv2](https://github.com/libretro/yabause/blob/kronos/yabause/COPYING)                  |                |
-| [LowRES NX](../library/lowres_nx.md)				                	   | [zlib](https://github.com/timoinutilis/lowres-nx/blob/master/LICENSE)                     |                |
-| [Lutro](../library/lutro.md)				                	   | [MIT](https://github.com/libretro/libretro-lutro/blob/master/LICENSE)                     |                |
+| [Kronos](../library/kronos.md)                                                   | [GPLv2](https://github.com/libretro/yabause/blob/kronos/yabause/COPYING)                  |                |
+| [LowRES NX](../library/lowres_nx.md)                                             | [zlib](https://github.com/timoinutilis/lowres-nx/blob/master/LICENSE)                     |                |
+| [Lutro](../library/lutro.md)                                                     | [MIT](https://github.com/libretro/libretro-lutro/blob/master/LICENSE)                     |                |
 | M2000                                                                            | [GPLv3](https://github.com/p2000t/M2000/blob/main/LICENSEE)                               |                |
-| MAME										   | [BSD-3-Clause & GNU GPLv2](http://mamedev.org/legal.html)                                 |                |
-| MAME 2000							                                               | [MAME (Non-commercial)](https://github.com/libretro/mame2000-libretro/blob/master/readme.txt) | Non-commercial |
-| [MAME 2003](../library/mame_2003.md)						                       | [MAME (Non-commercial)](https://github.com/libretro/mame2003-libretro/blob/master/LICENSE.md)         | Non-commercial |
+| MAME                                                                             | [BSD-3-Clause & GNU GPLv2](http://mamedev.org/legal.html)                                 |                |
+| MAME 2000                                                                        | [MAME (Non-commercial)](https://github.com/libretro/mame2000-libretro/blob/master/readme.txt) | Non-commercial |
+| [MAME 2003](../library/mame_2003.md)                                             | [MAME (Non-commercial)](https://github.com/libretro/mame2003-libretro/blob/master/LICENSE.md)         | Non-commercial |
 | MAME 2003 Midway                                                                 | [MAME (Non-commercial)](https://github.com/libretro/mame2003_midway/blob/master/docs/mame.txt)         | Non-commercial |
 | MAME 2003-Plus                                                                   | [MAME (Non-commercial)](https://github.com/libretro/mame2003-plus-libretro/blob/master/LICENSE.md) | Non-commercial |
 | MAME 2009                                                                        | [MAME (Non-commercial)](https://github.com/r-type/mame2009/blob/master/docs/mame.txt)         | Non-commercial |
-| MAME 2010                                                 	         	       | [MAME (Non-commercial)](https://github.com/libretro/mame2010-libretro/blob/master/docs/mame.txt)         | Non-commercial |
-| MAME 2014                                                 		               | [MAME (Non-commercial)](https://github.com/libretro/mame2014-libretro/blob/master/docs/license.txt)         | Non-commercial |
-| MAME 2016                                                 		           | [BSD-3-Clause & GNU GPLv2](http://mamedev.org/legal.html)                                 |                |
+| MAME 2010                                                                        | [MAME (Non-commercial)](https://github.com/libretro/mame2010-libretro/blob/master/docs/mame.txt)         | Non-commercial |
+| MAME 2014                                                                        | [MAME (Non-commercial)](https://github.com/libretro/mame2014-libretro/blob/master/docs/license.txt)         | Non-commercial |
+| MAME 2016                                                                        | [BSD-3-Clause & GNU GPLv2](http://mamedev.org/legal.html)                                 |                |
 | [melonDS 2021](../library/melonds.md)                                                 | [GPLv3](https://github.com/libretro/melonDS/blob/master/LICENSE)                          |                |
-| [melonDS DS](../library/melonds_ds.md)                                                 | [GPLv3](https://github.com/JesseTG/melonds-ds/blob/main/LICENSE)                          |                |
+| [melonDS DS](../library/melonds_ds.md)                                                 | [GPLv3](https://github.com/libretro/melonDS/blob/master/LICENSE)                          |                |
 | [Mesen](../library/mesen.md)                                                     | [GPLv3](https://github.com/SourMesen/Mesen/blob/master/README.md)                         |                |
 | [Mesen-S](../library/mesen-s.md)                                                   | [GPLv3](https://github.com/SourMesen/Mesen-S/blob/master/README.md)                       |                |
-| MESS 2014                                                 		               | [MAME (Non-commercial)](https://github.com/libretro/mame2014-libretro/blob/master/docs/license.txt)         | Non-commercial |
-| [Meteor](../library/meteor.md)                            		           | [GPLv3](https://github.com/libretro/meteor-libretro/blob/master/COPYING)                  |                |
+| MESS 2014                                                                        | [MAME (Non-commercial)](https://github.com/libretro/mame2014-libretro/blob/master/docs/license.txt)         | Non-commercial |
+| [Meteor](../library/meteor.md)                                                   | [GPLv3](https://github.com/libretro/meteor-libretro/blob/master/COPYING)                  |                |
 | [mGBA](../library/mgba.md)                                                       | [MPLv2.0](https://github.com/libretro/mgba/blob/master/LICENSE)                           |                |
 | [MicroW8](../library/microw8.md)                                                       | [Unlicense](https://github.com/libretro/uw8-libretro/blob/main/UNLICENSE)                           |                |
 | [mkxp-z](../library/mkxp-z.md)                                                   | [GPLv2](https://github.com/mkxp-z/mkxp-z/blob/dev/COPYING)                                |                |
 | mpv                                                                              | [GPLv3](https://github.com/libretro/libretro-mpv/blob/master/LICENSE)                     |                |
-| [Mr.Boom](../library/mr_boom.md)                          		           | [MIT](https://github.com/libretro/mrboom-libretro/blob/master/LICENSE)                    |                |
-| Mupen64Plus                                               		           | [GPLv3](https://github.com/libretro/mupen64plus-libretro/blob/master/LICENSE)             |                |
-| Mupen64Plus GLES3                                         		           | [GPLv3](https://github.com/libretro/mupen64plus-libretro/blob/master/LICENSE)             |                |
+| [Mr.Boom](../library/mr_boom.md)                                                 | [MIT](https://github.com/libretro/mrboom-libretro/blob/master/LICENSE)                    |                |
+| Mupen64Plus                                                                      | [GPLv3](https://github.com/libretro/mupen64plus-libretro/blob/master/LICENSE)             |                |
+| Mupen64Plus GLES3                                                                | [GPLv3](https://github.com/libretro/mupen64plus-libretro/blob/master/LICENSE)             |                |
 | [Native32Emu](../library/native32emu.md)                                         | [BSD-3-Clause](https://github.com/jiangxincode/Native32Emu/blob/master/LICENSE)           |                |
-| Neko Project II                                           		           |                                                                                           |                |
+| Neko Project II                                                                  |                                                                                           |                |
 | Neko Project II Kai                                                              | [MIT](https://github.com/AZO234/NP2kai/blob/master/LICENSE)                               |                |
-| [Nestopia](../library/nestopia.md)                                               | [GPLv2](https://github.com/libretro/nestopia/blob/master/COPYING)                         |                |
+| [Nestopia](../library/nestopia.md)                                         | [GPLv2](https://github.com/libretro/nestopia/blob/master/COPYING)                         |                |
 | [Numero](../library/numero.md)                                         | [GPLv2](https://github.com/nbarkhina/numero/blob/master/LICENSE)                         |                |
 | nSide Balanced                                                                   | [GPLv3](https://github.com/hex-usr/nSide/blob/master/gpl-3.0.txt)                         |                |
-| [NXEngine](../library/nxengine.md)                        		           | [GPLv3](https://github.com/gameblabla/nxengine-nspire/blob/master/LICENSE)                |                |
+| [NXEngine](../library/nxengine.md)                                               | [GPLv3](https://github.com/gameblabla/nxengine-nspire/blob/master/LICENSE)                |                |
 | O2EM                                                                             | [Artistic License](https://sourceforge.net/projects/o2em/)                                |                |
 | [OpenLara](../library/openlara.md)                                               | [BSD-2-Clause](https://github.com/XProger/OpenLara/blob/master/LICENSE)                | |
-| [Opera](../library/opera.md)                         			           | [Non-commercial](https://github.com/libretro/opera-libretro/blob/master/libopera/opera_core.h) |                 |
+| [Opera](../library/opera.md)                                                     | [Non-commercial](https://github.com/libretro/opera-libretro/blob/master/libopera/opera_core.h) |                 |
 | P-UAE                                                                            | [GPLv2](https://github.com/libretro/PUAE/blob/master/COPYING)                             |                |
 | ParaLLEl N64                                                                     | [GPLv3](https://github.com/libretro/mupen64plus-libretro/blob/master/LICENSE)             |                |
 | PCem                                                                             | [GPLv2](https://github.com/libretro/libretro-pcem/blob/master/COPYING)                    |                |
@@ -228,5 +210,78 @@ See below for a summary of the licenses behind RetroArch and its cores:
 | [Virtual Jaguar](../library/virtual_jaguar.md)                                   | [GPLv3](https://github.com/libretro/virtualjaguar-libretro/blob/master/docs/GPLv3)        |                |
 | [VirtualXT](../library/virtualxt.md)                                   | [zlib](https://github.com/andreas-jonsson/virtualxt/blob/develop/LICENSE)        |                |
 | [XRick](../library/xrick.md)                                                     | [GPLv3](https://github.com/libretro/xrick-libretro/blob/master/README)                    |                |
-| [YabaSanshiro](../library/yabasanshiro.md)						   | [GPLv2](https://github.com/libretro/yabasanshiro/blob/master/yabause/COPYING)                  |                |
-| [Yabause](../library/yabause.md)						   | [GPLv2](https://github.com/libretro/yabause/blob/master/yabause/COPYING)                  |                |
+| [YabaSanshiro](../library/yabasanshiro.md)                                       | [GPLv2](https://github.com/libretro/yabasanshiro/blob/master/yabause/COPYING)                  |                |
+| [Yabause](../library/yabause.md)                                                 | [GPLv2](https://github.com/libretro/yabause/blob/master/yabause/COPYING)                  |                |
+
+[amiarcadia]: ../library/amiarcadia.md
+[amiarcadia-nc]: https://amigan.1emu.net/releases/
+[cannonball]: ../library/cannonball.md
+  "Cannonball - Libretro Documentation"
+[cannonball-nc]: https://github.com/libretro/cannonball/blob/master/docs/license.txt
+  "GitHub: cannonball/docs/license.txt on master • libretro/cannonball"
+[dinothawr]: ../library/dinothawr.md
+  "Dinothawr - Libretro Documentation"
+[dinothawr-nc]: https://github.com/libretro/Dinothawr/blob/master/LICENSE
+  "GitHub: Dinothawr/LICENSE on master • libretro/Dinothawr"
+[fbalpha-nc]: https://github.com/libretro/fbalpha/blob/master/src/license.txt
+  "GitHub: fbalpha/src/license.txt on master • libretro/fbalpha"
+[fbalpha2012-nc]: https://github.com/libretro/fbalpha2012/blob/master/docs/license.txt
+  "GitHub: fbalpha2012/docs/license.txt on master • libretro/fbalpha2012"
+[fbalpha2012-cps1-nc]: https://github.com/libretro/fbalpha2012_cps1/blob/master/src/license.txt
+  "GitHub: fbalpha2012_cps1/src/license.txt on master • libretro/fbalpha2012_cps1"
+[fbalpha2012-cps2-nc]: https://github.com/libretro/fbalpha2012_cps2/blob/master/src/license.txt
+  "GitHub: fbalpha2012_cps2/src/license.txt on master • libretro/fbalpha2012_cps2"
+[fbalpha2012-cps3-nc]: https://github.com/libretro/fbalpha2012_cps3/blob/master/docs/license.txt
+  "GitHub: fbalpha2012_cps3/docs/license.txt on master • libretro/fbalpha2012_cps3"
+[fbalpha2012-neogeo-nc]: https://github.com/libretro/fbalpha2012_neogeo/blob/master/src/license.txt
+  "GitHub: fbalpha2012_neogeo/src/license.txt on master • libretro/fbalpha2012_neogeo"
+[fmsx-nc]: https://github.com/libretro/fmsx-libretro/blob/master/LICENSE
+  "GitHub: fmsx-libretro/LICENSE on master • libretro/fmsx-libretro"
+[genesis-plus-gx]: ../library/genesis_plus_gx.md
+  "Genesis Plus GX (Sega Master System/Game Gear/Mega Drive/CD) - Libretro Documentation"
+[genesis-plus-gx-nc]: https://github.com/libretro/Genesis-Plus-GX/blob/master/LICENSE.txt
+  "GitHub: Genesis-Plus-GX/LICENSE.txt on master • libretro/Genesis-Plus-GX"
+[lakka]: https://www.lakka.tv/
+  "Lakka - The DIY open source retrogaming emulation console"
+[lakka-nc]: https://www.lakka.tv/doc/FAQ/#can-i-sell-lakka-boxes
+  "Lakka documentation - FAQ: Can I sell Lakka boxes?"
+[mame2000-nc]: https://github.com/libretro/mame2000-libretro/blob/master/readme.txt
+  "GitHub: mame2000-libretro/readme.txt on master • libretro/mame2000-libretro"
+[mame2003]: ../library/mame_2003.md
+  "MAME 2003 (Arcade) - Libretro Documentation"
+[mame2003-nc]: https://github.com/libretro/mame2003-libretro/blob/master/LICENSE.md
+  "GitHub: mame2003-libretro/LICENSE.md on master • libretro/mame2003-libretro"
+[mame2003-midway-nc]: https://github.com/libretro/mame2003_midway/blob/master/docs/mame.txt
+  "GitHub: mame2003_midway/docs/mame.txt on master • libretro/mame2003_midway"
+[mame2003-plus-nc]: https://github.com/libretro/mame2003-plus-libretro/blob/master/LICENSE.md
+  "GitHub: mame2003-plus-libretro/LICENSE.md on master • libretro/mame2003-plus-libretro"
+[mame2009-nc]: https://github.com/r-type/mame2009/blob/master/docs/mame.txt
+  "GitHub: mame2009/docs/mame.txt on master • r-type/mame2009"
+[mame2010-nc]: https://github.com/libretro/mame2010-libretro/blob/master/docs/mame.txt
+  "GitHub: mame2010-libretro/docs/mame.txt on master • libretro/mame2010-libretro"
+[mame2014-nc]: https://github.com/libretro/mame2014-libretro/blob/master/docs/license.txt
+  "GitHub: mame2014-libretro/docs/license.txt on master • libretro/mame2014-libretro"
+[opera]: ../library/opera.md
+  "Opera (3DO) - Libretro Documentation"
+[opera-nc]: https://github.com/libretro/opera-libretro/blob/master/libopera/opera_core.h
+  "GitHub: opera-libretro/libopera/opera_core.h on master • libretro/opera-libretro"
+[picodrive]: ../library/picodrive.md
+  "PicoDrive (Sega Master System/Mega Drive/CD/32X) - Libretro Documentation"
+[picodrive-nc]: https://github.com/libretro/picodrive/blob/master/COPYING
+  "GitHub: picodrive/COPYING on master • libretro/picodrive"
+[snes9x]: ../library/snes9x.md
+  "Snes9x (Super Nintendo/Famicom) - Libretro Documentation"
+[snes9x-nc]: https://github.com/snes9xgit/snes9x/blob/master/LICENSE
+  "GitHub: snes9x/LICENSE on master • snes9xgit/snes9x"
+[snes9x2002]: ../library/snes9x_2002.md
+  "Snes9x 2002 (Super Nintendo/Famicom) - Libretro Documentation"
+[snes9x2002-nc]: https://github.com/libretro/snes9x/blob/master/docs/snes9x-license.txt
+  "GitHub: snes9x/docs/snes9x-license.txt on master • libretro/snes9x"
+[snes9x2005]: ../library/snes9x_2005.md
+  "Snes9x 2005 (Super Nintendo/Famicom) - Libretro Documentation"
+[snes9x2005plus]: ../library/snes9x_2005_plus.md
+  "Snes9x 2005 Plus (Super Nintendo/Famicom) - Libretro Documentation"
+[snes9x2010]: ../library/snes9x_2010.md
+  "Snes9x 2010 (Super Nintendo/Famicom) - Libretro Documentation"
+[snes9x2010-nc]: https://github.com/libretro/snes9x2010/blob/master/LICENSE.txt
+  "GitHub: snes9x2010/LICENSE.txt on master • libretro/snes9x2010"

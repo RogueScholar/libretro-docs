@@ -15,7 +15,7 @@ Cores are essentially other programs and games that run through RetroArch. Retro
     - Navigate to **Menu Item Visibility**
     - Enable **Show Core Downloader**
 
-![Core Downloader](../image/retroarch/ozone/core_downloader.gif)
+![Core Downloader](../image/retroarch/ozone/core_downloader.avif)
 
 - Navigate to **Online Updater**
 - Navigate to **Select Core Downloader**

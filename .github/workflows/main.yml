@@ -1,3 +1,9 @@
+%YAML 1.2
+# SPDX-FileCopyrightText: © 2020–2026, Ömercan Kömür <fpscan@gmail.com>
+# SPDX-FileCopyrightText: © 2024–2026, Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: MIT
+---
 name: Publish docs via GitHub Pages
 on:
   push:
@@ -8,11 +14,11 @@ on:
       logLevel:
         description: 'Log level'
         required: true
-        default: 'release' 
+        default: 'release'
         type: choice
         options:
-        - debug 
-        - release  
+        - debug
+        - release
         - testing
 
 jobs:
@@ -21,15 +27,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
 
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        uses: afritzler/mkdocs-gh-pages-action@v9
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
+          CUSTOM_DOMAIN: docs.libretro.com
           EXTRA_PACKAGES: build-base
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REQUIREMENTS: docs/requirements.txt
+...

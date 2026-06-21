@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: © 2024–2026, Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: MIT
+Feature,Supported
+Restart,:check-mark-button:
+Screenshots,:check-mark-button:
+Saves,:noto-emoji-cross-mark-button:
+States,:check-mark-button:
+Rewind,:check-mark-button:
+Netplay,:check-mark-button:
+Core Options,:check-mark-button:
+RetroAchievements,:noto-emoji-cross-mark-button:
+RetroArch Cheats,:noto-emoji-cross-mark-button:
+Native Cheats,:noto-emoji-cross-mark-button:
+Controls,:check-mark-button:
+Remapping,:noto-emoji-cross-mark-button:
+Multi-Mouse,:noto-emoji-cross-mark-button:
+Rumble,:noto-emoji-cross-mark-button:
+Sensors,:noto-emoji-cross-mark-button:
+Camera,:noto-emoji-cross-mark-button:
+Location,:noto-emoji-cross-mark-button:
+Subsystem,:noto-emoji-cross-mark-button:
+[Softpatching][],:noto-emoji-cross-mark-button:
+Disk Control,:noto-emoji-cross-mark-button:
+Username,:noto-emoji-cross-mark-button:
+Language,:noto-emoji-cross-mark-button:
+Crop Overscan,:noto-emoji-cross-mark-button:
+LEDs,:noto-emoji-cross-mark-button:

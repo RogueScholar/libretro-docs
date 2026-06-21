@@ -1,0 +1,32 @@
+%YAML 1.2
+# SPDX-FileCopyrightText: © 2026, Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: MIT
+---
+name: Validate links in Markdown source files
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  check-links:
+    name: Check links
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Actions Repository
+      uses: actions/checkout@v7
+    - name: Check document links
+      uses: byrnereese/github-action-mkdocs-link-check@main
+      with:
+        file-extension: '.md'
+        folder-path: docs
+        local-only: false
+        method: get
+        recurse: true
+        synchronous: false
+        verbose-mode: 'yes'
+...

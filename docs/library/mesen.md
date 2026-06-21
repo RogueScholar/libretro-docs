@@ -1,10 +1,9 @@
 # Nintendo - NES / Famicom (Mesen)
 
-## Background
+Mesen is a high-accuracy Nintendo Entertainment System and Nintendo Famicom
+emulator plus NSF player for Windows and Linux.
 
-Mesen is a high-accuracy NES and Famicom emulator and NSF player for Windows and Linux.
-
-Features
+## Features
 
 - High Accuracy: A lot of effort has gone into making Mesen as accurate as possible.
 - High Compatibility: Over 220 mappers supported (all licensed games supported)
@@ -14,7 +13,7 @@ Features
 - Audio: Stereo effects, per-channel volume and panning, equalizer, etc.
 - Misc: Netplay, 7z/zip support, IPS/BPS patch support, automatic updates, and more!
 
-### Author/License
+## Author/License
 
 The Mesen core has been authored by
 
@@ -63,7 +62,7 @@ Frontend-level settings or features that the Mesen core respects.
 | Rewind            | ✔         |
 | Netplay           | ✔         |
 | Core Options      | ✔         |
-| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✔         |
+| RetroAchievements | ✔         |
 | RetroArch Cheats  | ✔         |
 | Native Cheats     | ✕         |
 | Controls          | ✔         |
@@ -114,7 +113,7 @@ The Mesen core saves/loads to/from these directories.
 - The Mesen core's base height is 240
 - The Mesen core's max width is 256 (higher when using HD Packs)
 - The Mesen core's max height is 240 (higher when using HD Packs)
-- The Mesen core's core provided aspect ratio is dependent on the ['Aspect Ratio' core option](#core-options).
+- The Mesen core's core provided aspect ratio is dependent on the ['Aspect Ratio' core option][sect-options].
 
 ### Custom Palettes
 
@@ -132,7 +131,7 @@ Custom color palettes for the NES can be generated with either of these tools.
 !!! attention
 	There is more HD pack documentation at the [official Mesen documentation](https://www.mesen.ca/docs/hdpacks/#using-hd-packs).
 
-To use HD packs, first make sure to turn on the [Enable HD Packs core option](#core-options.)
+To use HD packs, first make sure to turn on the [Enable HD Packs core option][sect-options].
 
 First, create a folder named 'HdPacks' in RetroArch's System directory.
 
@@ -422,12 +421,14 @@ Multitap support can be activated in the Mesen core by switching User 5's device
 #### Nintendo - Family Computer Disk System
 
 - [Nintendo - NES / Famicom (FCEUmm)](fceumm.md)
-- [Nintendo - NES / Famicom (Nestopia)](nestopia.md)
+- [Nintendo - NES / Famicom (Nestopia UE)](nestopia_ue.md)
 
 #### Nintendo - Nintendo Entertainment System
 
 - [Nintendo - NES / Famicom (bnes)](bnes.md)
 - [Nintendo - NES / Famicom (Emux NES)](emux_nes.md)
 - [Nintendo - NES / Famicom (FCEUmm)](fceumm.md)
-- [Nintendo - NES / Famicom (Nestopia)](nestopia.md)
+- [Nintendo - NES / Famicom (Nestopia UE)](nestopia_ue.md)
 - [Nintendo - NES / Famicom (QuickNES)](quicknes.md)
+
+[sect-options]: #core-options

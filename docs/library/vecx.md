@@ -36,7 +36,7 @@ vecx doesn't require BIOS (bootrom) files to work.
 | States            | ✔         |
 | Rewind            | ✔         |
 | Netplay           | ✕         |
-| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✔         |
+| RetroAchievements | ✔         |
 | RetroArch Cheats  | ✕         |
 | Native Cheats     | ✕         |
 | Controllers       | ✔         |
@@ -81,18 +81,18 @@ The vecx core supports one controller setting:
 
 * RetroPad
 
-| vecx      | [RetroPad](RetroPad)                                           |
-|-----------|----------------------------------------------------------------|
-| 2         | ![RetroPad_B](../image/retropad/retro_b.png)               |
-| 4         | ![RetroPad_Y](../image/retropad/retro_y.png)               |
+| vecx      | RetroPad                                                         |
+|-----------|------------------------------------------------------------------|
+| 2         | ![RetroPad_B](../image/retropad/retro_b.png)                     |
+| 4         | ![RetroPad_Y](../image/retropad/retro_y.png)                     |
 |           | ![RetroPad_Select](../image/retropad/retro_select.png)           |
 |           | ![RetroPad_Start](../image/retropad/retro_start.png)             |
 | D-pad     | ![RetroPad_Dpad](../image/retropad/retro_dpad.png)               |
-| 1         | ![RetroPad_A](../image/retropad/retro_a.png)               |
-| 3         | ![RetroPad_X](../image/retropad/retro_x.png)               |
+| 1         | ![RetroPad_A](../image/retropad/retro_a.png)                     |
+| 3         | ![RetroPad_X](../image/retropad/retro_x.png)                     |
 |           | ![RetroPad_L1](../image/retropad/retro_l1.png)                   |
 |           | ![RetroPad_R1](../image/retropad/retro_r1.png)                   |
-|           | ![RetroPad_L2](../image/retropad/retro_l2.png)              |
+|           | ![RetroPad_L2](../image/retropad/retro_l2.png)                   |
 |           | ![RetroPad_R2](../image/retropad/retro_r2.png)                   |
 |           | ![RetroPad_L3](../image/retropad/retro_l3.png)                   |
 |           | ![RetroPad_R3](../image/retropad/retro_r3.png)                   |

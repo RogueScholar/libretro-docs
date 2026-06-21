@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+RetroMouse Input,FFmpeg Core Action
+:material-mouse-scroll-wheel:{ .huge }<br />Wheel Up,:material-fast-forward-60:{ .huge }<br />Seek ahead 60 seconds
+:material-mouse-scroll-wheel:{ .huge }<br />Wheel Down,:material-rewind-60:{ .huge }<br />Seek behind 60 seconds

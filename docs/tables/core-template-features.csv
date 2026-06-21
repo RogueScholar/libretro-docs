@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+Feature,Supported
+Restart,-
+Saves,-
+States,-
+Rewind,-
+Netplay,-
+Core Options,-
+RetroAchievements,-
+RetroArch Cheats,-
+Native Cheats,-
+Controls,-
+Remapping,-
+Multi-Mouse,-
+Rumble,-
+Sensors,-
+Camera,-
+Location,-
+Subsystem,-
+[Softpatching][],-
+Disk Control,-
+Username,-
+Language,-
+Crop Overscan,-
+LEDs,-

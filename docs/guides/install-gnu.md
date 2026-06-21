@@ -62,19 +62,19 @@ Flatpak.
    the option to make it available only to the active user, or perform a
    "system" installation that can be used by all users.
 
-    - Active user only:
+    Active user only:
 
-        ``` shell
-        flatpak install -y --or-update --user --from \
-          https://dl.flathub.org/repo/appstream/org.libretro.RetroArch.flatpakref
-        ```
+    ``` shell
+    flatpak install -y --or-update --user --from \
+      https://dl.flathub.org/repo/appstream/org.libretro.RetroArch.flatpakref
+    ```
 
-    - All users (system installation):
+    All users (system installation):
 
-        ``` shell
-        sudo flatpak install -y --or-update --system --from \
-          https://dl.flathub.org/repo/appstream/org.libretro.RetroArch.flatpakref
-        ```
+    ``` shell
+    sudo flatpak install -y --or-update --system --from \
+      https://dl.flathub.org/repo/appstream/org.libretro.RetroArch.flatpakref
+    ```
 
 ### Launching the RetroArch flatpak
 
@@ -100,7 +100,7 @@ flatpak update -y --app org.libretro.RetroArch
 
 ## Ubuntu(-based)
 
-### Official package
+### Official Ubuntu package
 
 Ubuntu provides RetroArch as a native ["deb" package][ubuntu-package] in the
 Universe section of their software repository. Packages in that section are
@@ -235,7 +235,7 @@ sudo apt --update --yes upgrade retroarch
 
 ### Installation
 
-#### Official package
+#### Official Arch package
 
 Arch Linux provides a [**retroarch**][arch-retroarch] package for x86_64 systems
 in their official [Extra repository][archwiki-extra-repo]. You can install it by

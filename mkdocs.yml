@@ -1,4 +1,62 @@
 %YAML 1.2
+# SPDX-FileCopyrightInfo: © 2018–2025, Daniel De Matteis <libretro@gmail.com>
+# SPDX-FileCopyrightText: © 2018–2019, Mohmoud <devmohmoud@gmail.com>
+# SPDX-FileCopyrightText: © 2018, Brad Parker <bparker@reach3d.net>
+# SPDX-FileCopyrightText: © 2018, Ramiro Morales <cramm0@gmail.com>
+# SPDX-FileCopyrightText: © 2018–2021, Mark W. Kidd <mark@stardart.net>
+# SPDX-FileCopyrightText: © 2018, Joel <joellhansenn@gmail.com>
+# SPDX-FileCopyrightText: © 2018, Benoit Felix <benoitfelixjp@yahoo.com>
+# SPDX-FileCopyrightText: © 2018–2019, Thomas Lorblanchès <zlika_ese@hotmail.com>
+# SPDX-FileCopyrightText: © 2018–2025, Hunter Kaller <hunter_kaller@yahoo.com>
+# SPDX-FileCopyrightText: © 2018, Sven <RetroSven@users.noreply.github.com>
+# SPDX-FileCopyrightText: © 2018–2019, Jean-Pascal Meunier <jeanpascalmeunier@hotmail.com>
+# SPDX-FileCopyrightText: © 2018, Alfredo Monclus <alfredomonclus@gmail.com>
+# SPDX-FileCopyrightText: © 2018–2019, Nathan Salaün <natinusala@gmail.com>
+# SPDX-FileCopyrightText: © 2019, Yoshi Sugawara <yoshi.sugawara@gmail.com>
+# SPDX-FileCopyrightText: © 2019, Toby <myemulationguide@gmail.com>
+# SPDX-FileCopyrightText: © 2019, Barry J. Rowe <barry@whoknows.com>
+# SPDX-FileCopyrightText: © 2019–2026, Ömercan Kömür <fpscan@gmail.com>
+# SPDX-FileCopyrightText: © 2019, Rob Loach <robloach@gmail.com>
+# SPDX-FileCopyrightText: © 2019–2025, Ignacio Sánchez Ginés <nacho@geardome.com>
+# SPDX-FileCopyrightText: © 2019, Ciril Catington <CirilCatington@gmail.com>
+# SPDX-FileCopyrightText: © 2019, Keith Bourdon <webmaster@doggylongface.com>
+# SPDX-FileCopyrightText: © 2019, Devin Prater <d.prater@me.com>
+# SPDX-FileCopyrightText: © 2020, Francisco Javier Trujillo Mata <fjtrujy@gmail.com>
+# SPDX-FileCopyrightText: © 2020, negativeExponent <negativeExponent@users.noreply.github.com>
+# SPDX-FileCopyrightText: © 2020, Tobias Gruetzmacher <tobias-git@23.gs>
+# SPDX-FileCopyrightText: © 2020, Brandon <nanoworkerplay@users.noreply.github.com>
+# SPDX-FileCopyrightText: © 2020, Colin L. Crowley <sanaki@fuzzy-dice.net>
+# SPDX-FileCopyrightText: © 2020, Winston Weinert <winston@ml1.net>
+# SPDX-FileCopyrightText: © 2020, Tony Peter Jansson <tony@pihaus.org>
+# SPDX-FileCopyrightText: © 2020–2022, BarbuDreadMon <barbudreadmon@gmail.com>
+# SPDX-FileCopyrightText: © 2021, Ben Templeman <alphanumu@gmail.com>
+# SPDX-FileCopyrightText: © 2021–2024, Gouchi <gouchi@free.fr>
+# SPDX-FileCopyrightText: © 2021, Víctor González <pajaroloco_2@hotmail.com>
+# SPDX-FileCopyrightText: © 2022, Michael Burgardt <michael.burgardt@gmail.com>
+# SPDX-FileCopyrightText: © 2022–2024, Zoltan Balogh <balogh.zoltan.v@gmail.com>
+# SPDX-FileCopyrightText: © 2022, Neil Barkhina <nbarkhina@gmail.com>
+# SPDX-FileCopyrightText: © 2023, Cristian Mitrana <cristian.mitrana@online.ie>
+# SPDX-FileCopyrightText: © 2023, Andreas T. Jonsson <mail@andreasjonsson.se>
+# SPDX-FileCopyrightText: © 2023–2026, Eric Warmenhoven <eric@warmenhoven.org>
+# SPDX-FileCopyrightText: © 2023–2025, 宋文武 <iyzsong@member.fsf.org>
+# SPDX-FileCopyrightText: © 2023, Stefan Stockinger <estefan3112@gmail.com>
+# SPDX-FileCopyrightText: © 2024–2025, Rupert Carmichael <carmiker@users.noreply.gitlab.com>
+# SPDX-FileCopyrightText: © 2024, Neil Fore <neilfore@hotmail.com>
+# SPDX-FileCopyrightText: © 2024, Dion Olsthoorn <dion.olsthoorn@gmail.com>
+# SPDX-FileCopyrightText: © 2024, Tarek Hasan Faruk <tarekhasan199302@gmail.com>
+# SPDX-FileCopyrightText: © 2024–2026, Peter J. Mello <admin@petermello.net>
+# SPDX-FileCopyrightText: © 2024, Lleny <Lleny@users.noreply.github.com>
+# SPDX-FileCopyrightText: © 2024, Edward Stuckey <glaucoussocial@gmail.com>
+# SPDX-FileCopyrightText: © 2025, Jesse Talavera <jesse@jesse.tg>
+# SPDX-FileCopyrightText: © 2025, Ken Mitton <mittonk@alum.mit.edu>
+# SPDX-FileCopyrightText: © 2025, OctopusButtons <OctopusButtons@users.noreply.github.com>
+# SPDX-FileCopyrightText: © 2025, Clownacy <clownacy@yahoo.com>
+# SPDX-FileCopyrightText: © 2025, 刘皓 <whiteaxe@tuta.io>
+# SPDX-FileCopyrightText: © 2026, David Hedlund <public@beloved.name>
+# SPDX-FileCopyrightText: © 2026, Aloys <jiangxinnju@163.com>
+#
+# SPDX-License-Identifier: MIT
+
 ---
 site_name: Libretro Docs
 site_url: 'https://docs.libretro.com/'
@@ -7,22 +65,179 @@ site_description: >-2
   Information from sources outside of this website may be dated or incorrect.
 repo_name: 'libretro/docs'
 repo_url: 'https://github.com/libretro/docs'
-edit_uri: 'edit/master/docs'
-copyright: >2
-  Copyright &copy; 2010–2025 Libretro. –
+copyright: >-2
+  Copyright &copy; 2010&ndash;2026 The Libretro Team. &horbar;
   <a href="#__consent">Change cookie settings</a>
+edit_uri: edit/master/docs
+use_directory_urls: true
+
+extra:
+  adsense: ca-pub-9447404270680650
+  analytics:
+    property: G-MT11L3F6EZ
+    provider: google
+  consent:
+    description: >-2
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    title: Cookie consent
+  font:
+    code: 'Noto Sans Mono'
+    text: 'Noto Sans'
+  i18n:
+    next: 'Next'
+    prev: 'Previous'
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: 'https://github.com/libretro'
+      name: Libretro on GitHub
+    - icon: fontawesome/brands/x-twitter
+      link: 'https://x.com/libretro'
+      name: Libretro on X
+    - icon: simple/discord
+      link: 'https://discord.gg/C4amCeV'
+      name: RetroArch Discord server
+    - icon: fontawesome/brands/youtube
+      link: 'https://www.youtube.com/@Libretro'
+      name: Libretro YouTube channel
+    - icon: fontawesome/brands/square-facebook
+      link: 'https://facebook.com/libretro'
+      name: Libretro on Facebook
+    - icon: simple/instagram
+      link: 'https://www.instagram.com/libretro'
+      name: Libretro/RetroArch on Instagram
+    - icon: material/gmail
+      link: 'mailto:libretro@gmail.com'
+      name: Email the Libretro Team
+  status:
+    fixed: The information on this page never changes
+    incomplete: The information on this page is incomplete
+    stable: The information on this page changes infrequently, or not at all
+  unit:
+    stable: 1.22.2
+  version: 0.3.0
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/tablesort.css
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.7.1/dist/tablesort.min.js
+  - js/tablesort.js
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.blocks.caption
+  - pymdownx.caret:
+      insert: true
+      smart_insert: true
+      superscript: true
+  - pymdownx.critic:
+      mode: accept
+  - pymdownx.details
+  - pymdownx.emoji:
+      alt: short
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      options:
+        custom_icons:
+          - docs/overrides/icons
+      strict: false
+      title: short
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: false
+      guess_lang: block
+      line_spans: __span
+      linenums: None
+      linenums_style: pymdownx-inline
+      pygments_lang_class: true
+      stripnl: false
+      use_pygments: true
+  - pymdownx.inlinehilite:
+      style_plain_text: true
+  - pymdownx.keys:
+      camel_case: true
+      key_map:
+        amp: '&'
+        at: '@'
+        caret: '^'
+        close-paren: ')'
+        dollar: '$'
+        euro: '€'
+        mode: 'Mode'
+        octothorpe: '#'
+        open-paren: '('
+        star: '*'
+        sys-req: 'SysReq'
+        unknown: 'Unknown'
+        unmapped: 'Unmapped'
+      separator: '+'
+      strict: true
+  - pymdownx.magiclink:
+      hide_protocol: true
+      normalize_issue_symbols: false
+      provider: github
+      repo: docs
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shortener: true
+      social_url_shorthand: true
+      user: libretro
+  - pymdownx.mark:
+      smart_mark: true
+  - pymdownx.saneheaders
+  - pymdownx.smartsymbols:
+      arrows: false
+  - pymdownx.snippets:
+      base_path:
+        - '.'
+        - 'docs'
+      check_paths: true
+      dedent_subsections: false
+      url_download: false
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      clickable_checkbox: false
+      custom_checkbox: true
+  - pymdownx.tilde:
+      delete: true
+      smart_delete: true
+      subscript: true
+  - toc:
+      permalink: true
+      permalink_title: Reference link to this section
+      toc_depth: 6
+
 nav:
   - 'About': 'index.md'
   - 'Start':
       - 'Understanding': 'start/understanding.md'
       - 'Installation': 'start/installation.md'
-      - 'Love at first sight': 'start/love-at-first-sight.md'
+      - 'Love at First Sight': 'start/love-at-first-sight.md'
       - 'Last Station': 'start/last-station.md'
   - 'For Users':
     - 'Getting Started':
-      - 'Windows':
-        - 'Windows 7/8/8.1/10/11': 'guides/install-windows.md'
-        - 'Windows 2000/ME/98SE': 'guides/install-windows-2000-me-98SE.md'
+      - 'Microsoft&nbsp;Windows':
+        - 'Windows 7&thinsp;/&thinsp;8&thinsp;/&thinsp;8.1&thinsp;/&thinsp;10&thinsp;/&thinsp;11': 'guides/install-windows.md'
+        - 'Windows&nbsp;98&nbsp;SE&thinsp;/&thinsp;ME&thinsp;/&thinsp;2000': 'guides/install-windows-2000-me-98SE.md'
       - 'GNU/Linux': 'guides/install-gnu.md'
       - 'Apple':
         - 'macOS': 'guides/install-macos.md'
@@ -30,72 +245,71 @@ nav:
       - 'Android': 'guides/install-android.md'
       - 'Nintendo':
         - 'Switch': 'guides/install-libnx.md'
-        - '3DS/2DS Family': 'guides/install-3ds2ds.md'
+        - '3DS&thinsp;/&thinsp;2DS&nbsp;Family': 'guides/install-3ds2ds.md'
       - 'Sony':
-        - 'PlayStation Portable': 'guides/install-psp.md'
-        - 'PlayStation Vita': 'guides/install-psv.md'
-        - 'PlayStation 2': 'guides/install-ps2.md'
-        - 'PlayStation 3': 'guides/install-ps3.md'
-        - 'PlayStation Classic': 'guides/install-psc.md'
+        - 'PlayStation&nbsp;Portable': 'guides/install-psp.md'
+        - 'PlayStation&nbsp;Vita': 'guides/install-psv.md'
+        - 'PlayStation&nbsp;2': 'guides/install-ps2.md'
+        - 'PlayStation&nbsp;3': 'guides/install-ps3.md'
+        - 'PlayStation&nbsp;Classic': 'guides/install-psc.md'
       - 'TV': 'guides/tv.md'
       - 'Others':
         - 'Lakka':
-          - 'Installing': 'guides/install-lakka.md'
-          - 'Building': 'guides/building-lakka.md'
+          - 'Installation': 'guides/install-lakka.md'
+          - 'Compilation': 'guides/building-lakka.md'
         - 'Ludo':
-          - 'Installing': 'guides/install-ludo.md'
-          - 'Building': 'guides/building-ludo.md'
-        - 'Steam Link': 'guides/install-steamlink.md'
-        - 'Web Player': 'guides/web-player.md'
-        - 'Sega Genesis Mini': 'guides/install-genesismini.md'
-        - 'Facebook Portal': 'guides/install-facebookportal.md'
+          - 'Installation': 'guides/install-ludo.md'
+          - 'Compilation': 'guides/building-ludo.md'
+        - 'Steam&nbsp;Link': 'guides/install-steamlink.md'
+        - 'Web&nbsp;Player': 'guides/web-player.md'
+        - 'Sega&nbsp;Genesis Mini': 'guides/install-genesismini.md'
+        - 'Facebook&nbsp;Portal': 'guides/install-facebookportal.md'
     - 'User Guides':
       - 'User Interface': 'guides/navigating.md'
       - 'Input and Controls': 'guides/input-and-controls.md'
       - 'Starting a Game': 'guides/starting-a-game.md'
-      - 'Controller Auto-Configuration': 'guides/controller-autoconfiguration.md'
+      - 'Controller Auto&#8209;Configuration': 'guides/controller-autoconfiguration.md'
       - 'Installing Cores': 'guides/download-cores.md'
-      - 'Core List': 'guides/core-list.md'
       - 'Directory Configuration': 'guides/change-directories.md'
       - 'File Browser': 'guides/file-browser.md'
       - 'Launching Content': 'guides/launch-content.md'
-      - 'Menu Styles': 'guides/gui.md'
       - 'Quick Menu': 'guides/quick-menu.md'
       - 'Importing Content': 'guides/import-content.md'
       - 'Shaders': 'guides/shaders.md'
       - 'Overrides: Content/Folder/Core-Specific Settings': 'guides/overrides.md'
-      - 'Cheat/Rumble Codes': 'guides/cheat-codes.md'
+      - 'Cheat&thinsp;/&thinsp;Rumble&nbsp;Codes': 'guides/cheat-codes.md'
       - 'Input Overlays': 'guides/libretro-overlays.md'
       - 'Overlay Mouse & Lightgun': 'guides/overlay-pointing-devices.md'
-      - 'What is BIOS?': 'guides/bios.md'
+      - 'What is a BIOS?': 'guides/bios.md'
       - 'Netplay':
         - 'FAQ': 'guides/netplay-faq.md'
         - 'Getting Started': 'guides/netplay-getting-started.md'
         - 'Multiple Controllers': 'guides/netplay-multiple-controllers.md'
       - 'RetroAchievements': 'guides/retroachievements.md'
-      - 'Memory Monitoring': 'guides/memorymonitoring.md'
+      - 'Memory Monitoring': 'guides/memory-monitoring.md'
       - 'Disc Swapping': 'guides/disc-swapping.md'
       - 'Softpatching ROMs': 'guides/softpatching.md'
       - 'Accessibility':
-        - 'Quick Start': 'guides/accessibility.md'
-        - 'Guide': 'guides/retroarch-accessibility-guide.md'
+        - 'Quick&nbsp;Start': 'guides/accessibility-intro.md'
+        - 'Full&nbsp;Guide': 'guides/retroarch-accessibility-guide.md'
       - 'Video Recording and Streaming': 'guides/recording-and-streaming.md'
       - 'Troubleshooting': 'guides/troubleshooting-retroarch.md'
       - 'Generating Logs': 'guides/generating-retroarch-logs.md'
       - 'RetroArch Cloud Sync': 'guides/retroarch-cloud-sync.md'
       - 'Databases & Validation': 'guides/databases.md'
     - 'Appearance & Customization':
-      - 'Interface Styles':
-        - 'GLUI Interface': 'guides/glui.md'
-        - 'Ozone Interface': 'guides/ozone.md'
-        - 'RGUI Interface': 'guides/rgui.md'
-        - 'XMB Interface': 'guides/xmb.md'
+      - 'Interface&nbsp;Styles':
+        - 'Menu&nbsp;Drivers': 'guides/gui.md'
+        - 'GLUI&nbsp;Interface': 'guides/glui.md'
+        - 'Ozone&nbsp;Interface': 'guides/ozone.md'
+        - 'RGUI&nbsp;Interface': 'guides/rgui.md'
+        - 'XMB&nbsp;Interface': 'guides/xmb.md'
       - 'Creating a Theme': 'guides/themes.md'
       - 'Playlists and Thumbnails': 'guides/roms-playlists-thumbnails.md'
       - 'XMB Menu Map': 'guides/xmb-menu-map.md'
-    - 'Advanced':
+    - 'Advanced&nbsp;Topics':
       - 'AI Service': 'guides/ai-service.md'
-      - 'Command-Line Interface (CLI)': 'guides/cli-intro.md'
+      - 'Command&#8209;Line Interface (CLI)': 'guides/cli-intro.md'
       - 'CRT SwitchRes': 'guides/crtswitchres.md'
       - 'Input and Controller Drivers': 'guides/input-controller-drivers.md'
       - 'Latency': 'guides/latency.md'
@@ -104,242 +318,248 @@ nav:
       - 'Optimal Vsync Performance': 'guides/optimal-vsync.md'
       - 'Raspberry Pi': 'guides/rpi.md'
       - 'Run Ahead': 'guides/runahead.md'
-    - 'Lakka Documentation': 'http://www.lakka.tv/doc/Home/'
-    - 'Core Library: Emulation':
-      - 'Getting Started with Arcade Emulation': 'guides/arcade-getting-started.md'
-      - 'Getting Started with MAME Software List Emulation': 'guides/softwarelist-getting-started.md'
+    - 'Core Library&ensp;🢖&ensp;Emulation':
+      - 'Libretro Cores&nbsp;List': 'guides/core-list.md'
       - 'BIOS Information Hub': 'library/bios.md'
-      - '3DO Emulation':
-        - 'The 3DO Company - 3DO (Opera)': 'library/opera.md'
-        - '3DO Compatibility List': 'library/compatibility/3do.md'
-      - 'Acorn Emulation':
-        - 'Acorn - BBC Micro (b2)': 'library/b2.md'
-      - 'Amstrad Emulation':
-        - 'Amstrad - CPC (Caprice32)': 'library/caprice32.md'
-        - 'Amstrad - CPC (CrocoDS)': 'library/crocods.md'
+      - '3DO':
+        - 'Opera&nbsp;(3DO)': 'library/opera.md'
+      - 'Acorn':
+        - 'b2&nbsp;(BBC&nbsp;Micro)': 'library/b2.md'
+      - 'Amstrad':
+        - 'Caprice32&nbsp;(CPC)': 'library/caprice32.md'
+        - 'CrocoDS&nbsp;(CPC)': 'library/crocods.md'
       - 'Apple':
-        - 'Apple - Macintosh (minivmac)': 'library/minivmac.md'
-      - 'Arcade Emulation':
-        - 'Arcade (DICE)': 'library/dice.md'
-        - 'Arcade (FinalBurn Neo)': 'library/fbneo.md'
-        - 'Arcade (MAME 2003)': 'library/mame_2003.md'
-        - 'Arcade (MAME 2003-Plus)': 'library/mame2003_plus.md'
-        - 'Arcade (MAME 2010)': 'library/mame_2010.md'
-        - 'Arcade (SAME_CDI)': 'library/same_cdi.md'
+        - 'minivmac&nbsp;(Macintosh)': 'library/minivmac.md'
+      - 'Arcade':
+        - 'Getting&nbsp;Started': 'guides/arcade-getting-started.md'
+        - 'DICE&nbsp;(Arcade)': 'library/dice.md'
+        - 'FinalBurn&nbsp;Neo (Arcade)': 'library/fbneo.md'
+        - 'MAME&nbsp;(Arcade)':
+          - 'Getting&nbsp;Started': 'guides/softwarelist-getting-started.md'
+          - 'MAME&nbsp;2010 (Arcade)': 'library/mame_2010.md'
+          - 'MAME&nbsp;2003&#8209;Plus (Arcade)': 'library/mame2003_plus.md'
+          - 'MAME&nbsp;2003 (Arcade)': 'library/mame_2003.md'
+        - 'SAME_CDI (Arcade)': 'library/same_cdi.md'
       - 'Arduboy':
-        - 'Ardens': 'library/ardens.md'
-      - 'Atari Emulation':
-        - 'Atari - Jaguar Compatibility List': 'library/compatibility/jaguar.md'
-        - 'Atari - Lynx Compatibility List:': 'library/compatibility/lynx.md'
-        - 'Atari - 2600 (Stella)': 'library/stella.md'
-        - 'Atari - 7800 (ProSystem)': 'library/prosystem.md'
-        - 'Atari - 5200 (Atari800)': 'library/atari800.md'
-        - 'Atari - Jaguar (Virtual Jaguar)': 'library/virtual_jaguar.md'
-        - 'Atari - Lynx (Beetle Lynx)': 'library/beetle_lynx.md'
-        - 'Atari - Lynx (Gearlynx)': 'library/gearlynx.md'
-        - 'Atari - Lynx (Handy)': 'library/handy.md'
-        - 'Atari - Lynx (Holani)': 'library/holani.md'
-        - 'Atari - ST/STE/TT/Falcon (Hatari)': 'library/hatari.md'
-      - 'Bandai Emulation':
-        - 'Bandai - WonderSwan/Color (Beetle Cygne)': 'library/beetle_cygne.md'
-        - 'Bandai - Wonderswan Compatibility List': 'library/compatibility/wswan.md'
-      - 'BBK electronic dictionary':
-        - 'BBK - 4980/4988/5980 electronic dictionary': 'library/gam4980.md'
-      - 'ColecoVision Emulation':
-        - 'ColecoVision (Gearcoleco)': 'library/gearcoleco.md'
-        - 'ColecoVision/CreatiVision/My Vision (JollyCV)': 'library/jollycv.md'
-        - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
-      - 'Commodore Emulation':
-        - 'Commodore - 8-bit (VICE)': 'library/vice.md'
-        - 'Commodore - Amiga (PUAE)': 'library/puae.md'
-      - 'DOS Emulation':
-        - 'MS - DOS (DOSBox)': 'library/dosbox.md'
-        - 'MS - DOS (DOSBox Pure)': 'library/dosbox_pure.md'
-        - 'MS - DOS (VirtualXT)': 'library/virtualxt.md'
+        - 'Ardens (Arduboy&nbsp;FX)': 'library/ardens.md'
+      - 'Atari':
+        - 'Jaguar':
+          - 'Virtual&nbsp;Jaguar (Jaguar)': 'library/virtual_jaguar.md'
+        - 'Lynx':
+          - 'Beetle&nbsp;Lynx (Lynx)': 'library/beetle_lynx.md'
+          - 'Gearlynx (Lynx)': 'library/gearlynx.md'
+          - 'Handy (Lynx)': 'library/handy.md'
+          - 'Holani (Lynx)': 'library/holani.md'
+        - 'Stella (2600)': 'library/stella.md'
+        - 'Atari800 (5200)': 'library/atari800.md'
+        - 'ProSystem (7800)': 'library/prosystem.md'
+        - 'Hatari (ST&thinsp;/&thinsp;STE&thinsp;/&thinsp;TT&thinsp;/&thinsp;Falcon)': 'library/hatari.md'
+      - 'Bandai':
+        - 'Wonderswan Compatibility': 'library/compatibility/wswan.md'
+        - 'Beetle&nbsp;Cygne (WonderSwan&thinsp;/&thinsp;Color)': 'library/beetle_cygne.md'
+      - 'BBK':
+        - 'e&#8209;Dictionary (4980&thinsp;/&thinsp;4988&thinsp;/&thinsp;5980)': 'library/gam4980.md'
+      - 'CHIP&#8209;8':
+        - 'JAXE (CHIP&#8209;8&thinsp;/&thinsp;XO&#8209;CHIP)': 'library/jaxe.md'
+        - 'Emux (CHIP&#8209;8)': 'library/emux_chip8.md'
+      - 'ColecoVision':
+        - 'Gearcoleco (ColecoVision)': 'library/gearcoleco.md'
+        - 'JollyCV (ColecoVision&thinsp;/&thinsp;CreatiVision&thinsp;/&thinsp;My&nbsp;Vision)': 'library/jollycv.md'
+        - 'blueMSX (MSX&thinsp;/&thinsp;SVI&thinsp;/&thinsp;ColecoVision&thinsp;/&thinsp;SG&#8209;1000)': 'library/bluemsx.md'
+      - 'Commodore':
+        - 'VICE (8&#8209;bit)': 'library/vice.md'
+        - 'PUAE (Amiga)': 'library/puae.md'
+      - 'DOS':
+        - 'DOSBox (DOS)': 'library/dosbox.md'
+        - 'DOSBox&nbsp;Pure (DOS)': 'library/dosbox_pure.md'
+        - 'VirtualXT (DOS)': 'library/virtualxt.md'
       - 'Emerson':
-        - 'Emerson - Arcadia 2001 / Interton VC 4000 (AmiArcadia)': 'library/amiarcadia.md'
-      - 'Enterprise Emulation':
-        - 'Enterprise 128 (ep128emu)': 'library/ep128emu.md'
+        - 'AmiArcadia (Arcadia&nbsp;2001&thinsp;/&thinsp;Interton&nbsp;VC&nbsp;4000)': 'library/amiarcadia.md'
+      - 'Enterprise':
+        - 'ep128emu (128)': 'library/ep128emu.md'
       - 'Elektronika':
-        - 'Elektronika - BK-0010/BK-0011 (bk)': 'library/bk.md'
-      - 'Epoch Emulation':
-        - 'Epoch - Cassette Vision (PD777)': 'library/pd777.md'
-        - 'Epoch - Super Cassette Vision (EmuSCV)': 'library/emuscv.md'
-      - 'GCE Emulation':
-        - 'GCE - Vectrex (vecx)': 'library/vecx.md'
-      - 'Magnavox Emulation':
-        - 'Magnavox - Odyssey2 / Philips Videopac+ (O2EM)': 'library/o2em.md'
-      - 'Mattel Emulation':
-        - 'Mattel - Intellivision (FreeIntv)': 'library/freeintv.md'
-      - 'Microsoft Emulation':
-        - 'Microsoft - MSX (fMSX)': 'library/fmsx.md'
-        - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
-      - 'Nintendo Emulation':
-        - 'Nintendo - DS Compatibility List': 'library/compatibility/ds.md'
-        - 'Nintendo - Game Boy Advance Compatibility List': 'library/compatibility/gba.md'
-        - 'Nintendo - Game Boy Color Compatibility List': 'library/compatibility/gbc.md'
-        - 'Nintendo - NES Compatibility List': 'library/compatibility/nes.md'
-        - 'Nintendo - SNES Compatibility List': 'library/compatibility/snes.md'
-        - 'Nintendo - Game Boy / Color (Emux GB)': 'library/emux_gb.md'
-        - 'Nintendo - Game Boy / Color (Gambatte)': 'library/gambatte.md'
-        - 'Nintendo - Game Boy / Color (SameBoy)': 'library/sameboy.md'
-        - 'Nintendo - Game Boy / Game Boy Color (TGB Dual)': 'library/tgb_dual.md'
-        - 'Nintendo - Game Boy / Color (Gearboy)': 'library/gearboy.md'
-        - 'Nintendo - Game Boy Advance (Beetle GBA)': 'library/beetle_gba.md'
-        - 'Nintendo - Game Boy Advance (gpSP)': 'library/gpsp.md'
-        - 'Nintendo - Game Boy Advance (Meteor)': 'library/meteor.md'
-        - 'Nintendo - Game Boy Advance (mGBA)': 'library/mgba.md'
-        - 'Nintendo - Game Boy Advance (TempGBA)': 'library/tempgba.md'
-        - 'Nintendo - Game Boy Advance (VBA Next)': 'library/vba_next.md'
-        - 'Nintendo - Game Boy Advance (VBA-M)': 'library/vba_m.md'
-        - 'Nintendo - GameCube/Wii (Dolphin)': 'library/dolphin.md'
-        - 'Nintendo - NES (bnes)': 'library/bnes.md'
-        - 'Nintendo - NES / Famicom (Emux NES)': 'library/emux_nes.md'
-        - 'Nintendo - NES / Famicom (FCEUmm)': 'library/fceumm.md'
-        - 'Nintendo - NES / Famicom (Mesen)': 'library/mesen.md'
-        - 'Nintendo - NES / Famicom (Nestopia)': 'library/nestopia.md'
-        - 'Nintendo - NES / Famicom (QuickNES)': 'library/quicknes.md'
-        - 'Nintendo - 3DS (Citra)': 'library/citra.md'
-        - 'Nintendo - 3DS (Citra Canary/Experimental)': 'library/citra_canary.md'
-        - 'Nintendo - Nintendo 64 (Mupen64Plus)': 'library/mupen64plus.md'
-        - 'Nintendo - DS (DeSmuME 2015)': 'library/desmume_2015.md'
-        - 'Nintendo - DS (DeSmuME)': 'library/desmume.md'
-        - 'Nintendo - DS (melonDS DS)': 'library/melonds_ds.md'
-        - 'Nintendo - DS (melonDS 2021)': 'library/melonds.md'
-        - 'Nintendo - Pokémon Mini (PokeMini)': 'library/pokemini.md'
-        - 'Nintendo - SNES / Famicom (Beetle bsnes)': 'library/beetle_bsnes.md'
-        - 'Nintendo - SNES / Famicom (bsnes-jg)': 'library/bsnes-jg.md'
-        - 'Nintendo - SNES / Famicom (bsnes Accuracy)': 'library/bsnes_accuracy.md'
-        - 'Nintendo - SNES / Famicom (bsnes Balanced)': 'library/bsnes_balanced.md'
-        - 'Nintendo - SNES / Famicom (bsnes C++98 (v085))': 'library/bsnes_cplusplus98.md'
-        - 'Nintendo - SNES / Famicom (bsnes Performance)': 'library/bsnes_performance.md'
-        - 'Nintendo - SNES / Famicom (bsnes-mercury Accuracy)': 'library/bsnes_mercury_accuracy.md'
-        - 'Nintendo - SNES / Famicom (bsnes-mercury Balanced)': 'library/bsnes_mercury_balanced.md'
-        - 'Nintendo - SNES / Famicom (bsnes-mercury Performance)': 'library/bsnes_mercury_performance.md'
-        - 'Nintendo - SNES / Famicom (higan Accuracy)': 'library/higan_accuracy.md'
-        - 'Nintendo - SNES / Famicom (nSide Balanced)': 'library/nside_balanced.md'
-        - 'Nintendo - SNES / SFC / Game Boy / Color (Mesen-S)': 'library/mesen-s.md'
-        - 'Nintendo - SNES / Famicom (Snes9x 2002)': 'library/snes9x_2002.md'
-        - 'Nintendo - SNES / Famicom (Snes9x 2005 Plus)': 'library/snes9x_2005_plus.md'
-        - 'Nintendo - SNES / Famicom (Snes9x 2005)': 'library/snes9x_2005.md'
-        - 'Nintendo - SNES / Famicom (Snes9x 2010)': 'library/snes9x_2010.md'
-        - 'Nintendo - SNES / Famicom (Snes9x)': 'library/snes9x.md'
-        - 'Nintendo - Virtual Boy (Beetle VB)': 'library/beetle_vb.md'
-      - 'NEC Emulation':
-        - 'NEC - PC-FX Compatibility List': 'library/compatibility/pcfx.md'
-        - 'NEC - PC-8000 / PC-8800 series (QUASI88)': 'library/quasi88.md'
-        - 'NEC - PC-98 (Neko Project II Kai)': 'library/neko_project_ii_kai.md'
-        - 'NEC - PC Engine SuperGrafx (Beetle SGX)': 'library/beetle_sgx.md'
-        - 'NEC - PC Engine / CD (Beetle PCE FAST)': 'library/beetle_pce_fast.md'
-        - 'NEC - PC Engine / SuperGrafx (Geargrafx)': 'library/geargrafx.md'
-        - 'NEC - PC-FX (Beetle PC-FX)': 'library/beetle_pc_fx.md'
-      - 'Palm Emulation':
-        - 'Palm OS (Mu)': 'library/mu.md'
-      - 'Philips Emulation':
-        - 'Magnavox - Odyssey2 / Philips Videopac+ (O2EM)': 'library/o2em.md'
-        - 'Philips - P2000T (M2000)': 'library/m2000.md'
-      - 'RISC-V Emulation':
-        - 'RVVM - RISC-V Virtual Machine': 'library/rvvm.md'
-      - 'SNK Emulation':
-        - 'SNK - Neo Geo AES / MVS (Geolith)': 'library/geolith.md'
-        - 'SNK - Neo Geo Pocket / Color (Beetle NeoPop)': 'library/beetle_neopop.md'
-        - 'SNK - Neo Geo Pocket / Color (RACE)': 'library/race.md'
-      - 'Sega Emulation':
-        - 'Cannonball': 'library/cannonball.md'
-        - 'Sega - 32X Compatibility List': 'library/compatibility/32x.md'
-        - 'Sega - Dreamcast Compatibility List': 'library/compatibility/dc.md'
-        - 'Sega - Saturn Compatibility List': 'library/compatibility/saturn.md'
-        - 'Sega - Dreamcast (flycast)': 'library/flycast.md'
-        - 'Sega - Dreamcast (redream)': 'library/redream.md'
-        - 'Sega - Dreamcast VMU (VeMUlator)': 'library/vemulator.md'
-        - 'Sega - Master System (Emux SMS)': 'library/emux_sms.md'
-        - 'Sega - MS/GG (SMS Plus GX)': 'library/smsplus.md'
-        - 'Sega - MS/GG/SG-1000 (Gearsystem)': 'library/gearsystem.md'
-        - 'Sega - MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
-        - 'Sega - MS/MD/CD/32X (PicoDrive)': 'library/picodrive.md'
-        - 'Sega - MD/CD (BlastEm)': 'library/blastem.md'
-        - 'Sega - MD/CD (ClownMDEmu)': 'library/clownmdemu.md'
-        - 'Sega - Saturn (Beetle Saturn)': 'library/beetle_saturn.md'
-        - 'Sega - Saturn/ST-V (Kronos)': 'library/kronos.md'
-        - 'Sega - Saturn (Yabause)': 'library/yabause.md'
-        - 'Sega - Saturn (YabaSanshiro)': 'library/yabasanshiro.md'
-        - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
-      - 'Sharp Emulation':
-        - 'Sharp - X68000 (PX68k)': 'library/px68k.md'
-      - 'Sinclair Emulation':
-        - 'Sinclair - ZX 81 (EightyOne)': 'library/eightyone.md'
-        - 'Sinclair - ZX Spectrum (Fuse)': 'library/fuse.md'
-      - 'Sony Emulation':
-        - 'Sony - Playstation Compatibility List': 'library/compatibility/psx.md'
-        - 'Sony - PlayStation (Beetle PSX)': 'library/beetle_psx.md'
-        - 'Sony - PlayStation (Beetle PSX HW)': 'library/beetle_psx_hw.md'
-        - 'Sony - PlayStation (PCSX ReARMed)': 'library/pcsx_rearmed.md'
-        - 'Sony - PlayStation 2 (PCSX2)': 'library/lrps2.md'
-        - 'Sony - PlayStation 2 (Play!)': 'library/play.md'
-        - 'Sony - PlayStation Portable (PPSSPP)': 'library/ppsspp.md'
-      - 'SpectraVision Emulation':
-        - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
-      - 'Sunplus Emulation':
-        - 'Sunplus - Native32 (Native32Emu)': 'library/native32emu.md'
-      - 'Texas Instruments Emulation':
-        - 'Texas Instruments - TI-83 (Numero)': 'library/numero.md'
-      - 'Thomson Emulation':
-        - 'Thomson - MO/TO (Theodore)': 'library/theodore.md'
-      - 'MegaDuck Emulation':
-        - 'Welback Holdings - Mega Duck (SameDuck)': 'library/sameduck.md'
-    - 'Core Library: Game and Scripting Engines':
+        - 'bk (BK&#8209;0010&thinsp;/&thinsp;BK&#8209;0011)': 'library/bk.md'
+      - 'Epoch':
+        - 'PD777 (Cassette&nbsp;Vision)': 'library/pd777.md'
+        - 'EmuSCV (Super Cassette&nbsp;Vision)': 'library/emuscv.md'
+      - 'GCE':
+        - 'vecx (Vectrex)': 'library/vecx.md'
+      - 'Mattel':
+        - 'FreeIntv (Intellivision)': 'library/freeintv.md'
+      - 'Microsoft':
+        - 'fMSX (MSX)': 'library/fmsx.md'
+        - 'blueMSX (MSX&thinsp;/&thinsp;SVI&thinsp;/&thinsp;ColecoVision&thinsp;/&thinsp;SG&#8209;1000)': 'library/bluemsx.md'
+      - 'NEC':
+        - 'PC&#8209;FX Compatibility': 'library/compatibility/pcfx.md'
+        - 'Beetle&nbsp;PC&#8209;FX (PC&#8209;FX)': 'library/beetle_pc_fx.md'
+        - 'QUASI88 (PC&#8209;8000&thinsp;/&thinsp;PC&#8209;8800 series)': 'library/quasi88.md'
+        - 'Neko&nbsp;Project&nbsp;II Kai (PC&#8209;98)': 'library/neko_project_ii_kai.md'
+        - 'Beetle&nbsp;PCE&nbsp;FAST (PC&nbsp;Engine&thinsp;/&thinsp;CD)': 'library/beetle_pce_fast.md'
+        - 'Geargrafx (PC&nbsp;Engine&thinsp;/&thinsp;SuperGrafx)': 'library/geargrafx.md'
+        - 'Beetle&nbsp;SGX (PC&nbsp;Engine&nbsp;SuperGrafx)': 'library/beetle_sgx.md'
+      - 'Nintendo':
+        - 'DS':
+          - 'DS Compatibility': 'library/compatibility/ds.md'
+          - 'DeSmuME (DS)': 'library/desmume.md'
+          - 'DeSmuME&nbsp;2015 (DS)': 'library/desmume_2015.md'
+          - 'melonDS (DS)': 'library/melonds_ds.md'
+          - 'melonDS&nbsp;2021 (DS)': 'library/melonds.md'
+        - 'Game&nbsp;Boy&nbsp;Advance':
+          - 'Game&nbsp;Boy&nbsp;Advance Compatibility': 'library/compatibility/gba.md'
+          - 'Beetle&nbsp;GBA (Game&nbsp;Boy&nbsp;Advance)': 'library/beetle_gba.md'
+          - 'gpSP (Game&nbsp;Boy&nbsp;Advance)': 'library/gpsp.md'
+          - 'Meteor (Game&nbsp;Boy&nbsp;Advance)': 'library/meteor.md'
+          - 'mGBA (Game&nbsp;Boy&nbsp;Advance)': 'library/mgba.md'
+          - 'TempGBA (Game&nbsp;Boy&nbsp;Advance)': 'library/tempgba.md'
+          - 'VBA&nbsp;Next (Game&nbsp;Boy&nbsp;Advance)': 'library/vba_next.md'
+          - 'VBA-M (Game&nbsp;Boy&nbsp;Advance)': 'library/vba_m.md'
+        - 'Game&nbsp;Boy&nbsp;Color':
+          - 'Game&nbsp;Boy&nbsp;Color Compatibility': 'library/compatibility/gbc.md'
+          - 'Emux&nbsp;GB (Game&nbsp;Boy&thinsp;/&thinsp;Color)': 'library/emux_gb.md'
+          - 'Gambatte (Game&nbsp;Boy&thinsp;/&thinsp;Color)': 'library/gambatte.md'
+          - 'Gearboy (Game&nbsp;Boy&thinsp;/&thinsp;Color)': 'library/gearboy.md'
+          - 'Mesen&#8209;S (SNES&thinsp;/&thinsp;SFC&thinsp;/&thinsp;Game&nbsp;Boy&thinsp;/&thinsp;Color)': 'library/mesen-s.md'
+          - 'SameBoy (Game&nbsp;Boy&thinsp;/&thinsp;Color)': 'library/sameboy.md'
+          - 'TGB&nbsp;Dual (Game&nbsp;Boy&thinsp;/&thinsp;Color)': 'library/tgb_dual.md'
+        - 'NES&thinsp;/&thinsp;Famicom':
+          - 'NES Compatibility': 'library/compatibility/nes.md'
+          - 'bnes (NES&thinsp;/&thinsp;Famicom)': 'library/bnes.md'
+          - 'Emux&nbsp;NES (NES&thinsp;/&thinsp;Famicom)': 'library/emux_nes.md'
+          - 'FCEUmm (NES&thinsp;/&thinsp;Famicom)': 'library/fceumm.md'
+          - 'Mesen (NES&thinsp;/&thinsp;Famicom)': 'library/mesen.md'
+          - 'Nestopia (NES&thinsp;/&thinsp;Famicom)': 'library/nestopia.md'
+          - 'QuickNES (NES&thinsp;/&thinsp;Famicom)': 'library/quicknes.md'
+        - 'SNES&thinsp;/&thinsp;Super&nbsp;Famicom':
+          - 'SNES&thinsp;/&thinsp;SFC Compatibility': 'library/compatibility/snes.md'
+          - 'Beetle&nbsp;bsnes (SNES&thinsp;/&thinsp;SFC)': 'library/beetle_bsnes.md'
+          - 'bsnes&#8209;jg (SNES&thinsp;/&thinsp;SFC)': 'library/bsnes-jg.md'
+          - 'bsnes&nbsp;Accuracy (SNES&thinsp;/&thinsp;SFC)': 'library/bsnes_accuracy.md'
+          - 'bsnes&nbsp;Balanced (SNES&thinsp;/&thinsp;SFC)': 'library/bsnes_balanced.md'
+          - 'bsnes&nbsp;C++98&nbsp;v085 (SNES&thinsp;/&thinsp;Famicom)': 'library/bsnes_cplusplus98.md'
+          - 'bsnes&nbsp;Performance (SNES&thinsp;/&thinsp;SFC)': 'library/bsnes_performance.md'
+          - 'bsnes&#8209;mercury&nbsp;Accuracy (SNES&thinsp;/&thinsp;SFC)': 'library/bsnes_mercury_accuracy.md'
+          - 'bsnes&#8209;mercury&nbsp;Balanced (SNES&thinsp;/&thinsp;SFC)': 'library/bsnes_mercury_balanced.md'
+          - 'bsnes&#8209;mercury&nbsp;Performance (SNES&thinsp;/&thinsp;SFC)': 'library/bsnes_mercury_performance.md'
+          - 'higan&nbsp;Accuracy (SNES&thinsp;/&thinsp;SFC)': 'library/higan_accuracy.md'
+          - 'nSide&nbsp;Balanced (SNES&thinsp;/&thinsp;SFC)': 'library/nside_balanced.md'
+          - 'Mesen&#8209;S (SNES&thinsp;/&thinsp;SFC&thinsp;/&thinsp;Game&nbsp;Boy&thinsp;/&thinsp;Color)': 'library/mesen-s.md'
+          - 'Snes9x (SNES&thinsp;/&thinsp;SFC)': 'library/snes9x.md'
+          - 'Snes9x&nbsp;2002 (SNES&thinsp;/&thinsp;SFC)': 'library/snes9x_2002.md'
+          - 'Snes9x&nbsp;2005&nbsp;Plus (SNES&thinsp;/&thinsp;SFC)': 'library/snes9x_2005_plus.md'
+          - 'Snes9x&nbsp;2005 (SNES&thinsp;/&thinsp;SFC)': 'library/snes9x_2005.md'
+          - 'Snes9x&nbsp;2010 (SNES&thinsp;/&thinsp;SFC)': 'library/snes9x_2010.md'
+        - 'Dolphin (GameCube&thinsp;/&thinsp;Wii)': 'library/dolphin.md'
+        - 'Citra (3DS)': 'library/citra.md'
+        - 'Citra Canary&thinsp;/&thinsp;Experimental (3DS)': 'library/citra_canary.md'
+        - 'Mupen64Plus (Nintendo&nbsp;64)': 'library/mupen64plus.md'
+        - 'PokeMini (Pokémon&nbsp;Mini)': 'library/pokemini.md'
+        - 'Beetle&nbsp;VB (Virtual&nbsp;Boy)': 'library/beetle_vb.md'
+      - 'Palm':
+        - 'Mu (Palm OS)': 'library/mu.md'
+      - 'Philips Magnavox':
+        - 'O2EM (Magnavox&nbsp;Odyssey2&thinsp;/&thinsp;Philips&nbsp;Videopac+)': 'library/o2em.md'
+        - 'M2000 (Philips&nbsp;P2000T)': 'library/m2000.md'
+      - 'RISC&#8209;V':
+        - 'RVVM (RISC&#8209;V Virtual&nbsp;Machine)': 'library/rvvm.md'
+      - 'SNK':
+        - 'Geolith (Neo&nbsp;Geo&nbsp;AES&thinsp;/&thinsp;MVS)': 'library/geolith.md'
+        - 'Beetle&nbsp;NeoPop (Neo&nbsp;Geo&nbsp;Pocket&thinsp;/&thinsp;Color)': 'library/beetle_neopop.md'
+        - 'RACE (Neo&nbsp;Geo&nbsp;Pocket&thinsp;/&thinsp;Color)': 'library/race.md'
+      - 'Sega':
+        - '32X Compatibility': 'library/compatibility/32x.md'
+        - 'Dreamcast':
+          - 'Dreamcast Compatibility': 'library/compatibility/dc.md'
+          - 'flycast (Dreamcast)': 'library/flycast.md'
+          - 'redream (Dreamcast)': 'library/redream.md'
+          - 'VeMUlator (Dreamcast&nbsp;VMU)': 'library/vemulator.md'
+        - 'Saturn':
+          - 'Saturn Compatibility': 'library/compatibility/saturn.md'
+          - 'Beetle&nbsp;Saturn (Saturn)': 'library/beetle_saturn.md'
+          - 'Kronos (Saturn&thinsp;/&thinsp;T&#8209;V)': 'library/kronos.md'
+          - 'Yabause (Saturn)': 'library/yabause.md'
+          - 'YabaSanshiro (Saturn)': 'library/yabasanshiro.md'
+        - 'Emux&nbsp;SMS (Master&nbsp;System)': 'library/emux_sms.md'
+        - 'SMS&nbsp;Plus&nbsp;GX (MS&thinsp;/&thinsp;GG)': 'library/smsplus.md'
+        - 'Gearsystem (MS&thinsp;/&thinsp;GG&thinsp;/&thinsp;SG&#8209;1000)': 'library/gearsystem.md'
+        - 'Genesis&nbsp;Plus&nbsp;GX (MS&thinsp;/&thinsp;GG&thinsp;/&thinsp;MD&thinsp;/&thinsp;CD)': 'library/genesis_plus_gx.md'
+        - 'PicoDrive (MS&thinsp;/&thinsp;MD&thinsp;/&thinsp;CD&thinsp;/&thinsp;32X)': 'library/picodrive.md'
+        - 'BlastEm (MD&thinsp;/&thinsp;CD)': 'library/blastem.md'
+        - 'ClownMDEmu (MD&thinsp;/&thinsp;CD)': 'library/clownmdemu.md'
+        - 'blueMSX (MSX&thinsp;/&thinsp;SVI&thinsp;/&thinsp;ColecoVision&thinsp;/&thinsp;SG&#8209;1000)': 'library/bluemsx.md'
+      - 'Sharp':
+        - 'PX68k (X68000)': 'library/px68k.md'
+      - 'Sinclair':
+        - 'EightyOne (ZX&nbsp;81)': 'library/eightyone.md'
+        - 'Fuse (ZX&nbsp;Spectrum)': 'library/fuse.md'
+      - 'Sony':
+        - 'Playstation':
+          - 'Playstation Compatibility': 'library/compatibility/psx.md'
+          - 'Beetle&nbsp;PSX (PlayStation)': 'library/beetle_psx.md'
+          - 'Beetle&nbsp;PSX&nbsp;HW (PlayStation)': 'library/beetle_psx_hw.md'
+          - 'PCSX&nbsp;ReARMed (PlayStation)': 'library/pcsx_rearmed.md'
+        - 'PCSX2 (PlayStation&nbsp;2)': 'library/lrps2.md'
+        - 'Play! (PlayStation&nbsp;2)': 'library/play.md'
+        - 'PPSSPP (PlayStation&nbsp;Portable)': 'library/ppsspp.md'
+      - 'SpectraVision':
+        - 'blueMSX (MSX&thinsp;/&thinsp;SVI&thinsp;/&thinsp;ColecoVision&thinsp;/&thinsp;SG&#8209;1000)': 'library/bluemsx.md'
+      - 'Sunplus':
+        - 'Native32Emu (Native32)': 'library/native32emu.md'
+      - 'Texas&nbsp;Instruments':
+        - 'Numero (TI&#8209;83)': 'library/numero.md'
+      - 'Thomson':
+        - 'Theodore (MO&thinsp;/&thinsp;TO)': 'library/theodore.md'
+      - 'Welback&nbsp;Holdings':
+        - 'SameDuck (Mega&nbsp;Duck&thinsp;/&thinsp;Cougar&nbsp;Boy)': 'library/sameduck.md'
+    - 'Core Library&ensp;🢖&ensp;Game and Scripting Engines':
       - '2048': 'library/2048.md'
-      - '3D Engine': 'library/3d_engine.md'
+      - '3D&nbsp;Engine': 'library/3d_engine.md'
       - 'Anarch': 'library/anarch.md'
-      - 'Cave Story (doukutsu-rs)': 'library/doukutsu-rs.md'
-      - 'Cave Story (NXEngine)': 'library/nxengine.md'
+      - 'Boom3 (Doom&nbsp;3)': 'library/boom3.md'
       - 'Cannonball': 'library/cannonball.md'
       - 'ChaiLove': 'library/chailove.md'
-      - 'CHIP-8 Emulation':
-        - 'XO-CHIP/CHIP-8 (JAXE)': 'library/jaxe.md'
-        - 'CHIP-8 (Emux)': 'library/emux_chip8.md'
+      - 'Craft (Minecraft)': 'library/craft.md'
       - 'Dinothawr': 'library/dinothawr.md'
-      - 'Doom (PrBoom)': 'library/prboom.md'
-      - 'Doom 3 (Boom3)': 'library/boom3.md'
-      - 'Dungeon Crawl Stone Soup': 'library/stone_soup.md'
-      - 'Flashback (REminiscence)': 'library/reminiscence.md'
-      - 'Handheld Electronic (GW)': 'library/gw.md'
-      - 'Jump n Bump': 'library/jumpnbump.md'
-      - 'LowRes NX': 'library/lowres_nx.md'
-      - 'Lua Engine (Lutro)': 'library/lutro.md'
+      - 'doukutsu&#8209;rs (Cave&nbsp;Story)': 'library/doukutsu-rs.md'
+      - 'ECWolf (Wolfenstein&nbsp;3D)': 'library/ecwolf.md'
+      - 'GW (Handheld Electronic)': 'library/gw.md'
+      - "Jump&nbsp;'n'&nbsp;Bump": 'library/jumpnbump.md'
+      - 'LowRes&nbsp;NX': 'library/lowres_nx.md'
+      - 'Lutro (Lua&nbsp;Engine)': 'library/lutro.md'
       - 'MicroW8': 'library/microw8.md'
-      - 'Minecraft (Craft)': 'library/craft.md'
-      - 'Mr.Boom (Bomberman)': 'library/mr_boom.md'
-      - 'Quake 1 (TyrQuake)': 'library/tyrquake.md'
-      - 'Rick Dangerous (XRick)': 'library/xrick.md'
-      - 'RPG Maker Emulation':
-        - 'RPG Maker 2000/2003 (EasyRPG)': 'library/easyrpg.md'
-        - 'RPG Maker XP/VX/VX Ace (mkxp-z)': 'library/mkxp-z.md'
+      - 'Mr.&nbsp;Boom (Bomberman)': 'library/mr_boom.md'
+      - 'NXEngine (Cave&nbsp;Story)': 'library/nxengine.md'
+      - 'OpenLara (Tomb&nbsp;Raider)': 'library/openlara.md'
+      - 'PrBoom (Doom)': 'library/prboom.md'
+      - 'REminiscence (Flashback)': 'library/reminiscence.md'
+      - 'RPG&nbsp;Maker&nbsp;Emulation':
+        - 'EasyRPG (RPG&nbsp;Maker&nbsp;2000&thinsp;/&thinsp;2003)': 'library/easyrpg.md'
+        - 'mkxp-z (RPG&nbsp;Maker&nbsp;XP&thinsp;/&thinsp;VX&thinsp;/&thinsp;VX&nbsp;Ace)': 'library/mkxp-z.md'
       - 'ScummVM': 'library/scummvm.md'
-      - 'The Powder Toy': 'library/the_powder_toy.md'
-      - 'TIC-80': 'library/tic80.md'
-      - 'Tomb Raider (OpenLara)': 'library/openlara.md'
-      - 'Uzebox (Uzem)': 'library/uzem.md'
+      - 'Stone&nbsp;Soup (Dungeon&nbsp;Crawl)': 'library/stone_soup.md'
+      - 'The&nbsp;Powder&nbsp;Toy': 'library/the_powder_toy.md'
+      - 'TIC&#8209;80': 'library/tic80.md'
+      - 'TyrQuake (Quake&nbsp;1)': 'library/tyrquake.md'
+      - 'Uzem (Uzebox)': 'library/uzem.md'
       - 'VaporSpec': 'library/vaporspec.md'
       - 'Vircon32': 'library/vircon32.md'
-      - 'WebAssembly (WASM-4)': 'library/wasm-4.md'
-      - 'Wolfenstein 3D (ECWolf)': 'library/ecwolf.md'
-    - 'Core Library: Media':
+      - 'WASM&#8209;4 (WebAssembly)': 'library/wasm-4.md'
+      - 'XRick (Rick&nbsp;Dangerous)': 'library/xrick.md'
+    - 'Core Library&ensp;🢖&ensp;Media':
       - 'Imageviewer': 'library/imageviewer.md'
       - 'FFmpeg': 'library/ffmpeg.md'
-      - 'Game Music Emu': 'library/game_music_emu.md'
+      - 'Game&nbsp;Music&nbsp;Emu': 'library/game_music_emu.md'
       - 'PocketCDG': 'library/pocketcdg.md'
-      - 'Video Processor': 'library/video_processor.md'
-    - 'Core Library: Special-Purpose':
-      - 'Dummy Core': 'library/dummy.md'
-      - 'Remote RetroPad': 'library/remote_retropad.md'
-    - 'Shader Library':
+      - 'Video&nbsp;Processor': 'library/video_processor.md'
+    - 'Core Library&ensp;🢖&ensp;Special&nbsp;Purpose':
+      - 'Dummy&nbsp;Core': 'library/dummy.md'
+      - 'Remote&nbsp;RetroPad': 'library/remote_retropad.md'
+    - 'Shader&nbsp;Library':
       - 'Introduction': 'shader/introduction.md'
       - '3dfx': 'shader/3dfx.md'
       - 'antialiasing': 'shader/antialiasing.md'
       - 'autobox': 'shader/auto-box.md'
-      - 'border': 'shader/border.md'
       - 'blurs': 'shader/blurs.md'
+      - 'border': 'shader/border.md'
       - 'cel': 'shader/cel.md'
       - 'cgp': 'shader/cgp.md'
       - 'crt': 'shader/crt.md'
@@ -360,8 +580,8 @@ nav:
       - 'presets': 'shader/presets.md'
       - 'retro': 'shader/retro.md'
       - 'sabr': 'shader/sabr.md'
-      - 'scalefx-OLD-shaders': 'shader/scalefx-old-shaders.md'
       - 'scalefx': 'shader/scalefx.md'
+      - 'scalefx&nbsp;(old)': 'shader/scalefx-old-shaders.md'
       - 'scalehq': 'shader/scalehq.md'
       - 'scalenx': 'shader/scalenx.md'
       - 'sharpen': 'shader/sharpen.md'
@@ -370,14 +590,16 @@ nav:
       - 'xbrz': 'shader/xbrz.md'
       - 'xsal': 'shader/xsal.md'
       - 'xsoft': 'shader/xsoft.md'
-  - 'For Developers':
-    - 'Libretro API and Ecosystem':
-      - 'Libretro Overview': 'development/libretro-overview.md'
-      - 'Open Source Bounties': 'development/bounties.md'
-      - 'Input API': 'development/input-api.md'
-      - 'Coding Standards': 'development/coding-standards.md'
-      - 'Licenses': 'development/licenses.md'
+    - 'Related&nbsp;Projects':
+      - 'Lakka&nbsp;Documentation': 'https://www.lakka.tv/doc/Home/'
+  - 'For&nbsp;Developers':
+    - 'Libretro&nbsp;API & Ecosystem':
+      - 'Development&nbsp;Overview': 'development/libretro-overview.md'
+      - 'Coding&nbsp;Standards': 'development/coding-standards.md'
       - 'Frontends': 'development/frontends.md'
+      - 'Input&nbsp;API': 'development/input-api.md'
+      - 'Licenses': 'development/licenses.md'
+      - 'Open&nbsp;Source&nbsp;Bounties': 'development/bounties.md'
     - 'RetroArch Development':
       - 'Glossary': 'development/retroarch/glossary.md'
       - 'Debugging': 'development/retroarch/debugging.md'
@@ -459,127 +681,32 @@ nav:
     - 'Quick informations': 'support/quick-informations.md'
     - 'Developing Cores': 'tech/developing-cores.md'
 
-extra:
-  adsense: "ca-pub-9447404270680650"
-  analytics:
-    provider: google
-    property: G-MT11L3F6EZ
-  consent:
-    description: >-2
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-    title: Cookie consent
-  font:
-    text: 'Noto Sans'
-    code: 'Noto Sans Mono'
-  i18n:
-    prev: 'Previous'
-    next: 'Next'
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/libretro
-      name: Libretro on GitHub
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/libretro
-      name: Libretro on X
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/C4amCeV
-      name: RetroArch Discord server
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/@Libretro
-      name: Libretro YouTube channel
-    - icon: fontawesome/brands/facebook
-      link: https://facebook.com/libretro
-      name: Libretro on Facebook
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/libretro
-      name: Libretro/RetroArch on Instagram
-  status:
-    fixed: The information on this page never changes
-    stable: The information on this page changes infrequently, or not at all
-  unit:
-    stable: 1.22.2
-  version: '0.2.0'
-
-extra_css:
-  - stylesheets/extra.css
-
-markdown_extensions:
-  - admonition
-  - abbr
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - meta
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret:
-      insert: true
-      smart_insert: true
-      superscript: true
-  - pymdownx.critic:
-      mode: accept
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-  - pymdownx.highlight:
-      anchor_linenums: true
-      auto_title: false
-      guess_lang: block
-      line_spans: __span
-      linenums: false
-      linenums_style: pymdownx-inline
-      pygments_lang_class: true
-      stripnl: false
-      use_pygments: true
-  - pymdownx.inlinehilite:
-      style_plain_text: true
-  - pymdownx.keys:
-      camel_case: true
-      strict: true
-  - pymdownx.magiclink:
-      repo: docs
-      repo_url_shorthand: true
-      user: libretro
-  - pymdownx.mark:
-      smart_mark: true
-  - pymdownx.smartsymbols:
-      arrows: false
-  - pymdownx.snippets:
-      check_paths: true
-      dedent_subsections: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-      combine_header_slug: true
-  - pymdownx.tasklist:
-      clickable_checkbox: false
-      custom_checkbox: true
-  - pymdownx.tilde:
-      delete: true
-      smart_delete: true
-      subscript: true
-  - toc:
-      permalink: true
-      permalink_title: Reference link to this section
-      toc_depth: 6
-
 plugins:
   - git-revision-date-localized
+  - glightbox:
+      auto_caption: true
+      auto_themed: true
+      background: none
+      loop: true
+      manual: true
+      shadow: none
   - macros
-  - search
+  - redirects:
+      redirect_maps:
+        'library/nestopia_ue.md': 'library/nestopia.md'
+        'library/pcsx2.md': 'library/lrps2.md'
+  - search:
+      lang: en
+  - table-reader:
+      allow_missing_files: true
+      data_path: docs/tables
+      select_readers:
+        - read_csv
+        - read_yaml
+  - typeset
 
 theme:
-  custom_dir: docs/overrides/
+  custom_dir: docs/overrides
   favicon: 'image/branding/invader.png'
   features:
     - content.action.edit
@@ -600,10 +727,24 @@ theme:
   font:
     text: 'Noto Sans'
     code: 'Noto Sans Mono'
+  icon:
+    admonition:
+      abstract: fontawesome/solid/scroll
+      bug: fontawesome/solid/bugs
+      danger: fontawesome/solid/cloud-bolt
+      example: fontawesome/solid/person-chalkboard
+      failure: material/skull-crossbones
+      info: fontawesome/solid/info
+      note: material/clipboard-text
+      question: fontawesome/solid/question
+      quote: fontawesome/solid/quote-right-alt
+      success: fontawesome/solid/trophy
+      tip: material/lightbulb-on
+      warning: material/sign-caution
   # Don't include MkDocs' JavaScript
   include_search_page: false
   language: en
-  logo: 'image/branding/invader.png'
+  logo: image/branding/invader.png
   name: material
   palette:
     - media: "(prefers-color-scheme: light)"

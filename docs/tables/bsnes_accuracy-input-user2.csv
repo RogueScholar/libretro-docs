@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+Device,Type
+&#8203;None,Input disabled
+[**SNES JOYPAD**][fandom-snes-joypad],Gamepad
+[SNES Mouse][enwiki-snes-mouse],Mouse
+[Multitap][fandom-super-multitap],Simultaneous joypad use for up to five players
+[SuperScope][enwiki-super-scope],Lightgun
+[Justifier][enwiki-konami-justifier],Lightgun
+[Justifiers][enwiki-konami-justifier],Lightgun - Two Justifiers connected for two-player games

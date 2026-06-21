@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT
+#
+# SPDX-FileCopyrightText: © 2024, Peter J. Mello <admin@petermello.net>
+Feature,Supported
+Restart,:white_check_mark:
+Screenshots,:white_check_mark:
+Saves,❌
+States,:white_check_mark:
+Rewind,:white_check_mark:
+Netplay (State-based) { .middle },:white_check_mark:<br />(except link-cable emulation)
+Core Options,:white_check_mark:
+RetroAchievements,:white_check_mark:
+Cheats (Cheats menu),❌
+Native Cheats,❌
+Controls,:white_check_mark:
+Remapping,:white_check_mark:
+Multi-Mouse,❌
+Rumble,❌
+Sensors,❌
+Camera,❌
+Location,❌
+Subsystem,❌
+[Softpatching][],❌
+Disk Control,❌
+Username,❌
+Language,❌
+Crop Overscan,❌
+LEDs,❌

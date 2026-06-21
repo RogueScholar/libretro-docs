@@ -2,51 +2,62 @@
 
 ## Background
 
-Beetle PSX HW is a port/fork of Mednafen's PSX module to the libretro API. It can be compiled in C++98 mode, excluding the Vulkan renderer, which is written in C++11 for the time being. Beetle PSX HW currently runs on Linux, OSX and Windows.
+Beetle PSX HW is a port/fork of Mednafen's PSX module to the libretro API. It
+can be compiled in C++98 mode, excluding the Vulkan renderer, which is written
+in C++11 for the time being. Beetle PSX HW currently runs on Linux, OSX and
+Windows.
 
 Notable additions in this fork are:
 
-- PBP and CHD file format support, developed by Zapeth;
-- Software renderer internal resolution upscaling, implemented by simias;
-- An OpenGL 3.3 renderer, developed by simias;
-- A Vulkan renderer, developed by TinyTiger;
-- PGXP perspective correct texturing and subpixel precision, developed by iCatButler;
+- PBP and CHD file format support (developed by Zapeth)
+- Software renderer internal resolution upscaling (implemented by simias)
+- An OpenGL 3.3 renderer (developed by simias)
+- A Vulkan renderer (developed by TinyTiger)
+- PGXP perspective correct texturing and subpixel precision (developed by
+  iCatButler)
 
 The Beetle PSX HW core has been authored by
 
-- [Mednafen Team](https://mednafen.github.io/)
+- [The Mednafen Team](https://mednafen.github.io/)
 
 The Beetle PSX HW core is licensed under
 
 - [GPLv2](https://github.com/libretro/beetle-psx-libretro/blob/master/COPYING)
 
-A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
+[A summary of the licenses](../development/licenses.md) that govern the use and
+distribution of RetroArch and its cores is available.
 
 ### Requirements
 
-- OpenGL 3.3 for the opengl renderer
-- Vulkan for the vulkan renderer
+- OpenGL 3.3 (OpenGL renderer only)
+- Vulkan (Vulkan renderer only)
 
 ## BIOS
 
-User-supplied BIOS files are supported, but not required; [OpenBIOS](https://pcsx-redux.consoledev.net/openbios/) will be used if no BIOS is provided.
+User-supplied BIOS files are supported, but not required;
+[OpenBIOS](https://pcsx-redux.consoledev.net/openbios/) will be used if none are
+provided.
 
-Required or optional firmware files go in the frontend's `system` directory.
+Required or optional firmware files must be placed in the frontend's `system`
+directory.
 
-|   Filename      | Description                           |              md5sum              |
-|:---------------:|:-------------------------------------:|:--------------------------------:|
-| scph5500.bin    | PS1 JP BIOS - Required for JP games   | 8dd7d5296a650fac7319bce665a6a53c |
-| scph5501.bin    | PS1 US BIOS - Required for US games   | 490f666e1afb15b7362b406ed1cea246 |
-| scph5502.bin    | PS1 EU BIOS - Required for EU games   | 32736f17079d0b2b7024407c39bd3050 |
+|    Filename    |            Description             |               md5sum               |
+|:--------------:|:----------------------------------:|:----------------------------------:|
+| `scph5500.bin` | PS1 JP BIOS, required for JP games | `8dd7d5296a650fac7319bce665a6a53c` |
+| `scph5501.bin` | PS1 US BIOS, required for US games | `490f666e1afb15b7362b406ed1cea246` |
+| `scph5502.bin` | PS1 EU BIOS, required for EU games | `32736f17079d0b2b7024407c39bd3050` |
 
-As a replacement for any of the BIOS files mentioned above, it is also possible to use either of these BIOS files:
+As a replacement for any of the files listed above, it is also possible to use
+any of these region-free BIOS files:
 
-- `PSXONPSP660.bin` (MD5: c53ca5908936d412331790f4426c6c33)
-- `ps1_rom.bin` (MD5: 81bbe60ba7a3d1cea1d48c14cbcc647b)
-- `openbios.bin`
+- `PSXONPSP660.bin` – from the PlayStation Portable _(MD5 checksum:
+  `c53ca5908936d412331790f4426c6c33`)_
+- `ps1_rom.bin` – from the PlayStation 3 _(MD5 checksum:
+  `81bbe60ba7a3d1cea1d48c14cbcc647b`)_
+- `openbios.bin` – from PCSX-Redux
 
-The `PSXONPSP660.bin` BIOS comes from the PSP, the `ps1_rom.bin` BIOS comes from the PS3, and the `openbios.bin` BIOS comes from PCSX-Redux; all are region-free.
-For Beetle PSX HW to recognize these BIOS files, you need to enable the "Override BIOS" option.
+For Beetle PSX HW to recognize these BIOS files, the `Override BIOS` core option
+must be enabled.
 
 ## Extensions
 
@@ -433,7 +444,7 @@ The default setting for each option will be highlighted in bold. Settings with (
 	    ![](../image/core/beetle_psx_hw/smooth_off.png)
 
 	??? note "*Adaptive smoothing - On*"
-	    ![](../image/core/beetle_psx_hw/smooth_on.png)
+	    ![](../image/core/beetle_psx_hw/smooth_on.webp)
 
 - **Supersampling (Downsample to Native Resolution)** [beetle_psx_hw_super_sampling] (**disabled**/enabled)
 

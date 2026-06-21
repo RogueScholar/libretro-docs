@@ -1,6 +1,11 @@
+# SPDX-FileCopyrightText: © 2024, Viačasłaŭ Chalikin <viachaslavic@outlook.com>
+# SPDX-FileCopyrightText: © 2026, Ömercan Kömür <fpscan@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+
 [files]
 extend-exclude = [
-  ".git/",     # Version control files
+  ".git/",      # Version control files
   "archive/*",  # Archive files
 ]
 
