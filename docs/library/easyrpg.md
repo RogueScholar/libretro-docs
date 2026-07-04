@@ -31,7 +31,7 @@ Content that can be loaded by the EasyRPG core have the following file extension
 
 ### RTP files
 
-You must download the RTP2000 and RTP2003 from [here](https://www.rpgmakerweb.com/run-time-package). They are exe/zip files but can be extracted with e.g. 7zip. Create a `rtp` folder in the `system` folder of the frontend. Put the extracted data from the RTP2000 "rtp/2000" and the extracted data from the RTP2003 in "rtp/2003".
+You must download the RTP2000 and RTP2003 from [here](https://www.rpgmakerweb.com/run-time-package). They are exe/zip files but can be extracted with e.g. 7zip. Create a `rtp` folder in the `system` folder of the frontend. Put the extracted data from the RTP2000 in "rtp/2000" and the extracted data from the RTP2003 in "rtp/2003".
 
 |   |   |   |   |   |
 |---|---|---|---|---|
