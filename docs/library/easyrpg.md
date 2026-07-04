@@ -94,7 +94,7 @@ The EasyRPG core saves/loads to/from these directories.
 
 - easyrpg-player/config.ini (configuration of the engine)
 - easyrpg-player/Soundfont (soundfont files)
-- easyrpg-player/Font (Font files)
+- easyrpg-player/Font (font files)
 - easyrpg-player/wildmidi.cfg (wildmidi configuration file, to combine with an instruments folder)
 
 ### Geometry and timing
