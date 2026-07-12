@@ -103,7 +103,7 @@ See below for a summary of the licenses behind RetroArch and its cores:
 | Dungeon Crawl Stone Soup                                                         | [GPLv2+](https://github.com/libretro/crawl-ref/blob/master/crawl-ref/licence.txt)         |                |
 | EasyRPG                                                                          | [GPLv3](https://github.com/libretro/easyrpg-libretro/blob/master/COPYING)                 |                |
 | [EightyOne](../library/eightyone.md)             			           | [GPLv3](https://github.com/libretro/81-libretro/blob/master/LICENSE)                      |                |
-| [Elektronika - BK-0010/BK-0011](../library/bk.md)                                          | [BSD](https://github.com/libretro/bk-emulator/blob/master/COPYING) |                            |
+| [Elektronika - BK-0010/BK-0011](../library/bk.md)                                          | [HPND](https://github.com/libretro/bk-emulator/blob/master/COPYING) |                            |
 | [EmuSCV](../library/emuscv.md)                           | [GPLv2](https://github.com/libretro/)                  |                |
 | [Emux CHIP-8](../library/emux_chip8.md)                                          | [GPLv2](https://github.com/libretro/emux/blob/master/COPYING)                             |                |
 | [Emux GB](../library/emux_gb.md)                                                 | [GPLv2](https://github.com/libretro/emux/blob/master/COPYING)                             |                |
@@ -120,7 +120,7 @@ See below for a summary of the licenses behind RetroArch and its cores:
 | [FFmpeg](../library/ffmpeg.md)                                                   | [LGPLv2, GPLv2](https://github.com/libretro/FFmpeg/blob/master/LICENSE.md)                |                |
 | [Flycast](../library/flycast.md)                                                 | [GPLv2](https://github.com/libretro/flycast/blob/master/LICENSE)        |                |
 | fMSX                                                                             | [Non-commercial](https://github.com/libretro/fmsx-libretro/blob/master/LICENSE)           | Non-commercial |
-| FreeIntv                                                                         | [GPLv3](https://github.com/libretro/FreeIntv/blob/master/LICENSE)             |                |
+| FreeIntv                                                                         | [GPLv2+](https://github.com/libretro/FreeIntv/blob/master/LICENSE)             |                |
 | FreeJ2ME                                                                         | [GPLv3](https://github.com/hex007/freej2me/blob/master/LICENSE)                           |                |
 | Frodo                                                                            | [GPLv2](https://github.com/r-type/frodo-libretro/blob/master/COPYING)                     |                |
 | Fuse                                                                             | [GPLv3](https://github.com/libretro/fuse-libretro/blob/master/LICENSE)                    |                |
