@@ -150,7 +150,7 @@ Configure region, language, BIOS and base hardware settings.
 
 	Enable emulation of the Dreamcast's audio DSP (digital signal processor). Improves the accuracy of generated sound, but increases performance requirements.
 
-**Force Windows CE Mode** [flycast_force_windows_ce_modee] (**disabled**|enabled)
+**Force Windows CE Mode** [flycast_force_windows_ce_mode] (**disabled**|enabled)
 
 !!! regular ""
 
@@ -180,7 +180,7 @@ Configure visual buffers & effects, display parameters, framerate/-skip and rend
 
 	The output signal type. 'TV (Composite)' is the most widely supported.	
 
-**Broadcast Standard** [flycast_brodcast] (**Default**|PAL-M (Brazil)|PAL-N (Argentina, Paraguay, Uruguay)|NTSC|PAL (World))
+**Broadcast Standard** [flycast_broadcast] (**Default**|PAL-M (Brazil)|PAL-N (Argentina, Paraguay, Uruguay)|NTSC|PAL (World))
 
 **Screen Orientation** [flycast_screen_orientation] (**Horizontal**|Vertical)	
 
@@ -289,7 +289,7 @@ Configure threaded rendering, integer division optimisations and frame skip sett
 
 !!! regular ""
 
-	Configure per-game VMU save files and on-scren VMU visibility sttings.
+	Configure per-game VMU save files and on-screen VMU visibility settings.
 
 **Per-Game VMUs** [flycast_per_content_vmus] (**disabled**|VMU A1|All VMUs)
 

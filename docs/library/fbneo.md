@@ -17,7 +17,7 @@ The libretro core provides wide compatibility with platforms and features suppor
 FBNeo strives for accuracy, just like MAME. There are some arcade boards where one or the other will be more accurate, but for the most part they should be equally accurate.
 The main difference with MAME is that FBNeo doesn't mind including "quality of life" hacks, while MAME is mostly focused on preservation and documentation. "Quality of life" hacks include things like :
 
-* improving original game's sound (some games like "Burger Time" have noise which was clearly unintended by their developpers, we are removing it)
+* improving original game's sound (some games like "Burger Time" have noise which was clearly unintended by their developers, we are removing it)
 * implementing alternative colors for games where the colors don't look right (sometimes there are controversies about which colors are right for an arcade board, like "Tropical Angel", we implement alternative colors as dipswitches)
 * having control alternatives that didn't exist on original cabinet (play rotary stick games like twin-stick shooters, use lightguns in "Rambo 3", use simplified 8-way directional controls for "Battlezone", ...)
 * improving the gaming experience by cutting what we deem as unnecessary aspect of emulation (you don't have to spend 20 minutes "installing" CPS-3 games, neither 100s loading Deco Cassette games)
@@ -37,7 +37,7 @@ There are controversies about whether libretro's patreon and retroarch's GPL lic
 * *If* the libretro project was a commercial activity, it would still be unclear how it does affect this port. Our win32 standalone builds use the directx api, which belongs to a commercial company. Using the libretro api, which would belong to a commercial activity, wouldn't be any different. Furthermore, in all likeliness, there would still be alternative libretro frontends that don't belong to the libretro project and are not commercial. 
 * Actually, alternative commercial libretro frontends already exist, and we consider we are not concerned as long as they neither redistribute FBNeo nor use it as some mean of advertisement. In this scenario, only a manual installation of the core by the user will be considered legal and supported.
 * While GPL code can't be mixed with non-commercial code, this is a non-issue since this port doesn't contain any GPL-licensed code.
-* Under european law, where the libretro buildbots are located, linking GPL and non-commercial softwares doesn't produce a derivative work, and doesn't extend the GPL license to the non-commercial work (source [here](https://joinup.ec.europa.eu/collection/eupl/licence-compatibility-permissivity-reciprocity-and-interoperability)). It is unclear whether the same applies in non-EU countries or not.
+* Under european law, where the libretro buildbots are located, linking GPL and non-commercial software doesn't produce a derivative work, and doesn't extend the GPL license to the non-commercial work (source [here](https://joinup.ec.europa.eu/collection/eupl/licence-compatibility-permissivity-reciprocity-and-interoperability)). It is unclear whether the same applies in non-EU countries or not.
 
 ## Extensions
 
@@ -120,7 +120,7 @@ The following "device type" also exist, but they won't be compatible with every 
 * **Mouse (full)** : same as above, but the buttons will be on the mouse
 * **Pointer** : it will use "pointer" device (can be a mouse/trackball) to determine coordinates on screen, buttons will stay on retropad
 * **Lightgun** : it will use lightgun to determine coordinates on screen, buttons will be on the lightgun too.
-* **Analog Arcade Gun** : it will use the analog stick for gun games but in a different way than "Classic" and "Modern", it is particularily useful if you have a "fixed arcade gun" (arcade gun mounted on an analog control).
+* **Analog Arcade Gun** : it will use the analog stick for gun games but in a different way than "Classic" and "Modern", it is particularly useful if you have a "fixed arcade gun" (arcade gun mounted on an analog control).
 
 The following device types are mostly WIP, they haven't been thoroughly tested and might contain major bugs (please report them) :
 
@@ -490,7 +490,7 @@ This feature doesn't accept achievements made with any kind of cheat, meaning un
 
 ### Why do i need to re-enable cheats every time i boot a game ?
 
-It is common for arcade machines to execute self-tests at boot, and in many cases they won't boot if unexpected values have been injected into their memory, which is exactly what cheats do. Disabling cheats at boot is a safety mecanism to prevent those boot issues.
+It is common for arcade machines to execute self-tests at boot, and in many cases they won't boot if unexpected values have been injected into their memory, which is exactly what cheats do. Disabling cheats at boot is a safety mechanism to prevent those boot issues.
 
 ### Why do the self-tests at boot fail ?
 

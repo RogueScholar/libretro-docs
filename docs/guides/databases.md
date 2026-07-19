@@ -97,7 +97,7 @@ After you've investigated the issue (see above), some possible actions are:
     - __Open__ an Issue if a relevant one isn't already open.
       - Open a [Database Issue](https://github.com/libretro/libretro-database/issues) __if__ you observe either of the following:
         - You see a large-scale issue affecting many data entries or entire dats.
-        - You found that Upstream Data is _correct_ but libretro or RetroArch doesn't reflect it, and at leat 4 weeks have passed since the Upstream update occurred.  
+        - You found that Upstream Data is _correct_ but libretro or RetroArch doesn't reflect it, and at least 4 weeks have passed since the Upstream update occurred.  
       - Open a [RetroArch Issue](https://github.com/libretro/RetroArch/issues) __if__: you see a problem with RetroArch's scanning behavior or validation, while the databases appear correct and match your file's properties (crc and serial within the game's binary data viewable with a hex editor).
 - __Submit Upstream Changes.__  Make changes upstream (No-Intro, Redump, GameTDB, etc) by going through the channels of the upstream group responsible for the data at issue __if__: you found that Upstream Data is _Incorrect_ and has been imported to the libretro database repository. The upstream group must make the correction to "fix it at the source", though it may be possible to create alternative data coverage instead (see below).
  

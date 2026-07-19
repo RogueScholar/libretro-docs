@@ -190,7 +190,7 @@ else if (string_is_equal(language,"xx"))
 else if (string_is_equal(language, "xx"))
    return "yyy";
 ```
-3. For Windows. (OS compatiable)
+3. For Windows. (OS compatible)
     1. Open `frontend/drivers/platform_win32.c`.
     2. Go to `accessibility_win_language_code(const char* language)` function. Check if the following block is present, where `Yyyyy` is the [voice name](https://support.microsoft.com/en-us/windows/appendix-a-supported-languages-and-voices-4486e345-7730-53da-fcfe-55cc64300f01#WindowsVersion=Windows_10) for the language and if not, add it before `return ""`:
 ```c

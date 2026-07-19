@@ -56,7 +56,7 @@ The matching algorithm considers several key factors:
 - **Physical ID (input_phys)**: A locally generated identifier in supported drivers, only valid for one specific controller instance / USB port.
 
 ### Matching process
-RetroArch compares these factors against the files in the autoconfig directorys. It calculates a matching score for each profile, selecting the one with the highest score to configure the controller.
+RetroArch compares these factors against the files in the autoconfig directories. It calculates a matching score for each profile, selecting the one with the highest score to configure the controller.
 
 The combination of Vendor ID and Product ID is often referred to as "vid:pid" in technical contexts.
 
@@ -83,7 +83,7 @@ It is also worth to change `display_name`, to immediately see if the match went 
 
 | Controller driver | input_vendor_id/input_product_id required | input_device usage | input_device name variability policy
 |-|-|-|-|
-| android | Yes | input_device[^3] | Use the Bluetooth name since it's primarly used by Android devices.
+| android | Yes | input_device[^3] | Use the Bluetooth name since it's primarily used by Android devices.
 | udev | Yes | input_device[^3] | For optimal configuration, if you are generating Linux raw autoconfig files, it is advisable to reuse the variables for input_device and alternative_input_device. In cases where input_device is used without alternative names, it is recommended to utilize the USB Device Index for a more descriptive identification.
 | linuxraw | No | input_device (for Device Index over USB), input_device_alt1 (for Device Index over Bluetooth), input_device_alt2 (for Device Index over USB on another Linux kernel)... | Use both Device Index over USB and Bluetooth from different Linux kernels; Their names can differ depending on the Linux version in use.
 | sdl2 | Yes | input_device[^3] | No (uses [SDL2 Game Controller community database](https://github.com/mdqinc/SDL_GameControllerDB/blob/master/gamecontrollerdb.txt))
@@ -209,7 +209,7 @@ Most Android devices are not rooted, and RetroArch's default autoconfig director
 - This adjustment allows the autoconfig files to be saved in `/storage/emulated/0/RetroArch/autoconfig/android` when using `Settings` -> `Input` -> `RetroPad Binds` -> `Port 1 Controls` -> `Save Controller Profile`.
 
 #### Addressing controller navigation issues on non-touchscreen devices
-Your controller will use the Controller Profile directory `/data/user/0/com.retroarch/autoconfig` by default in Android. Any autoconfig file that mathces your controller (Vendor ID/Product ID) be used by RetroArch automatically. However, you will not be able to generate a **new** autoconfig file for your controller if a default autoconfig file encounter issues with the following components:
+Your controller will use the Controller Profile directory `/data/user/0/com.retroarch/autoconfig` by default in Android. Any autoconfig file that matches your controller (Vendor ID/Product ID) be used by RetroArch automatically. However, you will not be able to generate a **new** autoconfig file for your controller if a default autoconfig file encounter issues with the following components:
 
 * **DPAD**: Essential for navigating menus.
 * **OK**: Necessary for applying settings, such as navigating to `Settings -> Input -> RetroPad Binds -> Port 1 Controls`, and selecting `Set All Controls` and `Save Controller Profile`.
@@ -353,7 +353,7 @@ input_r2_axis_label = "ZR"
 
 To address this bug in RetroArch on other controllers or drivers, you need to manually edit the RetroArch config file to set the correct analog axis mappings for L2 and R2. Here's how to find the proper axis values:
 
-* Install and run jstest avalible for GNU/Linux (`sudo apt-get install joystick` for Debian-like distros), and Windows.
+* Install and run jstest available for GNU/Linux (`sudo apt-get install joystick` for Debian-like distros), and Windows.
   - In GNU/Linux: `jstest /dev/input/js0`
   - In GNU/Linux virtual machines using QEMU, js0 is designated for the mouse, so you need to use js1 by running the command: `jstest /dev/input/js1`
 * Slowly press L2 and R2 to identify which axis numbers change
@@ -468,7 +468,7 @@ SDL2 uses the [SDL2 Game controller community database](https://github.com/mdqin
 You can check it using [SDL2 Gamepad Mapper](https://gitlab.com/ryochan7/sdl2-gamepad-mapper/-/releases).
 
 #### Appimage issue
-Currently, the SDL2 controller driver utilizes UDEV rather than SDL2 in the RetroArch Appimage package. Therfore, use the Flatpak package in order to upload SDL2 autoconfig files.
+Currently, the SDL2 controller driver utilizes UDEV rather than SDL2 in the RetroArch Appimage package. Therefore, use the Flatpak package in order to upload SDL2 autoconfig files.
 
 ### linuxraw, and udev naming schemes (depends on multiple Device Indexes)
 

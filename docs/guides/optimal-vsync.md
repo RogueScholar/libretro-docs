@@ -85,7 +85,7 @@ Notable internal RetroArch statistics regarding frame pacing are:
 
       - Windowed mode, and even windowed full-screen mode can contribute to frame pacing issues, so `Settings->Video->Fullscreen Mode->Windowed Full-Screen Mode` can be disabled to test if this improves your frame pacing.
 
-      - `Settings->Video->Output->Automatic Refresh Rate Switch` can be considered to be disabled, as if it changes your actual display refresh rate, in non-VRR mode this can interfere with your set Vsync Swap Interval and cause *large* mistiming, and in VRR mode, you want the display to maintain the maximum potential refresh rate so that it can be more accurate in accomodating small requested timing differences.
+      - `Settings->Video->Output->Automatic Refresh Rate Switch` can be considered to be disabled, as if it changes your actual display refresh rate, in non-VRR mode this can interfere with your set Vsync Swap Interval and cause *large* mistiming, and in VRR mode, you want the display to maintain the maximum potential refresh rate so that it can be more accurate in accommodating small requested timing differences.
 
       - `Settings->Video->Output->Threaded Video` is well known to interfere with smooth frame pacing and audio sync, but can be the only choice for hardware otherwise too weak for the intended content to run at near the correct frame rate at all.
 
@@ -101,7 +101,7 @@ Notable internal RetroArch statistics regarding frame pacing are:
 
          How low you can set this to without issue can vary per content, but the default value of 64 ms was chosen for avoiding issues like this. If you still decide to push lower, keep in mind a 60Hz NTSC frame is approximately 16.66 ms long, so you might want to try a value a little longer than 2 frames, like 35ms, and then a little longer than 3 frames like 52ms, et cetera.
 
-      - Under `System->Video Settings->Synchronization`, `Hard GPU Sync`, `Max Swapchain Images`, or `Waitable Swapchains`, any of which might be available with your current renderer API, are designed to reduce latency by limiting how many frames ahead that the cpu can calculate beyond the currently displayed frame. If you are still experiencing frame pacing issues having reached this poing in the document, and care more about that than increased latency, you can disable `Hard GPU Sync`, `Waitable Swapchains`, or increase the value of `Max Swapchain Images` to give your system more performance headroom.
+      - Under `System->Video Settings->Synchronization`, `Hard GPU Sync`, `Max Swapchain Images`, or `Waitable Swapchains`, any of which might be available with your current renderer API, are designed to reduce latency by limiting how many frames ahead that the cpu can calculate beyond the currently displayed frame. If you are still experiencing frame pacing issues having reached this point in the document, and care more about that than increased latency, you can disable `Hard GPU Sync`, `Waitable Swapchains`, or increase the value of `Max Swapchain Images` to give your system more performance headroom.
 
 
 ## Further Considerations

@@ -15,7 +15,7 @@
     - Update Installed Cores
     - Playlist Thumbnails Updater
     - **Content Downloader**
-    - Update Core Infor Files
+    - Update Core Info Files
     - Update Assets
     - Update Controller Profiles
     - Update Cheats

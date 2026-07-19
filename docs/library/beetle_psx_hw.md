@@ -169,7 +169,7 @@ foo (Disc 3).cue
 
 After that, you can load the `foo.m3u` file in RetroArch with the Beetle PSX HW core.
 
-Here's a m3u example done with Valkryie Profile
+Here's a m3u example done with Valkyrie Profile
 
 ![](../image/core/beetle_psx_hw/m3u.png)
 
@@ -215,7 +215,7 @@ To convert content to CHD format, use the chdman tool found inside the latest MA
 chdman createcd --input foo.cue --output foo.chd
 ```
 
-Note that the tool currrently does not integrate .sbi files into the .chd, so these must be placed alongside the resulting .chd file in order to properly play games with LibCrypt protection.
+Note that the tool currently does not integrate .sbi files into the .chd, so these must be placed alongside the resulting .chd file in order to properly play games with LibCrypt protection.
 
 !!! attention
 	For multi-disc content, make an .m3u file that lists all the .chd files instead of .cue files. Like the PBP files, content must be added to playlists manually.
@@ -310,7 +310,7 @@ or
 	To import your old memory cards from other emulators, you need to rename them to either the Libretro (.srm) savedata format or the Mednafen (.mcr) savedata format. The Libretro (.srm) savedata format, when used with Beetle PSX, is internally identical to the Mednafen PSX (.mcr) savedata format, and can be converted between one another via renaming.
 
 !!! warning
-	Keep in mind that save states also include the state of the memory card; carelessly loading an old save state will **OVEWRITE** the memory card, potentially resulting in lost saved games. **You can set the 'Don't overwrite SaveRAM on loading savestate' option in RetroArch's Saving settings to On to prevent this.**
+	Keep in mind that save states also include the state of the memory card; carelessly loading an old save state will **OVERWRITE** the memory card, potentially resulting in lost saved games. **You can set the 'Don't overwrite SaveRAM on loading savestate' option in RetroArch's Saving settings to On to prevent this.**
 
 ## Core options
 

@@ -216,7 +216,7 @@ chdman createcd --input foo.cue --output foo.chd
 
 ## Playing with MD+ / MSU-MD modes
 
-Comparable to how MSU-1 modifcations can enhance SNES games; Mega Drive Plus / Genesis Plus (MD+) and MSU-MD (Mega SD flash cartridge) patches can be used to add CD quality level of audio to certain Sega Genesis and Mega Drive games via the emulated Sega CD hardware and its CDDA track functionality.
+Comparable to how MSU-1 modifications can enhance SNES games; Mega Drive Plus / Genesis Plus (MD+) and MSU-MD (Mega SD flash cartridge) patches can be used to add CD quality level of audio to certain Sega Genesis and Mega Drive games via the emulated Sega CD hardware and its CDDA track functionality.
 
 Regarding Genesis Plus GX's implementation of MD+ mode operation, all CD overlay commands (incl. cue loop commands) described in MegaSD dev manual (see referenced PDF at the end of this section) are supported except the ones that deal with opening/reading files from SD card (starting from command 1Ch) but afaik no MD+ hacks use these commands so far.
 
@@ -296,7 +296,7 @@ When running Sega CD content, specifies whether to share a single save file betw
 When running Sega CD content, specifies whether to share a single backup [ram cart](https://segaretro.org/CD_BackUp_RAM_Cart) for all games (Per-Cart) or to create a separate backup ram cart for each game (Per-Game).
 
 * **Per-Cart [per cart]** - All games share a single backup RAM cart.
-* Per-Game [per game] - Creates a seperate backrup RAM cart for each game.
+* Per-Game [per game] - Creates a separate backrup RAM cart for each game.
 
 **CD add-on (MD mode) (Requires Restart)** [genesis_plus_gx_add_on]
 

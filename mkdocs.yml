@@ -456,7 +456,7 @@ nav:
     - 'See Also': 'meta/see-also.md'
   - 'Support':
     - 'Privacy Policy': 'support/privacy-policy.md'
-    - 'Quick informations': 'support/quick-informations.md'
+    - 'Quick information': 'support/quick-informations.md'
     - 'Developing Cores': 'tech/developing-cores.md'
 
 extra:

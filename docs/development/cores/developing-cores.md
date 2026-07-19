@@ -65,7 +65,7 @@ The program flow of a frontend using the libretro API can be expressed as follow
 
 #### `retro_api_version()`
 
-This function should return RETRO_API_VERSION, defined in libretro.h. It is used by the frontend to determine if ABI/API are mismatched. The ver- sion will be bumped should there be any non- compatible changes to the API. Changes to retro_* structures, as well as changes in publically visible functions and/or their arguments will warrant a bump in API version.
+This function should return RETRO_API_VERSION, defined in libretro.h. It is used by the frontend to determine if ABI/API are mismatched. The ver- sion will be bumped should there be any non- compatible changes to the API. Changes to retro_* structures, as well as changes in publicly visible functions and/or their arguments will warrant a bump in API version.
 
 #### `retro_set_*()`
 
@@ -94,7 +94,7 @@ The frontend will typically request statically known information about the core 
 
 This function will load content. If the implementation is an emulator, this would be a game ROM image, if it is a game engine, this could be packaged upassets for the game, etc. The function takes a structure that points to the path where the ROM was loaded from, as well as a memory chunk of the already loaded file.
 
-**There are two modes of loading files with libretro.** If the game engine requires to know the path of where the ROM image was loaded from, the `need_fullpath` field in `retro_system_info` must be set to true. If the path is required, the frontend will not load the file into the data/size fields, and it is up to the implementation to load the file from disk. The path might be both relative and absolute, and the implementation must check for both cases. This is useful if the ROM image is too large to load into memory at once. It is also useful if the assests consist of many smaller files, where it is necessary to know the path of a master file to infer the paths of the others.
+**There are two modes of loading files with libretro.** If the game engine requires to know the path of where the ROM image was loaded from, the `need_fullpath` field in `retro_system_info` must be set to true. If the path is required, the frontend will not load the file into the data/size fields, and it is up to the implementation to load the file from disk. The path might be both relative and absolute, and the implementation must check for both cases. This is useful if the ROM image is too large to load into memory at once. It is also useful if the assets consist of many smaller files, where it is necessary to know the path of a master file to infer the paths of the others.
 
 If `need_fullpath` is set to `false`, the frontend will load the ROM image into memory beforehand. In this mode, the path field is not guaranteed to be non-`NULL`. It should point to a valid path if the file was indeed, loaded from disk, however, it is possible that the file was loaded from `stdin`, or similar, which has no well-defined path. It is recommended that `need_fullpath` is set to `false` if possible, as it allows more features, such as soft-patching to work correctly.
 

@@ -11,7 +11,7 @@
 
 **Design principle: Avoid mandating high-level features which do not work for GLES2.**
 
-RetroArch runs on GL, GL2, and GLES2. GL and GL2 are only relevant from a legacy standpoint, but GLES2 is stil a relevant target platform today and having GLES2 compatibility makes GL2 very easy. We therefore avoid a design which deliberately ruins GLES2 compatibility.
+RetroArch runs on GL, GL2, and GLES2. GL and GL2 are only relevant from a legacy standpoint, but GLES2 is still a relevant target platform today and having GLES2 compatibility makes GL2 very easy. We therefore avoid a design which deliberately ruins GLES2 compatibility.
 
 However, we also do not want to artificially limit ourselves to shader features which are only available in GLES2. There are many shader builtins, for example, which only work in GLES3/GL3 and we should not hold back support in these cases.
 

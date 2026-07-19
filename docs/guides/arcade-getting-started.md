@@ -57,7 +57,7 @@ Additionally, there exist different kind of romsets :
 
 There are two families of multi-system arcade emulators available as libretro cores: FinalBurn and MAME. These emulators are in turn available in multiple versions to allow users to best match a core to their device. There are also a few console emulators that can alternatively emulate the arcade hardware based on that console. There is no "best arcade core", recommending one is hard without knowing your device and what you intend to play, each of them being differently balanced.
 
-### The criterias for choosing an arcade core
+### The criteria for choosing an arcade core
 
 #### Integration within the libretro ecosystem
 A better integration allows for more features to be available from the frontend you are using, like netplay, runahead, rewind, retroachievements, ... but also reduces the risk of bugs. The quality of the integration is directly linked to the availability of a support team for the core.
@@ -108,7 +108,7 @@ Last but not least, most of the arcade cores have no real maintainer and are mos
 * keeps adding support for new games
 
 #### FinalBurn Alpha 2012
-* has splitted cores for optimized memory usage if you are using a device with very very limited memory (wii, nds, ...)
+* has split cores for optimized memory usage if you are using a device with very very limited memory (wii, nds, ...)
 * has fixed romsets
 * is an older version of FinalBurn Neo, and as such should be faster while being less accurate and supporting less games, the libretro integration isn't as good either
 * should only be considered as an alternative on ultra low-power devices

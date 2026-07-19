@@ -58,7 +58,7 @@ Spectators send no input data.
 When new input data is received from a player, if it is before the currently
 executing frame, RetroArch will invisibly rewind and replay with the new input
 data, arriving at the original frame so that the local player's own input is
-always seemless.
+always seamless.
 
 A typical, playing client sends no data other than its own input every frame.
 During normal play, the server sends its own input data. If the server is not
@@ -74,7 +74,7 @@ to send input data until its local frame count has reached the server's.
 
 In particular, resets and savestate loads are always synchronized to the
 server's frame count, and thus only the server may reset the core or load a
-savestate. Because input preceeding a savestate load is irrelevant, upon
+savestate. Because input preceding a savestate load is irrelevant, upon
 receiving a savestate load command, all frame counts are updated to be at least
 the server's frame count, including the local frame count if applicable. This
 is the only condition under which the frame count will skip at a rate greater

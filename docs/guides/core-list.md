@@ -59,7 +59,7 @@
 | [Dolphin](../library/dolphin.md)           | Nintendo GameCube/Wii  |                    |
 | [DOSBox](../library/dosbox.md)             | DOS                    |                    |
 | DOSBox-core               | DOS                    | Provides some improvements over the DOSBox-SVN trunk, including native MIDI support, cycle-accurate OPL3 (YMF262) emulation, MT-32 emulation and experimental 3dfx Voodoo support |
-| [DOSBox-Pure](../library/dosbox_pure.md)   | DOS                    | A port of DOSBox with a goal of simplicty and ease of use and gameplay. This core includes a streamlined workflow for launching games directly from ZIP archives with automated mapping of controls to gamepads and a native onscreen keyboard. |
+| [DOSBox-Pure](../library/dosbox_pure.md)   | DOS                    | A port of DOSBox with a goal of simplicity and ease of use and gameplay. This core includes a streamlined workflow for launching games directly from ZIP archives with automated mapping of controls to gamepads and a native onscreen keyboard. |
 | DOSBox-SVN                | DOS                    | This core is based on DOSBox-SVN trunk and allows on-the-fly configuration and different sync methods |
 | [doukutsu-rs](../library/doukutsu-rs.md)   | Game engine            | An open-source reimplementation of the Cave Story engine compatible with all official (and some unofficial) releases of Cave Story |
 | Dungeon Crawl Stone Soup  | Game                   | A preliminary port of the Dungeon Crawl Stone Soup strategy game |
@@ -226,7 +226,7 @@
 | [VICE xvic](../library/vice.md)    | Commodore VIC-20       |                    |
 | Vircon32                  | Game engine            | A port of Vircon32 game console to libretro |
 | [Virtual Jaguar](../library/virtual_jaguar.md) | Atari Jaguar           |                    |
-| [VirtualXT](../library/virtualxt.md)           | DOS                    | Runns PC/XT class software. Mainly intended for PC booters from the 80's. |
+| [VirtualXT](../library/virtualxt.md)           | DOS                    | Runs PC/XT class software. Mainly intended for PC booters from the 80's. |
 | vitaQuake 2               | Game engine            | A port of the VitaQuake 2 source port of iD's Quake 2 engine to libretro. There is a separate core for each of the Quake 2 mission packs, 'Rogue', 'Zaero' and 'Xatrix'. |
 | vitaQuake 2 (Rogue)       | Game engine            | (See vitaQuake 2 note) |
 | vitaQuake 2 (Xatrix)      | Game engine            | (See vitaQuake 2 note) |

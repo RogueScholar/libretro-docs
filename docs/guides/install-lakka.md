@@ -24,7 +24,7 @@ Please note that due to the wide variety of PC hardware, Lakka may not work on y
 
 ### Flashing Lakka Image
 
-The following softwares are fine however you can use any other software you want. The following softwares are not related to RetroArch or Libretro in any way. You must act consciously when providing or using these softwares.
+The following software are fine however you can use any other software you want. The following software are not related to RetroArch or Libretro in any way. You must act consciously when providing or using these software.
 
 #### Etcher
 

@@ -166,7 +166,7 @@ foo (Disc 3).cue
 
 After that, you can load the `foo.m3u` file in RetroArch with the Beetle PSX core.
 
-Here's a m3u example done with Valkryie Profile
+Here's a m3u example done with Valkyrie Profile
 
 ![](../image/core/beetle_psx_hw/m3u.png)
 
@@ -274,7 +274,7 @@ or
 	To import your old memory cards from other emulators, you need to rename them to either the Libretro savedata format or the Mednafen savedata format. The Libretro (.srm) savedata format, when used with Beetle PSX, is internally identical to the Mednafen PSX (.mcr) savedata format, and can be converted between one another via renaming.
 
 !!! warning
-	Keep in mind that save states also include the state of the memory card; carelessly loading an old save state will **OVEWRITE** the memory card, potentially resulting in lost saved games.	**You can set the 'Don't overwrite SaveRAM on loading savestate' option in RetroArch's Saving settings to On to prevent this.**
+	Keep in mind that save states also include the state of the memory card; carelessly loading an old save state will **OVERWRITE** the memory card, potentially resulting in lost saved games.	**You can set the 'Don't overwrite SaveRAM on loading savestate' option in RetroArch's Saving settings to On to prevent this.**
 
 ## Core options
 

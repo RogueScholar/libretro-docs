@@ -232,7 +232,7 @@ follow the steps below.
 
 ### Detailed Steps
 
-- __Fork the repository.__ Visit the github.com [libretro thumbnail repository](https://github.com/libretro-thumbnails/libretro-thumbnails) directory that you want to contribute to and click the fork button.  You must fork it at the level of specific console. The Fork button won't appear if you're viewing a lower level folder in the respository like "boxart" or "snaps.” _Example_. If you are doing GBA thumbnail work you should fork 
+- __Fork the repository.__ Visit the github.com [libretro thumbnail repository](https://github.com/libretro-thumbnails/libretro-thumbnails) directory that you want to contribute to and click the fork button.  You must fork it at the level of specific console. The Fork button won't appear if you're viewing a lower level folder in the repository like "boxart" or "snaps.” _Example_. If you are doing GBA thumbnail work you should fork 
 [Nintendo_-_Game_Boy_Advance](https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/).
     - **Why "Fork" your own**?  Every part RetroArch's code and materials are open and accessible on github for input from any public volunteer (via Pull Request), but only official admins have direct edit access.  Forking means copying your own copy of the project to freely draft changes in your own separate work area.  Later you’ll send your proposed changes to the official project.
     - _Warning_: You must visit and fork the _current_ github project for the libretro thumbnail repository, for example [this one for SNES](https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System), not to be confused with the similar-looking [archived version](https://github.com/libretro/libretro-thumbnails) which is inactive.

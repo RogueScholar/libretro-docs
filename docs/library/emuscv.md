@@ -87,7 +87,7 @@ Settings with (Restart) means that core has to be closed for the new setting to 
 
 EmuSCV require a Super Cassette Vision BIOS to run.
 
-There is only one version of the BIOS that can use diferent names:
+There is only one version of the BIOS that can use different names:
 - upd7801g.s01 (standard)
 - upd7801g.bin
 - upd7801g.bios

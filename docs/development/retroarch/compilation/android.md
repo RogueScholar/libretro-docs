@@ -129,7 +129,7 @@ Next, copy the cores, assets and overlays to an assets folder you create here:
 
     mkdir -p assets/cores
     mkdir assets/overlays
-    cp ../../../../dist/android/arm64-v8a/* assets/cores/ #replace arm64-v8a here by the  archetecture of the device you will be using. Google your phone's specs.
+    cp ../../../../dist/android/arm64-v8a/* assets/cores/ #replace arm64-v8a here by the  architecture of the device you will be using. Google your phone's specs.
     cp -r ../../../../dist/info/ assets/
     cp -r ../../../../retroarch/media/overlays/* assets/overlays/
 

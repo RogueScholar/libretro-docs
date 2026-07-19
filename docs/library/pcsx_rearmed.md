@@ -168,7 +168,7 @@ foo (Disc 3).cue
 
 After that, you can load the `foo.m3u` file in RetroArch with the PCSX ReARMed core.
 
-Here's a m3u example done with Valkryie Profile
+Here's a m3u example done with Valkyrie Profile
 
 `Valkyrie Profile (USA).m3u`
 ```
@@ -253,7 +253,7 @@ or
 	To import your old memory cards from other emulators, you need to rename them to the Libretro savedata format.
 
 !!! warning
-	Keep in mind that save states also include the state of the memory card; carelessly loading an old save state will **OVEWRITE** the memory card, potentially resulting in lost saved games. **You can set the 'Don't overwrite SaveRAM on loading savestate' option in RetroArch's Saving settings to On to prevent this.**
+	Keep in mind that save states also include the state of the memory card; carelessly loading an old save state will **OVERWRITE** the memory card, potentially resulting in lost saved games. **You can set the 'Don't overwrite SaveRAM on loading savestate' option in RetroArch's Saving settings to On to prevent this.**
 
 ## Core options
 

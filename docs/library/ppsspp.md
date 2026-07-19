@@ -20,7 +20,7 @@ A summary of the licenses behind RetroArch and its cores can be found [here](../
 
 The PPSSPP core requires some helper files to be fully functional, including assets such as fonts and backgrounds that are required for memory card screens, and per-game settings that are loaded automatically for compatibility/bugfixing.
 
-In order to acquire PPSSPP's assets files and install them succcessfully, follow these steps:
+In order to acquire PPSSPP's assets files and install them successfully, follow these steps:
 
 !!! info
 	Lakka users do not need to follow these steps. Lakka image ships with the assets already included. Those assets are compatible with the version of the core provided in the Lakka image. Using not compatible assets may lead to unexpected results.
