@@ -46,7 +46,7 @@ Frontend-level settings or features that the RustyNES core respects.
 | Netplay           | ✔         |
 | Core Options      | ✕         |
 | [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✔         |
-| RetroArch Cheats  | ✕         |
+| RetroArch Cheats  | ✔         |
 | Native Cheats     | ✔         |
 | Controls          | ✔         |
 | Remapping         | ✔         |
