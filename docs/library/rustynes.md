@@ -69,13 +69,14 @@ The RustyNES core's directory name is 'RustyNES'.
 
 ### BIOS
 
-No BIOS files are required for cartridge (.nes) content. Famicom Disk System
-(.fds) content needs the following optional firmware file in the frontend's
-system directory:
+No BIOS file is required for cartridge (.nes) content. Famicom Disk System
+(.fds) content requires the following firmware file in the frontend's system
+directory to boot (the core itself will still load without it, since it's
+marked optional at the frontend level, but no FDS game will run):
 
 | Filename    | Description                                                    | md5sum                          |
 |:-----------:|:----------------------------------------------------------------:|:--------------------------------:|
-| disksys.rom | Family Computer Disk System BIOS - Optional, required for .fds content | ca30b50f880eb660a320674ed365ef7a |
+| disksys.rom | Family Computer Disk System BIOS - required to boot .fds content | ca30b50f880eb660a320674ed365ef7a |
 
 ## Joypad
 
