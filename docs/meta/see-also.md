@@ -123,6 +123,7 @@ This is a list of cores that are related to each other in some way.
 - [Nintendo - NES / Famicom (Mesen)](../library/mesen.md)
 - [Nintendo - NES / Famicom (Nestopia)](../library/nestopia.md)
 - [Nintendo - NES / Famicom (QuickNES)](../library/quicknes.md)
+- [Nintendo - NES / Famicom (RustyNES)](../library/rustynes.md)
 
 ## RPG Maker
 

@@ -23,12 +23,14 @@ A summary of the licenses behind RetroArch and its cores can be found [here](../
 Content that can be loaded by the RustyNES core have the following file extensions:
 
 - .nes
+- .fds
 
 ## Databases
 
 RetroArch database(s) that are associated with the RustyNES core:
 
 - [Nintendo - Nintendo Entertainment System](https://github.com/libretro/libretro-database/blob/master/rdb/Nintendo%20-%20Nintendo%20Entertainment%20System.rdb)
+- [Nintendo - Family Computer Disk System](https://github.com/libretro/libretro-database/blob/master/rdb/Nintendo%20-%20Family%20Computer%20Disk%20System.rdb)
 
 ## Features
 
@@ -45,7 +47,7 @@ Frontend-level settings or features that the RustyNES core respects.
 | Core Options      | ✕         |
 | [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✔         |
 | RetroArch Cheats  | ✕         |
-| Native Cheats     | ✕         |
+| Native Cheats     | ✔         |
 | Controls          | ✔         |
 | Remapping         | ✔         |
 | Multi-Mouse       | ✕         |
@@ -55,7 +57,7 @@ Frontend-level settings or features that the RustyNES core respects.
 | Location          | ✕         |
 | Subsystem         | ✕         |
 | [Softpatching](../guides/softpatching.md) | ✔         |
-| Disk Control      | ✕         |
+| Disk Control      | ✔         |
 | Username          | ✕         |
 | Language          | ✕         |
 | Crop Overscan     | ✕         |
@@ -67,7 +69,13 @@ The RustyNES core's directory name is 'RustyNES'.
 
 ### BIOS
 
-No BIOS files are strictly required to use the RustyNES core.
+No BIOS files are required for cartridge (.nes) content. Famicom Disk System
+(.fds) content needs the following optional firmware file in the frontend's
+system directory:
+
+| Filename    | Description                                                    | md5sum                          |
+|:-----------:|:----------------------------------------------------------------:|:--------------------------------:|
+| disksys.rom | Family Computer Disk System BIOS - Optional, required for .fds content | ca30b50f880eb660a320674ed365ef7a |
 
 ## Joypad
 

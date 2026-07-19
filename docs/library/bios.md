@@ -80,6 +80,7 @@ MSX                           | fMSX               | [BIOS information](fmsx.md#
 NES/Famicom                   | FCEUmm             | [BIOS information](fceumm.md#bios)
 NES/Famicom                   | Nestopia        | [BIOS information](nestopia.md#bios)
 NES/Famicom                   | Mesen              | [BIOS information](mesen.md#bios)
+NES/Famicom                   | RustyNES           | [BIOS information](rustynes.md#bios)
 Odyssey2/Videopac+            | O2EM               | [BIOS information](o2em.md#bios)
 PC-98                         | Neko Project II Kai| [BIOS information](neko_project_ii_kai.md#bios)
 PC Engine/CD                  | Beetle PCE FAST    | [BIOS information](beetle_pce_fast.md#bios)

@@ -196,6 +196,7 @@ See below for a summary of the licenses behind RetroArch and its cores:
 | [REminiscence](../library/reminiscence.md)                                       | GPLv3                                                                                     |                |
 | RemoteJoy                                                                        | [GPLv2](https://github.com/libretro/libretro-remotejoy/blob/master/LICENSE)               |                |
 | Remote RetroPad                                                                  | [MIT](https://github.com/libretro/libretro-samples/blob/master/license)                   |                |
+| [RustyNES](../library/rustynes.md)                                               | [MIT OR Apache-2.0](https://github.com/doublegate/RustyNES/blob/main/LICENSE-MIT)         |                |
 | [RVVM](../library/rvvm.md)                                                       | [GPLv3](https://github.com/LekKit/RVVM/blob/staging/LICENSE-GPL), [MPLv2.0](https://github.com/LekKit/RVVM/blob/staging/LICENSE-MPL) |                |
 | [SameBoy](../library/sameboy.md)                                                 | [MIT](https://github.com/libretro/SameBoy/blob/master/LICENSE) | |
 | [SameDuck](../library/sameduck.md)                                               | [MIT](https://github.com/libretro/) | |

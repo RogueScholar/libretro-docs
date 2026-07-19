@@ -69,6 +69,7 @@ rom.ips2
 | [Mesen](../library/mesen.md)             | ✔         |
 | [Nestopia](../library/nestopia.md)       | ✔         |
 | [QuickNES](../library/quicknes.md)       | ✔         |
+| [RustyNES](../library/rustynes.md)       | ✔         |
 
 ### Nintendo - SNES / Famicom
 
