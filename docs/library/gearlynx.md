@@ -2,13 +2,13 @@
 
 ## Background
 
-Gearlynx is an open source, cross-platform, Atari Lynx emulator written in C++.
+Gearlynx is an open source, cross-platform Atari Lynx emulator written in C++.
 
 - Very accurate emulation supporting the entire commercial Atari Lynx catalog.
 - Bank switching (BANK1 + AUDIN) and EEPROM support.
 - Save files (EEPROM and NVRAM).
 - Configurable low-pass audio filter.
-- Internal database for automatic rom detection and hardware selection if `Auto` options are selected.
+- Internal database for automatic ROM detection and hardware selection when `Auto` is selected.
 - Supported platforms (libretro): Windows, Linux, macOS, Raspberry Pi, Android, iOS, tvOS, PlayStation Vita, PlayStation 3, Nintendo 3DS, Nintendo GameCube, Nintendo Wii, Nintendo WiiU, Nintendo Switch, Emscripten, Classic Mini systems (NES, SNES, C64, ...), OpenDingux, RetroFW and QNX.
 
 The Gearlynx core has been authored by:
@@ -79,7 +79,7 @@ Frontend-level settings or features that the Gearlynx core respects.
 
 ### Directories
 
-The Gearlynx core's library name is 'Gearlynx'
+The Gearlynx core's library name is 'Gearlynx'.
 
 The Gearlynx core saves/loads to/from these directories.
 
@@ -97,12 +97,11 @@ The Gearlynx core saves/loads to/from these directories.
 
 ### Geometry and timing
 
-- The Gearlynx core's core provided FPS is variable from 50 to 75
-- The Gearlynx core's core provided sample rate is 44100 Hz
-- The Gearlynx core's base width is 160
-- The Gearlynx core's base height is 102
+- The Gearlynx core reports a dynamic refresh rate based on each game's timer configuration
+- The Gearlynx core's provided sample rate is 44100 Hz
+- The Gearlynx core's base size is 160x102 in horizontal mode and 102x160 in vertical mode
 - The Gearlynx core's max width is 160
-- The Gearlynx core's max height is 102
+- The Gearlynx core's max height is 160
 - The Gearlynx core's provided aspect ratio is dependent on the ['Aspect Ratio' core option](#core-options).
 
 ## Core options
@@ -137,33 +136,41 @@ Settings with (restart) means that core has to be closed for the new setting to 
 	- *Lynx I* forces emulation of the original Lynx model.
 	- *Lynx II* forces emulation of the Lynx II model.
 
+- **EEPROM Type (restart)** [gearlynx_eeprom_type] (**Auto**|None|93C46 - 128 B - 16-bit|93C46 - 128 B - 8-bit|93C56 - 256 B - 16-bit|93C56 - 256 B - 8-bit|93C66 - 512 B - 16-bit|93C66 - 512 B - 8-bit|93C76 - 1 KB - 16-bit|93C76 - 1 KB - 8-bit|93C86 - 2 KB - 16-bit|93C86 - 2 KB - 8-bit)
+
+	Override the cartridge EEPROM capacity and organization. *Auto* uses the cartridge header or game database. Restart or reload the content to apply changes.
+
+- **Fast Sprite Rendering** [gearlynx_fast_sprite_rendering] (**Disabled**|Enabled)
+
+	Use a simpler, faster sprite renderer. This is less accurate for mid-render interrupt effects used by some demos.
+
 - **Audio Low-Pass Filter (Hz)** [gearlynx_lowpass_filter] (**3500**|500|1000|1500|2000|2500|3000|3500|4000|4500|5000)
 
 	Configures a low-pass audio filter to reduce high-frequency noise.
 
-- **Audio Channel 0 Volume** [gearlynx_audio_ch0_volume] (**100**|0-200)
+- **Audio Channel 0 Volume** [gearlynx_audio_ch0_volume] (**100**|0-200 in increments of 10)
 
 	Sets the volume level for audio channel 0 (percentage).
 
-- **Audio Channel 1 Volume** [gearlynx_audio_ch1_volume] (**100**|0-200)
+- **Audio Channel 1 Volume** [gearlynx_audio_ch1_volume] (**100**|0-200 in increments of 10)
 
 	Sets the volume level for audio channel 1 (percentage).
 
-- **Audio Channel 2 Volume** [gearlynx_audio_ch2_volume] (**100**|0-200)
+- **Audio Channel 2 Volume** [gearlynx_audio_ch2_volume] (**100**|0-200 in increments of 10)
 
 	Sets the volume level for audio channel 2 (percentage).
 
-- **Audio Channel 3 Volume** [gearlynx_audio_ch3_volume] (**100**|0-200)
+- **Audio Channel 3 Volume** [gearlynx_audio_ch3_volume] (**100**|0-200 in increments of 10)
 
 	Sets the volume level for audio channel 3 (percentage).
 
 - **Allow Up+Down / Left+Right** [gearlynx_up_down_allowed] (**Disabled**|Enabled)
 
-	Enabling this option allows pressing, quickly alternating, or holding both left and right (or up and down) directions at the same time.
+	Enable this option to press, quickly alternate, or hold both left and right, or up and down, at the same time.
 
-	This may cause movement based glitches to occur in certain games.
+	This may cause movement-based glitches in some games.
 
-	It's best to keep this core option disabled.
+	It is best to keep this option disabled.
 
 ## Joypad
 
