@@ -2,15 +2,15 @@
 
 ## Background
 
-Gearsystem is an open source, cross-platform, Sega Master System / Game Gear / SG-1000 / Othello Multivision emulator written in C++.
+Gearsystem is an open source, cross-platform Sega Master System, Game Gear, SG-1000, and Othello Multivision emulator written in C++.
 
-- Very accurate emulation supporting cartridges: ROM, ROM + RAM, SEGA, Codemasters, Korean, MSX + Nemesis, Janggun, SG-1000, and many Korean multi-carts.
+- Very accurate emulation with support for ROM-only cartridges and Sega, Codemasters, Korean, MSX, Janggun, SG-1000, EEPROM, and multicart mappers.
 - Automatic region detection: NTSC-JAP, NTSC-USA, PAL-EUR.
 - Accurate VDP emulation, including timing and VDP specifics for SMS, SMS2, GG and TMS9918 modes.
 - Support for YM2413 (OPLL) FM sound chip.
 - Light Phaser and Paddle Control support.
 - Internal database for ROM detection.
-- Battery powered RAM save support.
+- Battery-backed RAM save support.
 - Game Genie and Pro Action Replay cheat support.
 - Supported platforms (libretro): Windows, Linux, macOS, Raspberry Pi, Android, iOS, tvOS, PlayStation Vita, PlayStation 3, Nintendo 3DS, Nintendo GameCube, Nintendo Wii, Nintendo WiiU, Nintendo Switch, Emscripten, Classic Mini systems (NES, SNES, C64, ...), OpenDingux, RetroFW and QNX.
 
@@ -26,9 +26,9 @@ A summary of the licenses behind RetroArch and its cores can be found [here](../
 
 ## BIOS
 
-Gearsystem does not require BIOS (bootrom) files to work but they can be used optionally.
+Gearsystem does not require BIOS (boot ROM) files, but they can be used optionally.
 
-When the BIOS is enabled it will execute as in original hardware, causing invalid roms to lock or preventing them to boot, depending on the BIOS file and rom region and system. If you experience issues disable the BIOS.
+When enabled, the BIOS runs as it does on original hardware. Invalid ROMs or ROMs for a different region or system may fail to boot. Disable the BIOS if this occurs.
 
 Required or optional firmware files go in the frontend's system directory.
 
@@ -109,13 +109,13 @@ The Gearsystem core saves/loads to/from these directories.
 
 ### Geometry and timing
 
-- The Gearsystem core's core provided FPS is 60 for NTSC games and 50 for PAL games
-- The Gearsystem core's core provided sample rate is 44100 Hz
+- The Gearsystem core's provided FPS is 60 for NTSC games and 50 for PAL games
+- The Gearsystem core's provided sample rate is 44100 Hz
 - The Gearsystem core's base width is 256 for Master System / SG-1000 games and 160 for Game Gear games
 - The Gearsystem core's base height is 192 for Master System / SG-1000 games and 144 for Game Gear games
-- The Gearsystem core's max width is 256 for Master System games and 160 for Game Gear games
-- The Gearsystem core's max height is 224 for Master System games and 144 for Game Gear games
-- The Gearsystem core's core provided aspect ratio is 4:3 for Master System / SG-1000 games and 10:9 for Game Gear games
+- The Gearsystem core's max width is 320
+- The Gearsystem core's max height is 288
+- The Gearsystem core's provided aspect ratio is 4:3 for Master System / SG-1000 games and 10:9 for Game Gear games
 
 ## Core options
 
@@ -127,7 +127,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 	Select the console type to emulate. 'Auto' automatically detects the appropriate system based on the loaded content.
 
-    - *Auto* selects the best hardware based on the rom.
+    - *Auto* selects the best hardware based on the ROM.
     - *Master System / Mark III* forces original Master System / Mark III hardware.
     - *Game Gear (2 ASIC)* forces Game Gear hardware with 2 ASIC configuration.
     - *Game Gear (2 ASIC) SMS Mode* forces Game Gear in SMS compatibility mode (2 ASIC).
@@ -140,7 +140,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 	Select which region is emulated.
 
-    - *Auto* selects the best region based on the rom.
+    - *Auto* selects the best region based on the ROM.
     - *Master System Japan* forces Master System Japan region.
     - *Master System Export* forces Master System Export region.
     - *Game Gear Japan* forces Game Gear Japan region.
@@ -151,7 +151,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 	Select which mapper (memory bank controller) is emulated. 'Auto' automatically detects the appropriate mapper based on the loaded content. Only change this if a game does not work correctly with the default setting.
 
-    - *Auto* selects the best mapper based on the rom.
+    - *Auto* selects the best mapper based on the ROM.
     - *ROM* forces no mapper.
     - *SEGA* forces SEGA mapper.
     - *Codemasters* forces Codemasters mapper.
@@ -159,12 +159,28 @@ Settings with (restart) means that core has to be closed for the new setting to 
     - *SG-1000* forces SG-1000 mapper.
     - *MSX* forces MSX mapper.
     - *Janggun* forces Janggun mapper.
+    - *Korean 2000 XOR 1F* forces the Korean 2000 XOR 1F mapper.
+    - *Korean MSX 32KB 2000* forces the Korean MSX 32KB 2000 mapper.
+    - *Korean MSX SMS 8000* forces the Korean MSX SMS 8000 mapper.
+    - *Korean SMS 32KB 2000* forces the Korean SMS 32KB 2000 mapper.
+    - *Korean MSX 8KB 0300* forces the Korean MSX 8KB 0300 mapper.
+    - *Korean 0000 XOR FF* forces the Korean 0000 XOR FF mapper.
+    - *Korean FFFF HiCom* forces the Korean FFFF HiCom mapper.
+    - *Korean FFFE* forces the Korean FFFE mapper.
+    - *Korean BFFC* forces the Korean BFFC mapper.
+    - *Korean FFF3 FFFC* forces the Korean FFF3 FFFC mapper.
+    - *Korean MD FFF5* forces the Korean MD FFF5 mapper.
+    - *Korean MD FFF0* forces the Korean MD FFF0 mapper.
+    - *Jumbo Dahjee* forces the Jumbo Dahjee mapper.
+    - *EEPROM 93C46* forces the EEPROM 93C46 mapper.
+    - *Multi 4PAK All Action* forces the Multi 4PAK All Action mapper.
+    - *Iratahack* forces the Iratahack mapper.
 
 - **Refresh Rate (restart)** [gearsystem_timing] (**Auto**|NTSC (60 Hz)|PAL (50 Hz))
 
 	Select which refresh rate will be used in emulation.
 
-    - *Auto* selects the best refresh rate based on the rom.
+    - *Auto* selects the best refresh rate based on the ROM.
     - *NTSC (60 Hz)* forces 60 Hz.
     - *PAL (50 Hz)* forces 50 Hz.
 
@@ -194,26 +210,30 @@ Settings with (restart) means that core has to be closed for the new setting to 
     - *Auto* hides the left bar when the bar is detected.
     - *Always* always hides the left bar even if no left bar is detected.
 
+- **No Sprite Limit** [gearsystem_no_sprite_limit] (**Disabled**|Enabled)
+
+    Remove the per-line sprite limit. This reduces flickering but may cause glitches in some games.
+
 - **Master System BIOS (restart)** [gearsystem_bios_sms] (**Disabled**|Enabled)
 
-	Enable or disable the Master System BIOS. For this to work, the `bios.sms` file must exist in RetroArch's system directory. When enabled it will execute as in original hardware, which may cause invalid ROMs to lock or fail to boot.
+    Enable or disable the Master System BIOS. The `bios.sms` file must exist in the frontend's system directory. When enabled, it runs as it does on original hardware, so invalid ROMs may fail to boot.
 
 - **Game Gear BIOS (restart)** [gearsystem_bios_gg] (**Disabled**|Enabled)
 
-	Enable or disable the Game Gear BIOS. For this to work, the `bios.gg` file must exist in RetroArch's system directory. When enabled it will execute as in original hardware, which may cause invalid ROMs to lock or fail to boot.
+    Enable or disable the Game Gear BIOS. The `bios.gg` file must exist in the frontend's system directory. When enabled, it runs as it does on original hardware, so invalid ROMs may fail to boot.
 
 - **YM2413 (restart)** [gearsystem_ym2413] (**Auto**|Disabled)
 
 	Enable or disable the YM2413 (OPLL) FM sound chip. 'Auto' enables the chip based on the loaded content. Some Master System games use this chip for enhanced music.
 
-    - *Auto* selects the best option based on the rom.
+    - *Auto* selects the best option based on the ROM.
     - *Disabled* disables YM2413.
 
-- **PSG Volume** [gearsystem_psg_volume] (**100**|0 - 200)
+- **PSG Volume** [gearsystem_psg_volume] (**100**|0-200 in increments of 10)
 
 	Set the volume of the PSG (SN76489). The value is a percentage from 0 to 200, where 100 is the default volume.
 
-- **FM Volume** [gearsystem_fm_volume] (**100**|0 - 200)
+- **FM Volume** [gearsystem_fm_volume] (**100**|0-200 in increments of 10)
 
 	Set the volume of the YM2413 (OPLL) FM sound chip. The value is a percentage from 0 to 200, where 100 is the default volume.
 
@@ -227,17 +247,17 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 - **Allow Up+Down / Left+Right** [gearsystem_up_down_allowed] (**Disabled**|Enabled)
 
-	Enabling this option allows pressing, quickly alternating, or holding both left and right (or up and down in some games) directions at the same time.
+    Enable this option to press, quickly alternate, or hold both left and right, or up and down, at the same time.
 
-	This may cause movement based glitches to occur in certain games.
+    This may cause movement-based glitches in some games.
 
-	It's best to keep this core option disabled.
+    It is best to keep this option disabled.
 
 - **Light Gun Input** [gearsystem_lightgun_input] (**Light Gun**|Touchscreen)
 
     Select which input will be used for Light Phaser games.
 
-    - *Light Gun* - Selects mouse-controlled 'Light Gun' input (devices will use [RetroLightgun](#lightgun) inputs).
+    - *Light Gun* - Selects mouse-controlled Light Gun input (devices will use [RetroLightgun](#light-gun) inputs).
     - *Touchscreen* - Selects a touchscreen input (devices will use [RetroPointer](#pointer) inputs instead).
 
 - **Light Gun Crosshair** [gearsystem_lightgun_crosshair] (**Disabled**|Enabled)
@@ -285,7 +305,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
 | ![](../image/retropad/retro_a.png)             | 2                        |
 | ![](../image/retropad/retro_start.png)         | Pause / Start            |
 
-## Lightgun
+## Light Gun
 
 | RetroLightgun Inputs  | [Light Phaser](https://segaretro.org/Light_Phaser)      |
 |-----------------------|---------------------------------------------------------|

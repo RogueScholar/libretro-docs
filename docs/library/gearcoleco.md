@@ -2,19 +2,19 @@
 
 ## Background
 
-Gearcoleco is an open source, cross-platform, ColecoVision emulator written in C++.
+Gearcoleco is an open source, cross-platform ColecoVision emulator written in C++.
 
 - Accurate Z80 core, including undocumented opcodes and behavior like R and MEMPTR registers.
 - Accurate TMS9918 emulation.
-- Support for ColecoVision Super Game Module (SGM) and MegaCart ROMs.
+- Support for ColecoVision Super Game Module (SGM) and Mega Cart ROMs.
 - Support for Super Action Controller (SAC), Wheel Controller and Roller Controller.
 - Supported platforms (libretro): Windows, Linux, macOS, Raspberry Pi, Android, iOS, tvOS, PlayStation Vita, PlayStation 3, Nintendo 3DS, Nintendo GameCube, Nintendo Wii, Nintendo WiiU, Nintendo Switch, Emscripten, Classic Mini systems (NES, SNES, C64, ...), OpenDingux, RetroFW and QNX.
 
-The Gearcoleco core has been authored by
+The Gearcoleco core has been authored by:
 
 - [Nacho Sanchez (drhelius)](https://github.com/drhelius)
 
-The Gearcoleco core is licensed under
+The Gearcoleco core is licensed under:
 
 - [GPLv3](https://github.com/drhelius/Gearcoleco/blob/master/LICENSE)
 
@@ -27,11 +27,13 @@ Gearcoleco requires a BIOS file to work.
 Required or optional firmware files go in the frontend's system directory.
 
 !!! attention
-	 Gearcoleco emulator requires a ColecoVision BIOS. In order to get it to work you must place the following file in RetroArch's system directory.
+    Gearcoleco requires a ColecoVision BIOS. Place the following file in RetroArch's system directory.
 
 | Filename          | Description                        | md5sum                           |
 |:-----------------:|:----------------------------------:|:--------------------------------:|
 | colecovision.rom  | ColecoVision BIOS - Required       | 2c66f5911e5b42b8ebe113403548eee7 |
+
+If `colecovision.rom` is not found, the core also checks for `coleco.rom`.
 
 ## Extensions
 
@@ -79,7 +81,7 @@ Frontend-level settings or features that the Gearcoleco core respects.
 
 ### Directories
 
-The Gearcoleco core's library name is 'Gearcoleco'
+The Gearcoleco core's library name is 'Gearcoleco'.
 
 The Gearcoleco core saves/loads to/from these directories.
 
@@ -97,11 +99,13 @@ The Gearcoleco core saves/loads to/from these directories.
 
 ### Geometry and timing
 
-- The Gearcoleco core's core provided FPS is 60 for NTSC games and 50 for PAL games
-- The Gearcoleco core's core provided sample rate is 44100 Hz
-- The Gearcoleco core's width is 256
-- The Gearcoleco core's height is 192
-- The Gearcoleco core's core provided aspect ratio is 4:3
+- The Gearcoleco core's provided FPS is 60 for NTSC games and 50 for PAL games
+- The Gearcoleco core's provided sample rate is 44100 Hz
+- The Gearcoleco core's base width is 256
+- The Gearcoleco core's base height is 192
+- The Gearcoleco core's max width is 320
+- The Gearcoleco core's max height is 288
+- The Gearcoleco core's provided aspect ratio is 4:3 by default
 
 ## Core options
 
@@ -113,7 +117,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
     Select which refresh rate will be used in emulation.
 
-    - *Auto* selects the best refresh rate based on the rom.
+    - *Auto* selects the best refresh rate based on the loaded ROM.
     - *NTSC (60 Hz)* forces 60 Hz.
     - *PAL (50 Hz)* forces 50 Hz.
 
@@ -137,23 +141,23 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 - **Allow Up+Down / Left+Right** [gearcoleco_up_down_allowed] (**Disabled**|Enabled)
 
-    Enabling this option allows pressing, quickly alternating, or holding both left and right (or up and down in some games) directions at the same time.
+    Enable this option to press, quickly alternate, or hold both left and right, or up and down, at the same time.
 
-    This may cause movement based glitches to occur in certain games.
+    This may cause movement-based glitches in some games.
 
-    It's best to keep this core option disabled.
+    It is best to keep this option disabled.
 
 - **No Sprite Limit** [gearcoleco_no_sprite_limit] (**Disabled**|Enabled)
 
-    Enabling this will remove the sprite limit in a single line.
+    Remove the per-line sprite limit.
 
-    This may cause glitches to occur in certain games.
+    This may cause glitches in some games.
 
-    It's best to keep this core option disabled.
+    It is best to keep this option disabled.
 
 - **Spinner Support** [gearcoleco_spinners] (**Disabled**|Super Action Controller|Wheel Controller|Roller Controller)
 
-    Select which controller will be used in emulation. Spinners are controlled by mouse movement. Mouse buttons are mapped to Left (Yellow) and Right (Red) buttons.
+    Select which spinner controller to emulate. Mouse movement controls the spinner. Mouse buttons map to the Left (Yellow) and Right (Red) buttons.
 
     - *Disabled* disables spinner support.
     - *Super Action Controller* enables spinner support for Super Action Controller.
