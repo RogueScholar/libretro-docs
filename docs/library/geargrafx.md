@@ -2,7 +2,7 @@
 
 ## Background
 
-Geargrafx is an open source, cross-platform, PC Engine / TurboGrafx-16 / SuperGrafx emulator written in C++.
+Geargrafx is an open source, cross-platform PC Engine, TurboGrafx-16, and SuperGrafx emulator written in C++.
 
 - Very accurate emulation supporting the entire HuCard PCE / SGX catalog.
 - Support for CD-ROM², Super CD-ROM² and Arcade CD-ROM² systems.
@@ -13,16 +13,16 @@ Geargrafx is an open source, cross-platform, PC Engine / TurboGrafx-16 / SuperGr
     * Avenue Pad 3 (3 buttons, auto-configured based on game)
     * Avenue Pad 6 (6 buttons)
 - Adjustable scanline count (224p, 240p, or manual).
-- RGB or Composite color output.
-- Music rom support: HES.
-- Internal database for automatic rom detection and hardware selection if `Auto` options are selected.
+- Standard RGB, Turboxray, and Kitrinx color palettes.
+- HES music ROM support.
+- Internal database for automatic ROM detection and hardware selection when `Auto` is selected.
 - Supported platforms (libretro): Windows, Linux, macOS, Raspberry Pi, Android, iOS, tvOS, PlayStation Vita, PlayStation 3, Nintendo 3DS, Nintendo GameCube, Nintendo Wii, Nintendo WiiU, Nintendo Switch, Emscripten, Classic Mini systems (NES, SNES, C64, etc.), OpenDingux, RetroFW and QNX.
 
-The Geargrafx core has been authored by
+The Geargrafx core has been authored by:
 
 - [Nacho Sanchez (drhelius)](https://github.com/drhelius)
 
-The Geargrafx core is licensed under
+The Geargrafx core is licensed under:
 
 - [GPLv3](https://github.com/drhelius/Geargrafx/blob/master/LICENSE)
 
@@ -57,7 +57,7 @@ Content that can be loaded by the Geargrafx core have the following file extensi
 - .cue
 - .chd
 
-Geargrafx supports `chd`, `cue/bin`, `cue/img` and `cue/iso` CD-ROM images. `cue/iso + wav` is also supported when audio track format is 44100Hz, 16 bit, stereo. It does not support MP3 or OGG audio tracks.
+Geargrafx supports `chd`, `cue/bin`, `cue/img`, and `cue/iso` CD-ROM images. `cue/iso + wav` is also supported for 44.1 kHz, 16-bit stereo audio tracks. MP3 and OGG audio tracks are not supported.
 
 RetroArch database(s) that are associated with the Geargrafx core:
 
@@ -98,7 +98,7 @@ Frontend-level settings or features that the Geargrafx core respects.
 
 ## Directories
 
-The Geargrafx core's library name is 'Geargrafx'
+The Geargrafx core's library name is 'Geargrafx'.
 
 The Geargrafx core saves/loads to/from these directories.
 
@@ -118,9 +118,9 @@ The Geargrafx core saves/loads to/from these directories.
 
 - The Geargrafx core's provided FPS is 59.82
 - The Geargrafx core's provided sample rate is 44100 Hz
-- The Geargrafx core's base width is dependent on the content and overscan settings (Without overscan: 256, 341, 512. With overscan: 280, 373, 560) 
-- The Geargrafx core's base height is dependent on the ['Scanline Start' and 'Scanline End' core options](#core-options).
-- The Geargrafx core's max width is 560
+- The Geargrafx core's base width depends on the video mode and overscan settings. Standard frames use 256, 341, or 512 pixels without overscan and 280, 373, or 560 pixels with overscan. Mixed-resolution frames use 1024 or 1120 pixels
+- The Geargrafx core's base height depends on the ['Scanline Start' and 'Scanline End' core options](#core-options)
+- The Geargrafx core's max width is 1120
 - The Geargrafx core's max height is 242
 - The Geargrafx core's provided aspect ratio is dependent on the ['Aspect Ratio' core option](#core-options).
 
@@ -132,7 +132,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 - **System (restart)** [geargrafx_console_type] (**Auto**|PC Engine (JAP)|SuperGrafx (JAP)|TurboGrafx-16 (USA))
 
-    Select the console type to emulate. The default setting, Auto, automatically detects the appropriate console type based on the loaded content.
+    Select the console type to emulate. *Auto* detects the appropriate console type based on the loaded content.
     Many US games will not start if a Japanese system is detected.
 
 - **Aspect Ratio** [geargrafx_aspect_ratio] (**1:1 PAR**|4:3 DAR|6:5 DAR|16:9 DAR|16:10 DAR)
@@ -167,9 +167,9 @@ Settings with (restart) means that core has to be closed for the new setting to 
     This option will set the last scanline to be displayed. Scanline 241 is the last visible scanline.
     This option is only available when 'Scanline Count' is set to 'Manual'.
 
-- **Composite Colors** [geargrafx_composite_colors] (**Disabled**|Enabled)
+- **Color Palette** [geargrafx_palette] (**Standard RGB**|Turboxray|Kitrinx)
 
-    If enabled, the core will use composite colors instead of RGB colors.
+    Select the color palette used by the video encoder.
 
 - **No Sprite Limit** [geargrafx_no_sprite_limit] (**Disabled**|Enabled)
 
@@ -179,7 +179,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
     Enable a low-pass video filter to simulate the signal degradation of analog video output on CRT displays.
 
-- **Video LPF Intensity** [geargrafx_lowpass_intensity] (**100**|0 - 100)
+- **Video LPF Intensity** [geargrafx_lowpass_intensity] (**100**|0-100 in increments of 10)
 
     Set the intensity of the video low-pass filter as a percentage from 0 to 100.
 
@@ -220,7 +220,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
     - *Super CD-ROM* forces Super CD-ROM² system.
     - *Arcade CD-ROM* forces Arcade CD-ROM² system.
 
-- **CD-ROM Bios (restart)** [geargrafx_cdrom_bios] (**Auto**|System Card 1|System Card 2|System Card 3|Game Express)
+- **CD-ROM BIOS (restart)** [geargrafx_cdrom_bios] (**Auto**|System Card 1|System Card 2|System Card 3|Game Express)
 
     Specify the BIOS file to use for CD-ROM emulation. The *Auto* setting automatically selects the appropriate BIOS based on the loaded content. You can also manually choose one for compatibility with specific games.
 
@@ -232,30 +232,28 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 	Enable the HuC6280A audio chip, as found in the SuperGrafx and CoreGrafx I. When disabled, the original HuC6280 chip from the PC Engine is used instead.
 
-- **PSG Volume** [geargrafx_psg_volume] (**100**|0 - 200)
+- **PSG Volume** [geargrafx_psg_volume] (**100**|0-200 in increments of 10)
 
     This option sets the volume of the PSG (Programmable Sound Generator) sound system.
     The value is a percentage from 0 to 200, where 100 is the default volume.
 
-- **CD-ROM Volume** [geargrafx_cdrom_volume] (**100**|0 - 200)
+- **CD-ROM Volume** [geargrafx_cdrom_volume] (**100**|0-200 in increments of 10)
 
     This option sets the volume of the CD-ROM sound system, which is used for music in CD-ROM games.
     The value is a percentage from 0 to 200, where 100 is the default volume.
 
-- **ADPCM Volume** [geargrafx_adpcm_volume] (**100**|0 - 200)
+- **ADPCM Volume** [geargrafx_adpcm_volume] (**100**|0-200 in increments of 10)
 
     This option sets the volume of the ADPCM sound system, which is typically used for speech in CD-ROM games.
     The value is a percentage from 0 to 200, where 100 is the default volume.
 
 - **Allow Up+Down / Left+Right** [geargrafx_up_down_allowed] (**Disabled**|Enabled)
 
-    Enabling this option allows pressing, quickly alternating, or holding both left and right (or up and down in some games) directions at the same time.
-    This may cause movement based glitches to occur in certain games.
-    It's best to keep this core option disabled.
+    Enable this option to press, quickly alternate, or hold both left and right, or up and down, at the same time. This may cause movement-based glitches in some games.
 
 - **Allow Soft Reset** [geargrafx_soft_reset] (**Enabled**|Disabled)
 
-    Pressing RUN and SELECT simultaneously on the PCE gamepad will SOFT RESET the console. This is the default hardware behavior.
+    Pressing RUN and SELECT simultaneously on the PCE gamepad will soft reset the console. This is the default hardware behavior.
     Disable this option if you want the soft reset functionality turned off.
 
 - **TurboTap** [geargrafx_turbotap] (**Disabled**|Enabled)
@@ -266,6 +264,10 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 	Enable or disable MB128 backup memory support. MB128 is an external memory card device that can be used to save game data across multiple games.
 
+- **Mouse Sensitivity** [geargrafx_mouse_sensitivity] (**5**|1-15)
+
+    Adjust PC Engine Mouse sensitivity. Higher values move the cursor faster.
+
 - **Avenue Pad 3 Switch** [geargrafx_avenue_pad_3_switch] (**Auto**|SELECT|RUN)
 
     Configure the button mapping for the Avenue Pad 3 controller's third button (III).
@@ -273,6 +275,10 @@ Settings with (restart) means that core has to be closed for the new setting to 
     - *Auto* automatically selects the appropriate button mapping based on the game.
     - *SELECT* maps button III to SELECT.
     - *RUN* maps button III to RUN.
+
+- **Turbo Toggle Hotkey (R2/L2)** [geargrafx_turbo_toggle_hotkey] (**Disabled**|Enabled)
+
+    Use R2 to toggle Turbo I and L2 to toggle Turbo II for each player. When disabled, R2 and L2 are ignored.
 
 - **P1 Turbo I** [geargrafx_turbo_p1_i] (**Disabled**|Enabled)
 
@@ -370,8 +376,8 @@ Settings with (restart) means that core has to be closed for the new setting to 
 | ![](../image/retropad/retro_x.png)          |                    |                            | IV                      |
 | ![](../image/retropad/retro_l1.png)         |                    |                            | V                       |
 | ![](../image/retropad/retro_r1.png)         |                    |                            | VI                      |
-| ![](../image/retropad/retro_l2.png)         | Toggle Turbo II    | Toggle Turbo II            | Toggle Turbo II         |
-| ![](../image/retropad/retro_r2.png)         | Toggle Turbo I     | Toggle Turbo I             | Toggle Turbo I          |
+| ![](../image/retropad/retro_l2.png)         | Toggle Turbo II when enabled | Toggle Turbo II when enabled | Toggle Turbo II when enabled |
+| ![](../image/retropad/retro_r2.png)         | Toggle Turbo I when enabled  | Toggle Turbo I when enabled  | Toggle Turbo I when enabled  |
 
 ## External Links
 
