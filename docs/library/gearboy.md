@@ -2,13 +2,14 @@
 
 ## Background
 
-Gearboy is an open source, cross-platform, Nintendo Game Boy (DMG) / Game Boy Color (GBC) emulator written in C++.
+Gearboy is an open source, cross-platform Nintendo Game Boy (DMG), Game Boy Color (GBC), and Super Game Boy (SGB) emulator written in C++.
 
-- Accurate emulation supporting cartridges: ROM, ROM + RAM, MBC1, MBC2, MBC3, MBC5, MBC7, HuC-1, HuC-3, MMM01, Pocket Camera, TAMA5 and MBC1M.
+- Accurate emulation with support for ROM-only cartridges and MBC1, MBC1M, MBC2, MBC3, MBC5, MBC7, HuC-1, HuC-3, MMM01, Pocket Camera, TAMA5, Wisdom Tree, M161, Sachen MMC1/MMC2, PKJD, Bung/EMS, and Poke 2-in-1 mappers.
 - Game Boy Color support.
-- Battery powered RAM save support.
+- Super Game Boy support, including borders and color palettes.
+- Battery-backed RAM save support.
 - Save states.
-- Bootrom (BIOS) support.
+- Boot ROM (BIOS) support.
 - Game Genie and GameShark cheat support.
 - Supported platforms (libretro): Windows, Linux, macOS, Raspberry Pi, Android, iOS, tvOS, PlayStation Vita, PlayStation 3, Nintendo 3DS, Nintendo GameCube, Nintendo Wii, Nintendo WiiU, Nintendo Switch, Emscripten, Classic Mini systems (NES, SNES, C64, ...), OpenDingux, RetroFW and QNX.
 
@@ -24,14 +25,14 @@ A summary of the licenses behind RetroArch and its cores can be found [here](../
 
 ## BIOS
 
-Gearboy does not require bootrom (BIOS) files to work but they can be used optionally.
+Gearboy does not require boot ROM (BIOS) files, but they can be used optionally.
 
-When the bootrom is enabled it will execute as in original hardware, causing invalid roms to lock or forcing hardware like GB Pocket or GBA, depending on the bootrom file.
+When enabled, a boot ROM runs as it does on original hardware. Invalid ROMs may fail to boot, and the selected boot ROM may enable hardware differences for systems such as Game Boy Pocket or Game Boy Advance.
 
 Required or optional firmware files go in the frontend's system directory.
 
 !!! attention
-	 If you’d like to use any bootrom, you can place the following files in RetroArch's system directory. Then, you need to enable [DMG Bootrom](#core-options) and/or [Game Boy Color Bootrom](#core-options) core options for these bootrom files to be used.
+	Place boot ROM files in RetroArch's system directory, then enable the [DMG Bootrom](#core-options) or [GBC Bootrom](#core-options) core option.
 
 | Filename     | Description                        | md5sum                           |
 |:------------:|:----------------------------------:|:--------------------------------:|
@@ -106,13 +107,12 @@ The Gearboy core saves/loads to/from these directories.
 
 ### Geometry and timing
 
-- The Gearboy core's core provided FPS is 59.7275005696
-- The Gearboy core's core provided sample rate is 44100 Hz
-- The Gearboy core's base width is 160
-- The Gearboy core's base height is 144
-- The Gearboy core's max width is 160
-- The Gearboy core's max height is 144
-- The Gearboy core's core provided aspect ratio is 10/9
+- The Gearboy core's provided FPS is 59.7275005696
+- The Gearboy core's provided sample rate is 44100 Hz
+- The Gearboy core's base size is 160x144, or 256x224 when an SGB border is displayed
+- The Gearboy core's max width is 256
+- The Gearboy core's max height is 224
+- The Gearboy core's provided aspect ratio is 10:9 without an SGB border and 8:7 with a border
 
 ## Core options
 
@@ -124,15 +124,15 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 	Select which hardware/model is emulated.
 
-    - *Auto* selects the best hardware based on the rom.
+	- *Auto* selects the best hardware based on the ROM header.
     - *Game Boy DMG* forces original Game Boy hardware.
     - *Game Boy Advance* enables Game Boy Advance hardware.
 
-- **Mapper (restart)** [gearboy_mapper] (**Auto**|ROM Only|MBC 1|MBC 2|MBC 3|MBC 5|MBC 1 Multicart|HuC 1|HuC 3|MMM01|Camera|MBC 7|TAMA5)
+- **Mapper (restart)** [gearboy_mapper] (**Auto**|ROM Only|MBC 1|MBC 2|MBC 3|MBC 5|MBC 1 Multicart|HuC 1|HuC 3|MMM01|Camera|MBC 7|TAMA5|Wisdom Tree|M161|Sachen MMC1|Sachen MMC2|PKJD|Bung/EMS|Poke 2-in-1)
 
 	Select which Memory Bank Controller (MBC or mapper) is emulated.
 
-    - *Auto* selects the best MBC based on the rom.
+	- *Auto* selects the best mapper based on the ROM header.
     - *ROM Only* forces no MBC.
     - *MBC 1* forces MBC 1.
     - *MBC 2* forces MBC 2.
@@ -145,6 +145,21 @@ Settings with (restart) means that core has to be closed for the new setting to 
     - *Camera* forces Pocket Camera.
     - *MBC 7* forces MBC 7.
     - *TAMA5* forces TAMA5.
+	- *Wisdom Tree* forces the Wisdom Tree mapper.
+	- *M161* forces the M161 mapper.
+	- *Sachen MMC1* forces the Sachen MMC1 mapper.
+	- *Sachen MMC2* forces the Sachen MMC2 mapper.
+	- *PKJD* forces the PKJD mapper.
+	- *Bung/EMS* forces the Bung/EMS flash cartridge mapper.
+	- *Poke 2-in-1* forces the Poke 2-in-1 mapper.
+
+- **Super Game Boy (restart)** [gearboy_sgb] (**Enabled**|Disabled)
+
+	Run compatible games in Super Game Boy mode. Disable this option to run them as standard Game Boy games.
+
+- **Super Game Boy Border** [gearboy_sgb_border] (**Enabled**|Disabled)
+
+	Display the Super Game Boy border around the game screen. Disable this option to show only the 160x144 game screen.
 
 - **DMG Palette** [gearboy_palette] (**Original**|Sharp|B/W|Autumn|Soft|Slime)
 
@@ -164,7 +179,7 @@ Settings with (restart) means that core has to be closed for the new setting to 
 
 - **Allow Up+Down / Left+Right** [gearboy_up_down_allowed] (**Disabled**|Enabled)
 
-	Allow pressing, quickly alternating, or holding both left and right (or up and down) directions at the same time. This may cause movement based glitches in certain games.
+	Allow pressing, quickly alternating, or holding both left and right, or up and down, at the same time. This may cause movement-based glitches in some games.
 
 - **Tilt Source (MBC7)** [gearboy_tilt_source] (**Mouse**|Sensor|Analog Stick)
 
